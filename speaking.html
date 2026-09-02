@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IELTS Speaking Simulation & Band Calculator</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <span>IELTS Master Prep</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Dashboard</a></li>
+      <li><a href="listening.html" class="nav-link">Listening 🎧</a></li>
+      <li><a href="reading.html" class="nav-link">Reading 📖</a></li>
+      <li><a href="writing.html" class="nav-link">Writing ✍️</a></li>
+      <li><a href="speaking.html" class="nav-link active">Speaking 🗣️</a></li>
+    </ul>
+    <button id="theme-toggle-btn" class="theme-toggle">🌙 Dark</button>
+  </nav>
+
+  <div class="container">
+    <div class="grid-2">
+
+      <!-- Left Column: Topics & Cue Cards -->
+      <div>
+        <h2 style="margin-bottom: 1rem;">Speaking Test Catalog</h2>
+        <div id="speaking-topics-container">
+          <!-- Loaded dynamically -->
+        </div>
+      </div>
+
+      <!-- Right Column: Timer & Criteria Band Score Calculator -->
+      <div>
+        <!-- Cue Card Prep Timer Card -->
+        <div class="card" style="margin-bottom: 1.5rem; text-align: center;">
+          <h3 class="card-title">⏱️ Cue Card 1-Minute Prep Timer</h3>
+          <div id="prep-timer-display" style="font-size: 1.5rem; font-weight: 700; color: var(--accent-orange); margin: 1rem 0;">
+            Preparation Time: 60s
+          </div>
+          <button id="start-prep-timer" class="btn btn-primary">Start 60s Timer</button>
+        </div>
+
+        <!-- Official 4-Criteria Band Score Calculator Card -->
+        <div class="card">
+          <h3 class="card-title">📊 Speaking Band Score Calculator</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Average of all 4 official IELTS Speaking criteria with official rounding rules.</p>
+
+          <div class="form-group">
+            <label class="form-label">Fluency & Coherence (FC)</label>
+            <select id="score-fc" class="form-select">
+              <option value="0">Select band...</option>
+              <option value="9">9.0 - Expert</option>
+              <option value="8.5">8.5</option>
+              <option value="8">8.0 - Very Good</option>
+              <option value="7.5">7.5</option>
+              <option value="7">7.0 - Good</option>
+              <option value="6.5">6.5</option>
+              <option value="6">6.0 - Competent</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Lexical Resource (LR)</label>
+            <select id="score-lr" class="form-select">
+              <option value="0">Select band...</option>
+              <option value="9">9.0 - Expert</option>
+              <option value="8.5">8.5</option>
+              <option value="8">8.0 - Very Good</option>
+              <option value="7.5">7.5</option>
+              <option value="7">7.0 - Good</option>
+              <option value="6.5">6.5</option>
+              <option value="6">6.0 - Competent</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Grammatical Range & Accuracy (GRA)</label>
+            <select id="score-gra" class="form-select">
+              <option value="0">Select band...</option>
+              <option value="9">9.0 - Expert</option>
+              <option value="8.5">8.5</option>
+              <option value="8">8.0 - Very Good</option>
+              <option value="7.5">7.5</option>
+              <option value="7">7.0 - Good</option>
+              <option value="6.5">6.5</option>
+              <option value="6">6.0 - Competent</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Pronunciation (P)</label>
+            <select id="score-p" class="form-select">
+              <option value="0">Select band...</option>
+              <option value="9">9.0 - Expert</option>
+              <option value="8.5">8.5</option>
+              <option value="8">8.0 - Very Good</option>
+              <option value="7.5">7.5</option>
+              <option value="7">7.0 - Good</option>
+              <option value="6.5">6.5</option>
+              <option value="6">6.0 - Competent</option>
+            </select>
+          </div>
+
+          <div id="speaking-band-result" style="font-size: 1.5rem; font-weight: 800; color: var(--accent-green); text-align: center; margin-top: 1.5rem;">
+            Select criteria scores
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/speaking.js"></script>
+</body>
+</html>

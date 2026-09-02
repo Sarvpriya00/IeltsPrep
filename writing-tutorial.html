@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IELTS Writing Band 8/9 Masterclass Tutorial</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <span>IELTS Master Prep</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Dashboard</a></li>
+      <li><a href="writing.html" class="nav-link">Writing ✍️</a></li>
+      <li><a href="exercises.html" class="nav-link">Exercises 🏋️</a></li>
+      <li><a href="writing-tutorial.html" class="nav-link active">Writing Tutorial 💡</a></li>
+    </ul>
+    <button id="theme-toggle-btn" class="theme-toggle">🌙 Dark</button>
+  </nav>
+
+  <div class="container">
+    <div style="margin-bottom: 2rem;">
+      <h1 style="color: var(--accent-blue); margin-bottom: 0.5rem;">Band 8/9 IELTS Academic Writing Masterclass</h1>
+      <p style="font-size: 1.1rem; color: var(--text-secondary);">Official structural blueprints, examiner scoring rubrics, and high-scoring vocabulary cheat sheets.</p>
+    </div>
+
+    <!-- Structural Blueprints Section -->
+    <h2 style="margin-bottom: 1rem;">📐 Task 1 & Task 2 Structural Blueprints</h2>
+    <div id="blueprints-container">
+      <!-- Loaded dynamically via writing-tutorial.js -->
+    </div>
+
+    <!-- Scoring Criteria Section -->
+    <h2 style="margin-bottom: 1rem; margin-top: 2.5rem;">🏆 The 4 Examiner Scoring Criteria (25% Each)</h2>
+    <div id="criteria-container">
+      <!-- Loaded dynamically -->
+    </div>
+
+    <!-- Vocabulary Cheat Sheet Section -->
+    <div id="vocab-cheat-sheet" style="margin-top: 2.5rem;">
+      <!-- Loaded dynamically -->
+    </div>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/writing-tutorial.js"></script>
+</body>
+</html>

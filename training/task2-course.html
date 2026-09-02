@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2 Mastery | IELTS Training Gym</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/training.css">
+</head>
+<body class="training-body">
+  <div class="training-container" style="max-width: 800px; padding-top: 2rem;">
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <a href="index.html" class="btn btn-secondary" style="padding: 0.5rem 1rem;">◀ Back</a>
+        <h1 style="margin: 0; font-size: 1.5rem;">📝 Task 2 Mastery</h1>
+      </div>
+      <div id="q-number-display" style="font-weight: 700; color: var(--tr-text-sub); font-size: 0.9rem;"></div>
+    </div>
+    <div id="workout-runner-container"></div>
+  </div>
+
+  <script type="module">
+    import { task2Data } from '../data/training/task2Data.js';
+    import { renderExercise } from '../js/training-engine.js';
+    
+    let currentIndex = 0;
+
+    function loadQuestion() {
+      const container = document.getElementById('workout-runner-container');
+      const qNumDisplay = document.getElementById('q-number-display');
+      
+      if (currentIndex >= task2Data.length) {
+        container.innerHTML = `
+          <div class="workout-card" style="text-align: center; padding: 3rem 2rem;">
+            <h1 style="font-size: 2.5rem; color: var(--tr-primary); margin-bottom: 1rem;">Module Complete!</h1>
+            <p>You have completed all exercises in Task 2 Mastery.</p>
+            <a href="index.html" class="btn btn-primary" style="margin-top: 1.5rem;">Return to Dashboard</a>
+          </div>
+        `;
+        if (qNumDisplay) qNumDisplay.textContent = "";
+        return;
+      }
+
+      if (qNumDisplay) {
+        qNumDisplay.textContent = `Exercise ${currentIndex + 1} of ${task2Data.length}`;
+      }
+
+      renderExercise(container, task2Data[currentIndex], () => {
+        currentIndex++;
+        loadQuestion();
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadQuestion();
+    });
+  </script>
+</body>
+</html>

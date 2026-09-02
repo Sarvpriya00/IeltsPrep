@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IELTS Personal Error Vault</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <span>IELTS Master Prep</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Dashboard</a></li>
+      <li><a href="listening.html" class="nav-link">Listening 🎧</a></li>
+      <li><a href="reading.html" class="nav-link">Reading 📖</a></li>
+      <li><a href="writing.html" class="nav-link">Writing ✍️</a></li>
+      <li><a href="speaking.html" class="nav-link">Speaking 🗣️</a></li>
+      <li><a href="errors.html" class="nav-link active">Error Vault 🎯</a></li>
+    </ul>
+    <button id="theme-toggle-btn" class="theme-toggle">🌙 Dark</button>
+  </nav>
+
+  <div class="container">
+    <div class="grid-2">
+
+      <!-- Form: Log New Error -->
+      <div class="card">
+        <h3 class="card-title" style="color: var(--accent-red);">🎯 Log Practice Mistake</h3>
+        <form id="add-error-form">
+          <div class="form-group">
+            <label class="form-label">Test Section</label>
+            <select id="err-section" class="form-select" required>
+              <option value="listening">Listening</option>
+              <option value="reading">Reading</option>
+              <option value="writing">Writing</option>
+              <option value="speaking">Speaking</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Error Category</label>
+            <select id="err-category" class="form-select" required>
+              <option value="Listening Mishearing">Listening Mishearing</option>
+              <option value="Spelling Error">Spelling Error</option>
+              <option value="Keyword Misinterpretation">Keyword Misinterpretation</option>
+              <option value="Distractor Trap">Distractor Trap</option>
+              <option value="Grammar Flaw">Grammar Flaw</option>
+              <option value="Time Pressure">Time Pressure</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Question Text / Description</label>
+            <input type="text" id="err-question" class="form-input" placeholder="e.g. Listening Part 1 Q5" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Your Answer</label>
+            <input type="text" id="err-user-ans" class="form-input" placeholder="What you wrote" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Correct Answer</label>
+            <input type="text" id="err-correct-ans" class="form-input" placeholder="Official correct answer" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Why it was wrong / Action Plan</label>
+            <textarea id="err-why-wrong" class="form-textarea" style="height: 90px;" placeholder="Analyze why you made this mistake..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Add Error to Vault</button>
+        </form>
+      </div>
+
+      <!-- Error List Area -->
+      <div>
+        <h3 style="margin-bottom: 1rem;">Vault History</h3>
+        <div id="error-list-container">
+          <!-- Loaded dynamically via errors.js -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/errors.js"></script>
+</body>
+</html>

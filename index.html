@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IELTS Preparation Command Center</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <span>IELTS Master Prep</span>
+      <span class="badge">Public</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link active">Dashboard</a></li>
+      <li><a href="listening.html" class="nav-link">Listening 🎧</a></li>
+      <li><a href="reading.html" class="nav-link">Reading 📖</a></li>
+      <li><a href="writing.html" class="nav-link">Writing ✍️</a></li>
+      <li><a href="training/index.html" class="nav-link" style="color: var(--accent-orange); font-weight: 700;">Training Gym 🏋️</a></li>
+      <li><a href="writing-tutorial.html" class="nav-link">Writing Tutorial 💡</a></li>
+      <li><a href="speaking.html" class="nav-link">Speaking 🗣️</a></li>
+    </ul>
+    <button id="theme-toggle-btn" class="theme-toggle">🌙 Dark</button>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+      <div class="hero-content">
+        <h1>IELTS Academic Command Center</h1>
+        <p>Authentic Computer-Delivered Exam Practice</p>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-box">
+          <div class="number" id="countdown-days">12</div>
+          <div class="label">Days Remaining</div>
+        </div>
+        <div class="stat-box">
+          <div class="number" id="target-overall-display">8.0</div>
+          <div class="label">Target Band</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Practice Modules Grid -->
+    <h2 style="margin-bottom: 1rem;">Practice Modules</h2>
+    <div class="grid-4">
+      <a href="listening.html" class="card" style="text-decoration: none; color: inherit;">
+        <h3 class="card-title" style="color: var(--accent-blue);">🎧 Listening Test</h3>
+        <p style="font-size: 0.9rem; color: var(--text-secondary);">Cambridge 21 Tests 1–4 with audio uploader, timer, & instant auto-grading.</p>
+      </a>
+      <a href="reading.html" class="card" style="text-decoration: none; color: inherit;">
+        <h3 class="card-title" style="color: var(--accent-green);">📖 Reading Practice</h3>
+        <p style="font-size: 0.9rem; color: var(--text-secondary);">Split-screen passage view, True/False/Not Given, and Academic Band scoring.</p>
+      </a>
+      <a href="writing.html" class="card" style="text-decoration: none; color: inherit;">
+        <h3 class="card-title" style="color: var(--accent-purple);">✍️ Writing Studio</h3>
+        <p style="font-size: 0.9rem; color: var(--text-secondary);">8 Task 1s & 8 Task 2s with resizable columns, image zoom, & side-by-side comparison.</p>
+      </a>
+      <a href="training/index.html" class="card" style="text-decoration: none; color: inherit;">
+        <h3 class="card-title" style="color: var(--accent-orange);">🏋️ Training Gym</h3>
+        <p style="font-size: 0.9rem; color: var(--text-secondary);">Interactive Duolingo-style writing skill trainer with streaks, levels, & spaced review.</p>
+      </a>
+    </div>
+
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+  <script type="module">
+    import { getProfile } from './js/app.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const profile = getProfile();
+      document.getElementById('target-overall-display').textContent = profile.target_overall || '8.0';
+
+      const examDate = new Date(profile.exam_date || '2026-08-24');
+      const today = new Date('2026-08-11');
+      const days = Math.ceil((examDate - today) / (1000 * 60 * 60 * 24));
+      document.getElementById('countdown-days').textContent = days > 0 ? days : 0;
+    });
+  </script>
+
+</body>
+</html>

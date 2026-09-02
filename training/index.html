@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IELTS Writing Training Gym</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/training.css">
+  <style>
+    /* Dashboard specific layout */
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+    }
+    @media (max-width: 768px) {
+      .dashboard-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .module-card {
+      background: var(--tr-card-bg);
+      border: 1px solid var(--tr-border);
+      border-radius: var(--tr-radius-md);
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.2s;
+    }
+    .module-card:hover {
+      border-color: var(--tr-primary);
+      transform: translateY(-2px);
+      box-shadow: var(--tr-shadow-sm);
+    }
+    .module-card-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .module-card-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: var(--tr-text-main);
+    }
+    .module-card-desc {
+      font-size: 0.9rem;
+      color: var(--tr-text-muted);
+    }
+  </style>
+</head>
+<body class="training-body">
+
+  <!-- Minimal Nav -->
+  <nav class="navbar" style="border-bottom: 1px solid var(--tr-border);">
+    <a href="../index.html" class="nav-brand" style="text-decoration: none;">
+      <span style="color: var(--tr-text-main);">IELTS Command Center</span>
+    </a>
+    <div style="display: flex; gap: 1.5rem; align-items: center;">
+      <a href="/training/index.html" style="font-weight: 600; color: var(--tr-primary); text-decoration: none;">Training Gym</a>
+      <button id="theme-toggle-btn" class="theme-toggle" style="background: var(--tr-bg); border: 1px solid var(--tr-border);">🌙 Dark</button>
+    </div>
+  </nav>
+
+  <div class="training-container">
+    
+    <!-- Gamified Header -->
+    <div class="gamified-top-bar">
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <div id="level-badge" class="level-badge">Level 1</div>
+        <div id="level-title" style="font-weight: 700; color: var(--tr-text-sub); font-size: 0.95rem;">Foundation</div>
+      </div>
+      <div style="display: flex; gap: 2rem;">
+        <div class="xp-pill">⭐ <span id="xp-display">0</span></div>
+        <div class="streak-pill">🔥 <span id="streak-display">0</span></div>
+      </div>
+    </div>
+
+    <div class="dashboard-grid">
+      
+      <!-- Left Column: Workout & Modules -->
+      <div>
+        <!-- Daily Workout CTA -->
+        <div class="workout-card" style="display: flex; align-items: center; justify-content: space-between; background: linear-gradient(135deg, rgba(0,113,227,0.05), rgba(0,113,227,0.15)); border-color: var(--tr-primary);">
+          <div>
+            <h2 style="margin-bottom: 0.5rem; color: var(--tr-primary);">Today's Writing Workout</h2>
+            <p style="color: var(--tr-text-sub); margin-bottom: 0; font-size: 0.95rem;">10–15 minutes • Mixed Skills • Spaced Review</p>
+          </div>
+          <a href="/training/workout.html" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1.1rem; border-radius: 30px; text-decoration: none; font-weight: 700; box-shadow: 0 4px 12px rgba(0,113,227,0.3);">
+            Start Workout
+          </a>
+        </div>
+
+        <h3 style="margin-top: 2.5rem; margin-bottom: 1rem; font-size: 1.25rem;">Focused Training Modules</h3>
+        
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+          <a href="/training/grammar.html" class="module-card">
+            <div class="module-card-icon">🧠</div>
+            <div class="module-card-title">Grammar Gym</div>
+            <div class="module-card-desc">Subject-verb agreement, tenses, and structural accuracy.</div>
+          </a>
+          <a href="/training/vocab.html" class="module-card">
+            <div class="module-card-icon">📚</div>
+            <div class="module-card-title">Vocab & Spelling Lab</div>
+            <div class="module-card-desc">Collocations, word families, synonyms, and spelling.</div>
+          </a>
+          <a href="/training/sentence-lab.html" class="module-card">
+            <div class="module-card-icon">🏗️</div>
+            <div class="module-card-title">Sentence Builder</div>
+            <div class="module-card-desc">Combine and construct complex academic sentences (Levels 1-10).</div>
+          </a>
+          <a href="/training/cohesion.html" class="module-card">
+            <div class="module-card-icon">🔗</div>
+            <div class="module-card-title">Coherence & Cohesion</div>
+            <div class="module-card-desc">Paragraph ordering, topic sentences, and linking words.</div>
+          </a>
+          <a href="/training/task1-course.html" class="module-card">
+            <div class="module-card-icon">📊</div>
+            <div class="module-card-title">Task 1 Mastery</div>
+            <div class="module-card-desc">Trend vocabulary and overview writing (35% focus).</div>
+          </a>
+          <a href="/training/task2-course.html" class="module-card">
+            <div class="module-card-icon">📝</div>
+            <div class="module-card-title">Task 2 Mastery</div>
+            <div class="module-card-desc">Idea development and PEEL paragraphing (65% focus).</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Dashboard Stats -->
+      <div>
+        <div class="skill-meter-card">
+          <h3 style="font-size: 1.1rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--tr-border); padding-bottom: 0.5rem;">IELTS Writing Skills</h3>
+          
+          <div style="margin-bottom: 1.25rem;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; font-weight: 600;">
+              <span>Grammar Accuracy</span>
+              <span id="skill-grammar-val" style="color: var(--tr-primary);">0%</span>
+            </div>
+            <div class="skill-meter-bg">
+              <div id="skill-grammar-fill" class="skill-meter-fill" style="background: var(--tr-primary); width: 0%;"></div>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 1.25rem;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; font-weight: 600;">
+              <span>Vocabulary Flexibility</span>
+              <span id="skill-vocab-val" style="color: var(--tr-green);">0%</span>
+            </div>
+            <div class="skill-meter-bg">
+              <div id="skill-vocab-fill" class="skill-meter-fill" style="background: var(--tr-green); width: 0%;"></div>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 1.25rem;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; font-weight: 600;">
+              <span>Sentence Building</span>
+              <span id="skill-sentence-val" style="color: var(--tr-purple);">0%</span>
+            </div>
+            <div class="skill-meter-bg">
+              <div id="skill-sentence-fill" class="skill-meter-fill" style="background: var(--tr-purple); width: 0%;"></div>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 1.25rem;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; font-weight: 600;">
+              <span>Cohesion & Structure</span>
+              <span id="skill-cohesion-val" style="color: var(--tr-orange);">0%</span>
+            </div>
+            <div class="skill-meter-bg">
+              <div id="skill-cohesion-fill" class="skill-meter-fill" style="background: var(--tr-orange); width: 0%;"></div>
+            </div>
+          </div>
+          
+          <div style="margin-bottom: 1.25rem;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; font-weight: 600;">
+              <span>Task 1 Control</span>
+              <span id="skill-t1-val" style="color: var(--tr-text-sub);">0%</span>
+            </div>
+            <div class="skill-meter-bg">
+              <div id="skill-t1-fill" class="skill-meter-fill" style="background: var(--tr-text-sub); width: 0%;"></div>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 1.25rem;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; font-weight: 600;">
+              <span>Task 2 Argumentation</span>
+              <span id="skill-t2-val" style="color: var(--tr-text-main);">0%</span>
+            </div>
+            <div class="skill-meter-bg">
+              <div id="skill-t2-fill" class="skill-meter-fill" style="background: var(--tr-text-main); width: 0%;"></div>
+            </div>
+          </div>
+          <p style="font-size: 0.75rem; color: var(--tr-text-muted); text-align: center; margin-top: 1.5rem;">These are internal training metrics, not official IELTS scores.</p>
+        </div>
+
+        <a href="/training/habits.html" class="module-card" style="background: var(--tr-bg);">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+            <span style="font-size: 1.5rem;">🎯</span>
+            <h4 style="margin: 0; font-size: 1rem;">Band 7 Habits</h4>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--tr-text-muted); margin: 0;">Learn the practical habits that distinguish stronger academic writing.</p>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="module">
+    import { getGamificationState, calculateLevel } from '../js/gamification.js';
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      const state = getGamificationState();
+      
+      // Top Bar
+      document.getElementById('xp-display').textContent = state.xp;
+      document.getElementById('streak-display').textContent = state.streak;
+      
+      const levelInfo = calculateLevel(state.xp);
+      document.getElementById('level-badge').textContent = `Level ${levelInfo.level}`;
+      document.getElementById('level-title').textContent = levelInfo.title.split('—')[1].trim();
+
+      // Skills
+      const renderSkill = (id, val) => {
+        const fill = document.getElementById(`skill-${id}-fill`);
+        const text = document.getElementById(`skill-${id}-val`);
+        if(fill) fill.style.width = `${val}%`;
+        if(text) text.textContent = `${val}%`;
+      };
+
+      renderSkill('grammar', state.skills.grammar || 0);
+      renderSkill('vocab', state.skills.vocab || 0);
+      renderSkill('sentence', state.skills.sentence || 0);
+      renderSkill('cohesion', state.skills.cohesion || 0);
+      renderSkill('t1', state.skills.task1 || 0);
+      renderSkill('t2', state.skills.task2 || 0);
+    });
+  </script>
+</body>
+</html>

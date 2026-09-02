@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IELTS Computer-Delivered Listening Test</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .btn-back-header {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #334155;
+      color: #fff;
+      border: none;
+      padding: 0.35rem 0.85rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+    .btn-back-header:hover {
+      background: #475569;
+      color: #38bdf8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Authentic IELTS Top Candidate Header Bar -->
+  <header class="ielts-exam-header">
+    <div style="display:flex; align-items:center; gap:1rem;">
+      <a href="index.html" class="btn-back-header" title="Return to Command Center Dashboard">
+        ◀ Back to Dashboard
+      </a>
+      <div class="test-info">
+        IELTS Listening Practice — Candidate ID: 500219
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:center; gap: 1rem;">
+      <div class="timer-box">
+        <span>Time:</span>
+        <span id="timer-display">40:00</span>
+      </div>
+      <button id="toggle-timer" class="btn btn-secondary" style="font-size:0.8rem; padding: 0.3rem 0.6rem;">Hide Timer</button>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <span>IELTS Master Prep</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Dashboard</a></li>
+      <li><a href="listening.html" class="nav-link active">Listening 🎧</a></li>
+      <li><a href="reading.html" class="nav-link">Reading 📖</a></li>
+      <li><a href="writing.html" class="nav-link">Writing ✍️</a></li>
+      <li><a href="speaking.html" class="nav-link">Speaking 🗣️</a></li>
+    </ul>
+    <button id="theme-toggle-btn" class="theme-toggle">🌙 Dark</button>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 1.5rem;">
+      <div style="display:flex; align-items:center; gap: 1rem;">
+        <label style="font-weight: 600;">Select Test: </label>
+        <select id="test-selector" class="form-select" style="width: auto;">
+          <option value="cam21-t1">Cambridge 21 · Test 1</option>
+          <option value="cam21-t2">Cambridge 21 · Test 2</option>
+          <option value="cam21-t3">Cambridge 21 · Test 3</option>
+          <option value="cam21-t4">Cambridge 21 · Test 4</option>
+        </select>
+      </div>
+      <button id="submit-listening-test" class="btn btn-success">Submit & Grade Test</button>
+    </div>
+
+    <!-- Listening Test Parts Render Area -->
+    <div id="listening-parts-container">
+      <!-- Loaded dynamically via listening.js -->
+    </div>
+  </div>
+
+  <!-- Results Modal -->
+  <div id="results-modal" class="modal-backdrop hidden">
+    <div class="modal-content" style="text-align: center; max-width: 600px; width: 90%;">
+      <h2 style="color: var(--accent-blue); margin-bottom: 1rem;">Test Results</h2>
+      <p style="font-size: 1.1rem; margin-bottom: 0.5rem;">Raw Score: <strong id="result-score">0 / 40</strong></p>
+      <h1 id="result-band" style="font-size: 3rem; color: var(--accent-green); margin-bottom: 1.5rem;">Band 0.0</h1>
+      
+      <div id="result-details" style="text-align: left; max-height: 350px; overflow-y: auto; margin-bottom: 1.5rem; padding: 1rem; border: 1px solid var(--border-color); border-radius: 8px; background: var(--bg-primary); display: none;">
+        <!-- Detailed feedback injected via JS -->
+      </div>
+
+      <button class="btn btn-primary" onclick="document.getElementById('results-modal').classList.add('hidden')">Close</button>
+    </div>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/listening.js"></script>
+</body>
+</html>

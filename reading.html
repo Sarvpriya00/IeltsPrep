@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IELTS Computer-Delivered Academic Reading Portal</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    html, body {
+      height: 100vh;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      background: var(--bg-primary);
+    }
+
+    /* Authentic IELTS Exam Header */
+    .ielts-exam-header {
+      background: #1e293b;
+      color: #fff;
+      padding: 0.6rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #334155;
+      height: 52px;
+    }
+
+    .ielts-exam-header .candidate-id {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #94a3b8;
+    }
+
+    .ielts-exam-header .test-name {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #f8fafc;
+      margin-left: 1rem;
+    }
+
+    .timer-display-box {
+      background: #0f172a;
+      padding: 0.25rem 0.85rem;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #38bdf8;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 1px solid #334155;
+    }
+
+    /* Passage Navigation Sub-Bar */
+    .passage-nav-bar {
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+      height: 44px;
+    }
+
+    .passage-tab-btn {
+      padding: 0.35rem 1rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: 1px solid var(--border-color);
+      background: var(--bg-primary);
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .passage-tab-btn.active {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+    }
+
+    /* Split Viewport Layout (Zero Scroll) */
+    .reading-viewport {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: calc(100vh - 52px - 44px - 56px);
+      overflow: hidden;
+    }
+
+    .reading-pane {
+      background: var(--bg-card);
+      overflow-y: auto;
+      padding: 1.5rem 2rem;
+      border-right: 1px solid var(--border-color);
+    }
+
+    .reading-pane-questions {
+      background: var(--bg-card);
+      overflow-y: auto;
+      padding: 1.5rem 2rem;
+    }
+
+    /* Authentic Bottom Question Bar */
+    .bottom-q-bar {
+      height: 56px;
+      background: #1e293b;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+      border-top: 2px solid #334155;
+    }
+
+    .q-palette-grid {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      overflow-x: auto;
+      padding: 0.25rem 0;
+    }
+
+    .q-palette-btn {
+      width: 28px;
+      height: 28px;
+      border-radius: 4px;
+      border: 1px solid #475569;
+      background: #0f172a;
+      color: #94a3b8;
+      font-weight: 700;
+      font-size: 0.75rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+
+    .q-palette-btn.answered {
+      background: #0284c7;
+      color: #fff;
+      border-color: #38bdf8;
+    }
+
+    .q-palette-btn.active {
+      border: 2px solid #f59e0b;
+      box-shadow: 0 0 6px rgba(245, 158, 11, 0.6);
+    }
+
+    .font-adjuster-btn {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #334155;
+      color: #fff;
+      border: none;
+      padding: 0.35rem 0.85rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    .btn-back:hover {
+      background: #475569;
+      color: #38bdf8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Candidate Exam Header -->
+  <header class="ielts-exam-header">
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <a href="index.html" class="btn-back" title="Return to Command Center Dashboard">
+        ◀ Back to Dashboard
+      </a>
+      <span class="candidate-id">Candidate: <strong>500219 / Practice User</strong></span>
+      <span class="test-name">| IELTS Academic Reading Test</span>
+    </div>
+
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <label style="font-size: 0.8rem; color: #94a3b8;">Select Test:</label>
+        <select id="reading-test-selector" style="background: #0f172a; color: #f8fafc; border: 1px solid #475569; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.85rem; font-weight: 600;">
+          <option value="cam21-r1">Cambridge 21 · Test 1</option>
+          <option value="cam21-r2">Cambridge 21 · Test 2</option>
+        </select>
+      </div>
+
+      <div class="timer-display-box">
+        <span style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase;">Time:</span>
+        <span id="reading-timer-display">60:00</span>
+      </div>
+
+      <button id="toggle-reading-timer" style="background: #334155; color: #fff; border: none; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.75rem; cursor: pointer;">
+        Hide Timer
+      </button>
+
+      <button id="theme-toggle-btn" class="theme-toggle" style="padding: 0.2rem 0.5rem; font-size: 0.75rem;">🌙 Dark</button>
+    </div>
+  </header>
+
+  <!-- Passage Sub-Bar -->
+  <div class="passage-nav-bar">
+    <div style="display: flex; gap: 0.5rem;" id="passage-tabs-container">
+      <button class="passage-tab-btn active" data-passage="1">Passage 1 (Q1-13)</button>
+      <button class="passage-tab-btn" data-passage="2">Passage 2 (Q14-26)</button>
+      <button class="passage-tab-btn" data-passage="3">Passage 3 (Q27-40)</button>
+    </div>
+
+    <!-- Font Size Controls -->
+    <div style="display: flex; align-items: center; gap: 0.4rem;">
+      <span style="font-size: 0.8rem; color: var(--text-muted);">Text Size:</span>
+      <button id="font-dec" class="font-adjuster-btn">A-</button>
+      <button id="font-inc" class="font-adjuster-btn">A+</button>
+    </div>
+  </div>
+
+  <!-- Main Reading Viewport (Split Passage & Questions) -->
+  <div class="reading-viewport">
+    <!-- Left: Reading Passage -->
+    <div class="reading-pane" id="passage-content-pane">
+      <!-- Passage text loaded dynamically -->
+    </div>
+
+    <!-- Right: Questions -->
+    <div class="reading-pane-questions" id="questions-content-pane">
+      <!-- Question cards loaded dynamically -->
+    </div>
+  </div>
+
+  <!-- Bottom Authentic CD Question Palette Bar -->
+  <footer class="bottom-q-bar">
+    <div style="display: flex; align-items: center; gap: 0.75rem;">
+      <span style="font-size: 0.8rem; color: #94a3b8; font-weight: 700;">QUESTIONS:</span>
+      <div class="q-palette-grid" id="q-palette-grid">
+        <!-- Q1 to Q40 buttons loaded dynamically -->
+      </div>
+    </div>
+
+    <div style="display: flex; align-items: center; gap: 0.75rem;">
+      <button id="btn-prev-q" style="background: #334155; color: #fff; border: none; padding: 0.4rem 0.85rem; border-radius: 4px; font-weight: 700; font-size: 0.8rem; cursor: pointer;">
+        ◀ Prev
+      </button>
+      <button id="btn-next-q" style="background: #334155; color: #fff; border: none; padding: 0.4rem 0.85rem; border-radius: 4px; font-weight: 700; font-size: 0.8rem; cursor: pointer;">
+        Next ▶
+      </button>
+      <button id="submit-reading-test" class="btn btn-success" style="padding: 0.4rem 1rem; font-size: 0.85rem;">
+        Submit & Grade Test
+      </button>
+    </div>
+  </footer>
+
+  <!-- Results Modal -->
+  <div id="results-modal" class="modal-backdrop hidden">
+    <div class="modal-content" style="text-align: center; max-width: 600px; width: 90%;">
+      <h2 style="color: var(--accent-blue); margin-bottom: 1rem;">Academic Reading Results</h2>
+      <p style="font-size: 1.1rem; margin-bottom: 0.5rem;">Raw Score: <strong id="result-score">0 / 40</strong></p>
+      <h1 id="result-band" style="font-size: 3.5rem; color: var(--accent-green); margin-bottom: 1.5rem;">Band 0.0</h1>
+      
+      <div id="result-details" style="text-align: left; max-height: 350px; overflow-y: auto; margin-bottom: 1.5rem; padding: 1rem; border: 1px solid var(--border-color); border-radius: 8px; background: var(--bg-primary); display: none;">
+        <!-- Detailed feedback injected via JS -->
+      </div>
+
+      <button class="btn btn-primary" onclick="document.getElementById('results-modal').classList.add('hidden')">Close</button>
+    </div>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/reading.js"></script>
+</body>
+</html>

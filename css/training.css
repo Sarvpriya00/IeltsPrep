@@ -1,0 +1,242 @@
+/* Duolingo-Inspired Academic IELTS Training System CSS */
+
+:root {
+  --tr-bg: #f8fafc;
+  --tr-card-bg: #ffffff;
+  --tr-card-hover: #f1f5f9;
+  --tr-text-main: #0f172a;
+  --tr-text-sub: #475569;
+  --tr-text-muted: #64748b;
+  --tr-border: #e2e8f0;
+
+  --tr-primary: #0071e3;
+  --tr-primary-hover: #005bb5;
+  --tr-green: #22c55e;
+  --tr-green-bg: #f0fdf4;
+  --tr-green-border: #86efac;
+  --tr-red: #ef4444;
+  --tr-red-bg: #fef2f2;
+  --tr-red-border: #fca5a5;
+  --tr-orange: #f97316;
+  --tr-purple: #8b5cf6;
+  --tr-yellow: #eab308;
+
+  --tr-radius-sm: 8px;
+  --tr-radius-md: 14px;
+  --tr-radius-lg: 20px;
+
+  --tr-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --tr-shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --tr-shadow-lg: 0 16px 32px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="dark"] {
+  --tr-bg: #0b0f19;
+  --tr-card-bg: #161e2e;
+  --tr-card-hover: #1e293b;
+  --tr-text-main: #f8fafc;
+  --tr-text-sub: #94a3b8;
+  --tr-text-muted: #64748b;
+  --tr-border: #334155;
+
+  --tr-green-bg: #052e16;
+  --tr-green-border: #15803d;
+  --tr-red-bg: #450a0a;
+  --tr-red-border: #991b1b;
+}
+
+body.training-body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", Inter, sans-serif;
+  background-color: var(--tr-bg);
+  color: var(--tr-text-main);
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.training-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Gamified Header Bar */
+.gamified-top-bar {
+  background: var(--tr-card-bg);
+  border: 1px solid var(--tr-border);
+  border-radius: var(--tr-radius-md);
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--tr-shadow-sm);
+}
+
+.streak-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--tr-orange);
+}
+
+.xp-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--tr-yellow);
+}
+
+.level-badge {
+  background: var(--tr-primary);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* Exercise Runner Container */
+.workout-card {
+  background: var(--tr-card-bg);
+  border: 1px solid var(--tr-border);
+  border-radius: var(--tr-radius-lg);
+  padding: 2rem;
+  box-shadow: var(--tr-shadow-md);
+  margin-bottom: 1.5rem;
+}
+
+.workout-progress-bar-bg {
+  width: 100%;
+  height: 10px;
+  background: var(--tr-border);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.workout-progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--tr-primary), var(--tr-green));
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+/* Stage Indicator Badges */
+.stage-badge {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 3px 10px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.stage-learn { background: #e0f2fe; color: #0369a1; }
+.stage-practice { background: #fef3c7; color: #b45309; }
+.stage-apply { background: #f3e8ff; color: #6b21a8; }
+.stage-test { background: #dcfce7; color: #15803d; }
+
+/* Interactive Option Cards */
+.option-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.option-card {
+  background: var(--tr-bg);
+  border: 2px solid var(--tr-border);
+  border-radius: var(--tr-radius-md);
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--tr-text-main);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.option-card:hover {
+  border-color: var(--tr-primary);
+  background: rgba(0, 113, 227, 0.04);
+}
+
+.option-card.selected {
+  border-color: var(--tr-primary);
+  background: rgba(0, 113, 227, 0.08);
+}
+
+.option-card.correct {
+  border-color: var(--tr-green);
+  background: var(--tr-green-bg);
+  color: #15803d;
+}
+
+.option-card.incorrect {
+  border-color: var(--tr-red);
+  background: var(--tr-red-bg);
+  color: #b91c1c;
+}
+
+/* Feedback Banner */
+.feedback-banner {
+  padding: 1.25rem;
+  border-radius: var(--tr-radius-md);
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  animation: slideUp 0.25s ease;
+}
+
+.feedback-banner.success {
+  background: var(--tr-green-bg);
+  border: 1.5px solid var(--tr-green-border);
+  color: #166534;
+}
+
+.feedback-banner.error {
+  background: var(--tr-red-bg);
+  border: 1.5px solid var(--tr-red-border);
+  color: #991b1b;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Skill Dashboard Meters */
+.skill-meter-card {
+  background: var(--tr-card-bg);
+  border: 1px solid var(--tr-border);
+  border-radius: var(--tr-radius-md);
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--tr-shadow-sm);
+}
+
+.skill-meter-bg {
+  width: 100%;
+  height: 8px;
+  background: var(--tr-border);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.skill-meter-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}

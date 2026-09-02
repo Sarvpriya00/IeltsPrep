@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IELTS Academic Writing Studio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    html, body {
+      height: 100vh;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    .studio-app {
+      display: grid;
+      grid-template-rows: 54px 48px 1fr;
+      height: 100vh;
+      background: var(--bg-primary);
+    }
+
+    .studio-nav {
+      height: 54px;
+      padding: 0 1.5rem;
+    }
+
+    .studio-topbar {
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+      gap: 1rem;
+    }
+
+    .studio-main-grid {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .panel-prompt {
+      width: 480px;
+      min-width: 250px;
+      max-width: 80vw;
+      background: var(--bg-card);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .panel-editor {
+      flex: 1;
+      min-width: 320px;
+      background: var(--bg-card);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .panel-model {
+      width: 420px;
+      min-width: 280px;
+      background: var(--bg-card);
+      border-left: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    /* Drag Resizer Divider Handle */
+    .resizer-handle {
+      width: 10px;
+      background: var(--border-color);
+      cursor: col-resize;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      z-index: 100;
+      transition: background 0.2s ease, box-shadow 0.2s ease;
+      position: relative;
+    }
+
+    .resizer-handle:hover, .resizer-handle.dragging {
+      background: var(--accent-blue);
+      box-shadow: 0 0 8px rgba(0, 113, 227, 0.4);
+    }
+
+    .resizer-icon {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 6px 2px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      color: var(--text-secondary);
+      font-size: 0.75rem;
+      pointer-events: none;
+    }
+
+    .resizer-handle:hover .resizer-icon {
+      color: var(--accent-blue);
+      border-color: var(--accent-blue);
+    }
+
+    .panel-scrollable {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.25rem;
+    }
+
+    .panel-header {
+      padding: 0.75rem 1.25rem;
+      border-bottom: 1px solid var(--border-color);
+      background: rgba(255,255,255,0.6);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    [data-theme="dark"] .panel-header {
+      background: rgba(22,30,46,0.6);
+    }
+
+    .writing-editor-viewport {
+      font-family: var(--font-sans);
+      font-size: 1.05rem;
+      line-height: 1.7;
+      padding: 1.25rem;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      width: 100%;
+      height: 100%;
+      resize: none;
+      box-sizing: border-box;
+    }
+
+    .writing-editor-viewport:focus {
+      outline: none;
+      border-color: var(--accent-blue);
+      box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.15);
+    }
+
+    .prompt-image-large {
+      width: 100%;
+      height: auto;
+      max-height: 65vh;
+      object-fit: contain;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      cursor: zoom-in;
+      background: #fff;
+      padding: 6px;
+      transition: transform 0.3s ease, box-shadow 0.2s ease;
+    }
+
+    .layout-preset-btn {
+      padding: 0.25rem 0.6rem;
+      font-size: 0.75rem;
+      border: 1px solid var(--border-color);
+      background: var(--bg-primary);
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+
+    .layout-preset-btn.active {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 3000;
+    }
+
+    .lightbox-img {
+      max-width: 90vw;
+      max-height: 85vh;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="studio-app">
+
+    <!-- Top Navbar -->
+    <nav class="navbar studio-nav">
+      <a href="index.html" class="nav-brand" style="font-size: 1.1rem;">
+        <span>IELTS Master Prep</span>
+        <span class="badge" style="font-size: 0.7rem;">Writing Studio</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Dashboard</a></li>
+        <li><a href="listening.html" class="nav-link">Listening 🎧</a></li>
+        <li><a href="reading.html" class="nav-link">Reading 📖</a></li>
+        <li><a href="writing.html" class="nav-link active">Writing ✍️</a></li>
+        <li><a href="speaking.html" class="nav-link">Speaking 🗣️</a></li>
+      </ul>
+      <button id="theme-toggle-btn" class="theme-toggle" style="padding: 0.25rem 0.6rem; font-size: 0.8rem;">🌙 Dark</button>
+    </nav>
+
+    <!-- Task Selector & Layout Controls Bar -->
+    <div class="studio-topbar">
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <span style="font-weight: 700; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;">Task:</span>
+        <select id="writing-prompt-select" class="form-select" style="width: auto; max-width: 440px; padding: 0.35rem 0.75rem; font-size: 0.9rem; font-weight: 600;">
+          <!-- Loaded dynamically -->
+        </select>
+      </div>
+
+      <!-- Quick Preset Buttons -->
+      <div style="display: flex; align-items: center; gap: 0.4rem;">
+        <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600; margin-right: 0.2rem;">Quick Presets:</span>
+        <button id="btn-layout-normal" class="layout-preset-btn active">Default</button>
+        <button id="btn-layout-wide-img" class="layout-preset-btn">📐 Big Diagram (50%)</button>
+        <button id="btn-layout-wide-editor" class="layout-preset-btn">✍️ Wide Editor</button>
+      </div>
+
+      <!-- Timer & Word Count Quick Stats -->
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <div style="display: flex; align-items: center; gap: 0.4rem; background: var(--bg-primary); padding: 0.25rem 0.75rem; border-radius: 16px; border: 1px solid var(--border-color);">
+          <span style="font-size: 0.8rem; color: var(--text-muted);">⏱️</span>
+          <span id="writing-timer" style="font-family: monospace; font-weight: 700; font-size: 1rem; color: var(--accent-blue);">20:00</span>
+          <button id="timer-toggle-btn" class="btn btn-secondary" style="padding: 0.15rem 0.4rem; font-size: 0.75rem;">Start</button>
+          <button id="timer-reset-btn" class="btn btn-secondary" style="padding: 0.15rem 0.4rem; font-size: 0.75rem;">Reset</button>
+        </div>
+
+        <span style="font-size: 0.85rem; font-weight: 700; color: var(--accent-purple);">
+          <span id="word-count-display">0</span> / <span id="target-words-num">150</span> w
+        </span>
+      </div>
+    </div>
+
+    <!-- Main Viewport Grid -->
+    <div id="studio-main-grid" class="studio-main-grid">
+
+      <!-- Left Panel: Prompt Text & Big Diagram Image -->
+      <div id="panel-prompt" class="panel-prompt">
+        <div class="panel-header">
+          <span id="task-badge" class="badge" style="background: var(--accent-blue); color: #fff; padding: 2px 8px; font-size: 0.75rem;">Task 1</span>
+          
+          <div id="img-controls-header" style="display: none; gap: 0.35rem;">
+            <button id="rotate-img-btn" class="btn btn-secondary" style="padding: 0.2rem 0.5rem; font-size: 0.75rem;" title="Rotate image 90 degrees">
+              🔄 Rotate 90°
+            </button>
+            <button id="zoom-img-btn" class="btn btn-secondary" style="padding: 0.2rem 0.5rem; font-size: 0.75rem;">
+              🔍 Zoom
+            </button>
+          </div>
+        </div>
+
+        <div class="panel-scrollable">
+          <h3 id="prompt-title" style="color: var(--text-primary); font-size: 1.15rem; margin-bottom: 0.75rem; font-weight: 700;">
+            Prompt Title
+          </h3>
+
+          <div id="prompt-text" style="white-space: pre-line; background: var(--bg-primary); padding: 0.85rem; border-radius: var(--radius-sm); font-size: 0.95rem; line-height: 1.6; color: var(--text-primary); margin-bottom: 1rem; border-left: 3px solid var(--accent-blue);">
+            Prompt text...
+          </div>
+
+          <!-- Big Diagram Image -->
+          <div id="prompt-img-wrapper" style="text-align: center; display: none; overflow: hidden; padding: 10px 0;">
+            <img id="prompt-image" class="prompt-image-large" src="" alt="Task Diagram" title="Click to view fullscreen zoom" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Drag-to-Resize Divider Handle with Visual Grip Icon -->
+      <div id="resizer-handle" class="resizer-handle" title="Drag left or right to resize diagram & editor columns">
+        <div class="resizer-icon">
+          <span>◀</span>
+          <span>▶</span>
+        </div>
+      </div>
+
+      <!-- Center Panel: Full Height Editor -->
+      <div class="panel-editor">
+        <div class="panel-header">
+          <span style="font-weight: 700; font-size: 0.95rem; color: var(--text-primary);">✍️ Candidate Workspace</span>
+          <div style="display: flex; gap: 0.4rem;">
+            <button id="clear-draft-btn" class="btn btn-secondary" style="font-size: 0.75rem; padding: 0.25rem 0.5rem;">Clear</button>
+            <button id="copy-draft-btn" class="btn btn-secondary" style="font-size: 0.75rem; padding: 0.25rem 0.5rem;">Copy</button>
+            <button id="toggle-comparison-btn" class="btn btn-primary" style="font-size: 0.75rem; padding: 0.25rem 0.65rem;">
+              Compare Model
+            </button>
+          </div>
+        </div>
+
+        <div style="flex: 1; padding: 1rem; display: flex; flex-direction: column; overflow: hidden;">
+          <textarea id="writing-response" class="writing-editor-viewport" placeholder="Type your response here... Write continuously in full view without page scrolling."></textarea>
+        </div>
+      </div>
+
+      <!-- Right Panel: Model Answer (Initially Hidden) -->
+      <div id="model-side-panel" class="panel-model hidden">
+        <div class="panel-header" style="border-bottom: 2px solid var(--accent-green);">
+          <span style="font-weight: 700; font-size: 0.95rem; color: var(--accent-green);">🌟 Band 8.5+ Model Answer</span>
+          <button id="close-side-panel-btn" class="btn btn-secondary" style="padding: 0.2rem 0.5rem; font-size: 0.75rem;">✕ Close</button>
+        </div>
+
+        <div class="panel-scrollable">
+          <div id="sample-content" style="white-space: pre-line; line-height: 1.7; font-size: 0.95rem; background: var(--bg-primary); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color); color: var(--text-primary);">
+            Select a task to compare...
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Lightbox Fullscreen Image Zoom Modal -->
+  <div id="lightbox-modal" class="lightbox-modal hidden">
+    <div style="position: relative; text-align: center;">
+      <div style="position: absolute; top: -45px; right: 0; display: flex; gap: 0.5rem;">
+        <button id="lightbox-rotate-btn" style="background: var(--accent-blue); color: #fff; border: none; border-radius: 20px; padding: 6px 14px; font-weight: 700; cursor: pointer;">
+          🔄 Rotate 90°
+        </button>
+        <button id="close-lightbox-btn" style="background: #fff; color: #000; border: none; border-radius: 20px; padding: 6px 14px; font-weight: 700; cursor: pointer;">
+          ✕ Close
+        </button>
+      </div>
+      <img id="lightbox-img" class="lightbox-img" src="" alt="Fullscreen Diagram Zoom" />
+    </div>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/writing.js"></script>
+</body>
+</html>

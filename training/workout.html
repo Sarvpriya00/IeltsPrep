@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today's Workout | IELTS Training Gym</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/training.css">
+</head>
+<body class="training-body">
+
+  <div class="training-container" style="max-width: 800px; padding-top: 2rem;">
+    
+    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+      <a href="index.html" style="color: var(--tr-text-muted); text-decoration: none; font-size: 1.5rem;" title="Exit Workout">✕</a>
+      <div class="workout-progress-bar-bg" style="margin-bottom: 0; flex: 1;">
+        <div id="workout-progress-fill" class="workout-progress-bar-fill"></div>
+      </div>
+      <div id="q-number-display" style="font-weight: 700; color: var(--tr-text-sub); font-size: 0.9rem; min-width: 100px; text-align: right;"></div>
+    </div>
+
+    <!-- Workout Exercise Container -->
+    <div id="workout-runner-container">
+      <!-- Exercises injected by workout-runner.js -->
+    </div>
+
+  </div>
+
+  <!-- Gamification State & Scripts -->
+  <script type="module" src="../js/workout-runner.js"></script>
+
+</body>
+</html>

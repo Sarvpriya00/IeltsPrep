@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IELTS Performance Analytics</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <span>IELTS Master Prep</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Dashboard</a></li>
+      <li><a href="listening.html" class="nav-link">Listening 🎧</a></li>
+      <li><a href="reading.html" class="nav-link">Reading 📖</a></li>
+      <li><a href="writing.html" class="nav-link">Writing ✍️</a></li>
+      <li><a href="speaking.html" class="nav-link">Speaking 🗣️</a></li>
+      <li><a href="errors.html" class="nav-link">Error Vault 🎯</a></li>
+      <li><a href="analytics.html" class="nav-link active">Analytics 📊</a></li>
+    </ul>
+    <button id="theme-toggle-btn" class="theme-toggle">🌙 Dark</button>
+  </nav>
+
+  <div class="container">
+    <h2 style="margin-bottom: 1.5rem;">Performance Dashboard</h2>
+
+    <div class="grid-4" id="analytics-stats-container">
+      <!-- Loaded dynamically via analytics.js -->
+    </div>
+
+    <div class="card" style="margin-top: 2rem;">
+      <h3 class="card-title">💡 How Analytics Works</h3>
+      <p style="color: var(--text-secondary); font-size: 0.95rem;">All mock test attempts, scores, and practice records are automatically tracked locally in your browser storage. No server or account is required.</p>
+    </div>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/analytics.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IELTS Interactive Writing Exercises</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <span>IELTS Master Prep</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Dashboard</a></li>
+      <li><a href="writing.html" class="nav-link">Writing ✍️</a></li>
+      <li><a href="exercises.html" class="nav-link active">Exercises 🏋️</a></li>
+      <li><a href="writing-tutorial.html" class="nav-link">Writing Tutorial 💡</a></li>
+    </ul>
+    <button id="theme-toggle-btn" class="theme-toggle">🌙 Dark</button>
+  </nav>
+
+  <div class="container">
+    <div style="margin-bottom: 2rem;">
+      <h1 style="color: var(--accent-purple); margin-bottom: 0.5rem;">Interactive IELTS Writing Trainer</h1>
+      <p style="font-size: 1.1rem; color: var(--text-secondary);">Master essay formats, paragraph ordering, thesis statements, and Task 1 overviews through hands-on drills.</p>
+    </div>
+
+    <!-- Exercise 1: Structural Paragraph Reordering Challenge -->
+    <div id="reorder-exercise-container">
+      <!-- Loaded dynamically via exercises.js -->
+    </div>
+
+    <!-- Exercise 2: Essay Type & Thesis Builder -->
+    <div id="thesis-exercise-container">
+      <!-- Loaded dynamically via exercises.js -->
+    </div>
+
+    <!-- Exercise 3: Overview Spotter -->
+    <div id="overview-exercise-container">
+      <!-- Loaded dynamically via exercises.js -->
+    </div>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/exercises.js"></script>
+</body>
+</html>

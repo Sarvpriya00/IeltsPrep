@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IELTS Band 8/9 Masterclass Guide</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <span>IELTS Master Prep</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Dashboard</a></li>
+      <li><a href="listening.html" class="nav-link">Listening 🎧</a></li>
+      <li><a href="reading.html" class="nav-link">Reading 📖</a></li>
+      <li><a href="writing.html" class="nav-link">Writing ✍️</a></li>
+      <li><a href="speaking.html" class="nav-link">Speaking 🗣️</a></li>
+      <li><a href="guide.html" class="nav-link active">Band 8/9 Guide 💡</a></li>
+    </ul>
+    <button id="theme-toggle-btn" class="theme-toggle">🌙 Dark</button>
+  </nav>
+
+  <div class="container">
+    <div style="margin-bottom: 2rem;">
+      <h1 style="color: var(--accent-blue); margin-bottom: 0.5rem;" id="guide-title">Band 8/9 Masterclass Guide</h1>
+      <p style="font-size: 1.1rem; color: var(--text-secondary);" id="guide-subtitle">Proven tactics and scoring rubrics for top-tier IELTS performance.</p>
+    </div>
+
+    <div id="guide-sections-container" class="grid-2">
+      <!-- Loaded dynamically via JS -->
+    </div>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+  <script type="module">
+    import { guideData } from './data/guideData.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('guide-sections-container');
+      if (container) {
+        container.innerHTML = guideData.sections.map(sec => `
+          <div class="card">
+            <h3 class="card-title">${sec.title}</h3>
+            <ul style="padding-left: 1.25rem;">
+              ${sec.tips.map(t => `<li style="margin-bottom: 0.75rem; font-size: 0.95rem;">${t}</li>`).join('')}
+            </ul>
+          </div>
+        `).join('');
+      }
+    });
+  </script>
+</body>
+</html>
