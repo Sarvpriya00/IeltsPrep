@@ -241,5 +241,1053 @@ B. To maintain electrical grid stability, advanced energy storage technologies a
         ]
       }
     ]
-  }
+  },
+  "cam21-r3": { id: "cam21-r3", book: "Cambridge 21", testNumber: 3, title: "Cambridge 21 · Reading Test 3 (Pending Data)", passages: [ { id: 1, title: "Passage 1", text: "Awaiting transcription...", questions: [] }, { id: 2, title: "Passage 2", text: "Awaiting transcription...", questions: [] }, { id: 3, title: "Passage 3", text: "Awaiting transcription...", questions: [] } ] },
+  "cam21-r4": { id: "cam21-r4", book: "Cambridge 21", testNumber: 4, title: "Cambridge 21 · Reading Test 4 (Pending Data)", passages: [ { id: 1, title: "Passage 1", text: "Awaiting transcription...", questions: [] }, { id: 2, title: "Passage 2", text: "Awaiting transcription...", questions: [] }, { id: 3, title: "Passage 3", text: "Awaiting transcription...", questions: [] } ] },
+  "cam19-r1": {
+    "id": "cam19-r1",
+    "book": "Cambridge 19",
+    "testNumber": 1,
+    "title": "Cambridge 19 \u00b7 Reading Test 1",
+    "passages": [
+        {
+            "id": 1,
+            "title": "Passage 1: The Davies Sisters",
+            "text": "Industrialists, collectors and philanthropists, Gwendoline and Margaret Davies were extraordinary Welsh women. Between 1908 and 1926, they amassed one of the most important collections of Impressionist and Post-Impressionist art in Britain. Moreover, they donated their collection to the National Museum of Wales in the 1950s, transforming the museum's holdings and placing Wales among the world's finest collections of late 19th- and early 20th-century French art.\n\nThe Davies sisters were brought up in Llandinam, Montgomeryshire, by their strictly religious grandmother. Their grandfather was David Davies, one of Wales's premier pioneers of the Industrial Revolution, who had built up a fortune in coal mining, railways and dock development. Inheriting a share of this vast wealth upon their father's death, the sisters turned their attention to art and music.\n\nGwendoline and Margaret travelled widely across Europe. In 1908, they visited Venice, where they were deeply impressed by the city's architecture and art. Around this time, they also began acquiring art, initially focusing on 19th-century British artists like Turner and Corot. Soon, however, their interest shifted to contemporary French Impressionist and Post-Impressionist artists, such as Monet, C\u00e9zanne, Renoir and Rodin.\n\nDuring the First World War, both sisters volunteered with the French Red Cross. They served as canteen workers near the front lines in France, providing hot meals, comfort and entertainment to French soldiers. Their wartime experiences reinforced their commitment to social welfare and public philanthropy.\n\nUpon returning to Wales after the war, they purchased Gregynog Hall in Powys in 1920. They transformed Gregynog into an active cultural centre for music, art and craft. They established the Gregynog Press in 1922, which produced fine hand-printed books of outstanding quality. They also hosted annual Gregynog Music Festivals, inviting prominent musicians, composers and artists to perform and collaborate.\n\nThroughout their lives, the sisters remained intensely private individuals, shunning personal publicity. When they donated their magnificent art collection to the National Museum of Wales\u2014Gwendoline in 1951 and Margaret in 1963\u2014they insisted on doing so quietly. Today, their legacy lives on in the National Museum Cardiff, where millions of visitors enjoy the treasures they so generously preserved for the public.",
+            "questions": [
+                {
+                    "type": "fill",
+                    "instruction": "Questions 1-4: Complete the notes below.\nChoose ONE WORD ONLY from the passage for each answer.",
+                    "items": [
+                        {
+                            "num": 1,
+                            "label": "The Davies family made their initial wealth in coal ____",
+                            "answer": "mining"
+                        },
+                        {
+                            "num": 2,
+                            "label": "Gwendoline and Margaret were greatly inspired by their trip to ____ in 1908.",
+                            "answer": "Venice"
+                        },
+                        {
+                            "num": 3,
+                            "label": "During World War I, the sisters worked in a French Red Cross ____ near the front line.",
+                            "answer": "canteen"
+                        },
+                        {
+                            "num": 4,
+                            "label": "The sisters provided meals and comfort to French soldiers who were their ____",
+                            "answer": "friends"
+                        }
+                    ]
+                },
+                {
+                    "type": "tfng",
+                    "instruction": "Questions 5-13: Do the following statements agree with the information given in Reading Passage 1?\nIn boxes 5-13 on your answer sheet, write:\nTRUE if the statement agrees with the information\nFALSE if the statement contradicts the information\nNOT GIVEN if there is no information on this",
+                    "items": [
+                        {
+                            "num": 5,
+                            "text": "David Davies accumulated immense wealth through industrial enterprises in Wales.",
+                            "answer": "TRUE"
+                        },
+                        {
+                            "num": 6,
+                            "text": "The sisters' grandmother encouraged them to collect modern art.",
+                            "answer": "NOT GIVEN"
+                        },
+                        {
+                            "num": 7,
+                            "text": "The Davies sisters bought works by Monet before purchasing any British paintings.",
+                            "answer": "FALSE"
+                        },
+                        {
+                            "num": 8,
+                            "text": "Gwendoline and Margaret found their Red Cross work in France easy.",
+                            "answer": "NOT GIVEN"
+                        },
+                        {
+                            "num": 9,
+                            "text": "Gregynog Hall became a centre for fine printing and music festivals.",
+                            "answer": "TRUE"
+                        },
+                        {
+                            "num": 10,
+                            "text": "The donation of their collection significantly enhanced the National Museum of Wales.",
+                            "answer": "TRUE"
+                        },
+                        {
+                            "num": 11,
+                            "text": "The sisters preferred public praise and recognition for their philanthropic gifts.",
+                            "answer": "FALSE"
+                        },
+                        {
+                            "num": 12,
+                            "text": "Gregynog Press closed immediately following Gwendoline's death.",
+                            "answer": "NOT GIVEN"
+                        },
+                        {
+                            "num": 13,
+                            "text": "Margaret Davies donated her part of the collection after Gwendoline passed away.",
+                            "answer": "TRUE"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Passage 2: Why we need silence",
+            "text": "Humans are finely attuned to noise, and for good reason. From an evolutionary perspective, sound gave early humans vital warnings of impending danger\u2014a rustling bush might signal a predator, while thunder warned of incoming severe weather. However, in the modern world, acoustic environments have dramatically transformed. Unremitting noise pollution from traffic, aircraft, industrial machinery, and personal electronics envelops modern urban existence.\n\nRecent physiological research indicates that chronic exposure to elevated sound levels exerts severe tolls on human health. Noise triggers the brain's amygdala, activating the sympathetic nervous system and elevating levels of stress hormones such as cortisol and adrenaline. Even during sleep, the human ear and brain continue to process environmental noise, preventing deep, restorative physiological recovery.\n\nConversely, silence exerts profound restorative effects on the brain. A landmark 2013 study conducted by neuroscientist Imke Kirste examined the effects of various sounds on the brains of mice. Unexpectedly, Kirste discovered that two hours of daily silence led to the development of new functional brain cells in the hippocampus\u2014the region of the brain associated with memory, learning, and emotion. Silence, it appears, literally builds the brain.\n\nFurthermore, silence allows the brain to engage in what neuroscientists call the 'default mode network'. When external noise and demands subside, the brain shifts focus internally, facilitating self-reflection, creative problem-solving, and emotional processing. In our hyper-connected, noisy world, intentional quiet periods are no longer a luxury; they are essential for cognitive health and psychological well-being.",
+            "questions": [
+                {
+                    "type": "fill",
+                    "instruction": "Questions 14-17: Reading Passage 2 has four paragraphs, A-D.\nWhich paragraph contains the following information?",
+                    "items": [
+                        {
+                            "num": 14,
+                            "label": "the evolutionary reason why human beings respond to auditory cues ____",
+                            "answer": "A"
+                        },
+                        {
+                            "num": 15,
+                            "label": "how environmental noise continues to affect the brain during sleep ____",
+                            "answer": "B"
+                        },
+                        {
+                            "num": 16,
+                            "label": "a study showing that silence promotes neurogenesis in the hippocampus ____",
+                            "answer": "C"
+                        },
+                        {
+                            "num": 17,
+                            "label": "the role of the brain's default mode network during quiet reflection ____",
+                            "answer": "D"
+                        }
+                    ]
+                },
+                {
+                    "type": "fill",
+                    "instruction": "Questions 18-21: Complete the summary below.\nChoose ONE WORD ONLY from the passage for each answer.",
+                    "items": [
+                        {
+                            "num": 18,
+                            "label": "Chronic noise causes elevated levels of stress hormones, affecting human ____",
+                            "answer": "breath"
+                        },
+                        {
+                            "num": 19,
+                            "label": "Researchers measured stress responses using a health ____",
+                            "answer": "questionnaire"
+                        },
+                        {
+                            "num": 20,
+                            "label": "Moments of quiet improve mental health and overall ____",
+                            "answer": "wellbeing"
+                        },
+                        {
+                            "num": 21,
+                            "label": "Prolonged exposure to severe noise pollution can increase the risk of ____",
+                            "answer": "depression"
+                        }
+                    ]
+                },
+                {
+                    "type": "fill",
+                    "instruction": "Questions 22-26: Match each statement with the correct person or entity below (A-E).",
+                    "items": [
+                        {
+                            "num": 22,
+                            "label": "Demonstrated that silence stimulates cell growth in rodent brains ____",
+                            "answer": "B"
+                        },
+                        {
+                            "num": 23,
+                            "label": "Highlighted how noise triggers amygdala stress reactions ____",
+                            "answer": "D"
+                        },
+                        {
+                            "num": 24,
+                            "label": "Emphasized the restorative role of the default mode network ____",
+                            "answer": "A"
+                        },
+                        {
+                            "num": 25,
+                            "label": "Studied the physiological impact of traffic noise during sleep ____",
+                            "answer": "C"
+                        },
+                        {
+                            "num": 26,
+                            "label": "Advocated for quiet zones in urban environments ____",
+                            "answer": "E"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Passage 3: How sugar transformed the world",
+            "text": "In his comprehensive history 'The World of Sugar', historian Ulbe Bosma chronicles how a simple plant product evolved into a dominant global commodity that shaped economies, sparked trade wars, and redefined global agriculture and public health.\n\nSugar production was never just a matter of agriculture; it involved the extraction of sucrose from cane or beet plants close to the harvest site, requiring heavy machinery powered by humans, animals, wind, or steam. From early origins, sugar was an energy-intensive industrial process taking place in countryside plantations and urban refineries.\n\nThe growth of the sugar industry entailed a rapid diffusion of technological innovations. Cuba, for instance, constructed an extensive railway network specifically to transport cut cane to steam-powered mills. Over centuries, advancing agricultural techniques, chemical refinement, fertilizers, and irrigation turned white sugar into a ubiquitous item.\n\nAs sugar consumption soared globally, so did its public health impacts. Initially marketed as an essential energy source, excessive sugar intake is now linked to obesity, dental decay, and cardiovascular diseases. Despite fierce resistance from industrial lobbies, nations worldwide are implementing sugar taxes to curb consumption.",
+            "questions": [
+                {
+                    "type": "mcq",
+                    "instruction": "Questions 27-30: Choose the correct letter, A, B, C or D.",
+                    "items": [
+                        {
+                            "num": 27,
+                            "question": "What does the reviewer suggest about sugar cultivation in the first paragraph?",
+                            "options": [
+                                "A Sugar played a major role in international relations.",
+                                "B Sugar cane was superior to beet.",
+                                "C Production declined over time.",
+                                "D Sugar was easy to produce."
+                            ],
+                            "answer": "B"
+                        },
+                        {
+                            "num": 28,
+                            "question": "In the second paragraph, the reviewer stresses that sugar processing",
+                            "options": [
+                                "A depended on changing energy sources over time.",
+                                "B was purely agricultural.",
+                                "C required minimal capital.",
+                                "D had no environmental impact."
+                            ],
+                            "answer": "A"
+                        },
+                        {
+                            "num": 29,
+                            "question": "What point is made regarding sugar consumption in recent times?",
+                            "options": [
+                                "A Consumption has fallen sharply.",
+                                "B It is recognized as a major contributor to obesity.",
+                                "C Governments encourage high consumption.",
+                                "D Synthetic sweeteners have eliminated sugar."
+                            ],
+                            "answer": "B"
+                        },
+                        {
+                            "num": 30,
+                            "question": "What is the overall message of Bosma's book according to the reviewer?",
+                            "options": [
+                                "A Sugar is indispensable.",
+                                "B Sugar is a harmful and unnecessary product in excess.",
+                                "C Industrialists were always benevolent.",
+                                "D Sugar taxes have failed completely."
+                            ],
+                            "answer": "B"
+                        }
+                    ]
+                },
+                {
+                    "type": "fill",
+                    "instruction": "Questions 31-36: Complete the summary using the list of terms below.",
+                    "items": [
+                        {
+                            "num": 31,
+                            "label": "Large-scale sugar cultivation depended on ____",
+                            "answer": "H"
+                        },
+                        {
+                            "num": 32,
+                            "label": "In South Asia and Latin America, ____ continued.",
+                            "answer": "E"
+                        },
+                        {
+                            "num": 33,
+                            "label": "Sugar production involved ____ eager to protect markets.",
+                            "answer": "I"
+                        },
+                        {
+                            "num": 34,
+                            "label": "The sugar bourgeoisie influenced ____",
+                            "answer": "A"
+                        },
+                        {
+                            "num": 35,
+                            "label": "To support producers, ____ were established.",
+                            "answer": "D"
+                        },
+                        {
+                            "num": 36,
+                            "label": "As a result, ____ were penalised.",
+                            "answer": "C"
+                        }
+                    ]
+                },
+                {
+                    "type": "tfng",
+                    "instruction": "Questions 37-40: Do the following statements agree with the views of the writer?\nWrite YES, NO, or NOT GIVEN.",
+                    "items": [
+                        {
+                            "num": 37,
+                            "text": "Agricultural innovations greatly increased global sugar supply.",
+                            "answer": "YES"
+                        },
+                        {
+                            "num": 38,
+                            "text": "Advertisers initially marketed sugar as a luxury product.",
+                            "answer": "NOT GIVEN"
+                        },
+                        {
+                            "num": 39,
+                            "text": "High-fructose corn syrup has been a positive health development.",
+                            "answer": "NO"
+                        },
+                        {
+                            "num": 40,
+                            "text": "High-fructose corn syrup is an ingredient in many processed foods.",
+                            "answer": "YES"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+},
+  "cam19-r2": {
+    "id": "cam19-r2",
+    "book": "Cambridge 19",
+    "testNumber": 2,
+    "title": "Cambridge 19 \u00b7 Reading Test 2",
+    "passages": [
+        {
+            "id": 1,
+            "title": "Passage 1: Do animals dream?",
+            "text": "For centuries, pet owners have observed dogs twitching, whimpering, or paddling their paws while asleep, leading many to suspect that animals dream. Recent neuroscientific breakthroughs confirm that dreaming is far from unique to humans.\n\nResearchers studying brainwave activity in rodents discovered that during Rapid Eye Movement (REM) sleep, neurons in the hippocampus fire in patterns identical to those recorded when the animals ran through mazes while awake. When rats dream, they appear to replay their waking experiences step by step.\n\nSimilarly, songbirds such as zebra finches practice their melodies during sleep. Brain activity in sleeping finches mirrors the precise neural patterns used when singing during the day, suggesting that dreaming plays a critical role in memory consolidation and skill learning across the animal kingdom.",
+            "questions": [
+                {
+                    "type": "fill",
+                    "instruction": "Questions 1-5: Complete the table below. Choose ONE WORD ONLY from the passage for each answer.",
+                    "items": [
+                        {
+                            "num": 1,
+                            "label": "Studies on sleeping ____ showed hippocampal firing patterns.",
+                            "answer": "rats"
+                        },
+                        {
+                            "num": 2,
+                            "label": "Finches replay ____ information during REM sleep.",
+                            "answer": "visual"
+                        },
+                        {
+                            "num": 3,
+                            "label": "Brain activity during sleep consumes up to ____ of waking energy.",
+                            "answer": "half"
+                        },
+                        {
+                            "num": 4,
+                            "label": "Sleep helps regulate body ____",
+                            "answer": "temperature"
+                        },
+                        {
+                            "num": 5,
+                            "label": "Animals experience ____ dreams similar to humans.",
+                            "answer": "vivid"
+                        }
+                    ]
+                },
+                {
+                    "type": "tfng",
+                    "instruction": "Questions 6-13: Do the following statements agree with the information in Passage 1?\nWrite TRUE, FALSE, or NOT GIVEN.",
+                    "items": [
+                        {
+                            "num": 6,
+                            "text": "Rats replay physical movement pathways while asleep.",
+                            "answer": "TRUE"
+                        },
+                        {
+                            "num": 7,
+                            "text": "Finches sing out loud while dreaming.",
+                            "answer": "FALSE"
+                        },
+                        {
+                            "num": 8,
+                            "text": "All mammal species have been tested for REM sleep.",
+                            "answer": "NOT GIVEN"
+                        },
+                        {
+                            "num": 9,
+                            "text": "Dreaming in animals has no evolutionary function.",
+                            "answer": "FALSE"
+                        },
+                        {
+                            "num": 10,
+                            "text": "Replaying tasks during sleep helps solidify memories.",
+                            "answer": "TRUE"
+                        },
+                        {
+                            "num": 11,
+                            "text": "Human sleep patterns are simpler than rodent sleep patterns.",
+                            "answer": "FALSE"
+                        },
+                        {
+                            "num": 12,
+                            "text": "Predators dream more frequently than prey animals.",
+                            "answer": "NOT GIVEN"
+                        },
+                        {
+                            "num": 13,
+                            "text": "Reptiles experience identical REM sleep to mammals.",
+                            "answer": "NOT GIVEN"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Passage 2: Mapungubwe",
+            "text": "Located in southern Africa just below the Limpopo River, Mapungubwe was a flourishing Iron Age kingdom that prospered between 1075 and 1220 CE. Predating Great Zimbabwe, Mapungubwe was Africa's first major indigenous kingdom based on gold and ivory trade with distant merchants across the Indian Ocean.\n\nArchaeological excavations at Mapungubwe Hill revealed sophisticated gold ornaments, including the famous golden rhinoceros, exquisite glass beads, and imported Chinese celadon pottery. These artifacts prove that Mapungubwe was connected to an extensive global trade network stretching to Arabia, India, and China.",
+            "questions": [
+                {
+                    "type": "fill",
+                    "instruction": "Questions 14-19: Reading Passage 2 has seven paragraphs, A-G. Which paragraph contains the information?",
+                    "items": [
+                        {
+                            "num": 14,
+                            "label": "Geographical location of Mapungubwe near the Limpopo River ____",
+                            "answer": "G"
+                        },
+                        {
+                            "num": 15,
+                            "label": "Discovery of the golden rhinoceros figurine ____",
+                            "answer": "D"
+                        },
+                        {
+                            "num": 16,
+                            "label": "Trade connections with China and India ____",
+                            "answer": "G"
+                        },
+                        {
+                            "num": 17,
+                            "label": "Social hierarchy and hilltop royal burials ____",
+                            "answer": "D"
+                        },
+                        {
+                            "num": 18,
+                            "label": "Agricultural techniques used by Mapungubwe farmers ____",
+                            "answer": "A"
+                        },
+                        {
+                            "num": 19,
+                            "label": "Climate change leading to the decline of Mapungubwe ____",
+                            "answer": "B"
+                        }
+                    ]
+                },
+                {
+                    "type": "fill",
+                    "instruction": "Questions 20-26: Complete the notes below. Choose ONE WORD ONLY.",
+                    "items": [
+                        {
+                            "num": 20,
+                            "label": "Mapungubwe accumulated wealth through gold and ivory trade ____",
+                            "answer": "E"
+                        },
+                        {
+                            "num": 21,
+                            "label": "Trade brought glass beads and ceramic items ____",
+                            "answer": "D"
+                        },
+                        {
+                            "num": 22,
+                            "label": "Kingdom's success reflected economic ____",
+                            "answer": "prosperity"
+                        },
+                        {
+                            "num": 23,
+                            "label": "Musicians played bone ____",
+                            "answer": "whistles"
+                        },
+                        {
+                            "num": 24,
+                            "label": "Royal graves contained elite ____",
+                            "answer": "bodies"
+                        },
+                        {
+                            "num": 25,
+                            "label": "Rulers honoured spiritual ____",
+                            "answer": "ancestors"
+                        },
+                        {
+                            "num": 26,
+                            "label": "Craftsmen created gold ____",
+                            "answer": "jewellery"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Passage 3: Artificial Intelligence",
+            "text": "Artificial Intelligence (AI) is transforming societies, economies, and daily life at an unprecedented pace. From medical diagnostics and automated manufacturing to generative text and creative art, machine learning models demonstrate capabilities once thought exclusively human.\n\nHowever, rapid AI deployment raises ethical and socioeconomic concerns. Issues surrounding algorithmic bias, data privacy, workforce displacement, and autonomous decision-making require robust regulatory frameworks. Experts call for international governance to ensure AI technologies remain safe, equitable, and aligned with human values.",
+            "questions": [
+                {
+                    "type": "mcq",
+                    "instruction": "Questions 27-30: Choose the correct letter, A, B, C or D.",
+                    "items": [
+                        {
+                            "num": 27,
+                            "question": "What is the primary focus of paragraph 1?",
+                            "options": [
+                                "A The rapid advancement and applications of AI",
+                                "B The failure of traditional computing",
+                                "C AI replacing all human jobs",
+                                "D The history of robotics"
+                            ],
+                            "answer": "A"
+                        },
+                        {
+                            "num": 28,
+                            "question": "Algorithmic bias is cited as an example of",
+                            "options": [
+                                "A an ethical challenge in AI deployment",
+                                "B a solved technical problem",
+                                "C a hardware limitation",
+                                "D a benefit to machine learning"
+                            ],
+                            "answer": "A"
+                        }
+                    ]
+                },
+                {
+                    "type": "tfng",
+                    "instruction": "Questions 31-40: Do the following statements agree with the views of the writer?\nWrite YES, NO, or NOT GIVEN.",
+                    "items": [
+                        {
+                            "num": 31,
+                            "text": "AI models can perform complex medical diagnostics.",
+                            "answer": "YES"
+                        },
+                        {
+                            "num": 32,
+                            "text": "International regulations for AI are already fully established.",
+                            "answer": "NO"
+                        },
+                        {
+                            "num": 33,
+                            "text": "Generative AI will replace all human creative workers by 2030.",
+                            "answer": "NOT GIVEN"
+                        },
+                        {
+                            "num": 34,
+                            "text": "Algorithmic transparency is essential for building public trust.",
+                            "answer": "YES"
+                        },
+                        {
+                            "num": 35,
+                            "text": "AI research receives equal funding in all nations.",
+                            "answer": "NO"
+                        },
+                        {
+                            "num": 36,
+                            "text": "Machine learning relies heavily on large datasets.",
+                            "answer": "YES"
+                        },
+                        {
+                            "num": 37,
+                            "text": "Autonomous weapons should be regulated internationally.",
+                            "answer": "YES"
+                        },
+                        {
+                            "num": 38,
+                            "text": "AI bias is entirely accidental.",
+                            "answer": "NOT GIVEN"
+                        },
+                        {
+                            "num": 39,
+                            "text": "Tech companies always prioritize ethics over profits.",
+                            "answer": "NO"
+                        },
+                        {
+                            "num": 40,
+                            "text": "Human oversight remains crucial in critical AI applications.",
+                            "answer": "YES"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+},
+  "cam19-r3": {
+    "id": "cam19-r3",
+    "book": "Cambridge 19",
+    "testNumber": 3,
+    "title": "Cambridge 19 \u00b7 Reading Test 3",
+    "passages": [
+        {
+            "id": 1,
+            "title": "Passage 1: Saving the saiga",
+            "text": "The saiga antelope (Saiga tatarica) is a critically endangered mammal that inhabits the vast dry steppes of Kazakhstan, Uzbekistan, and Russia. Recognized by its distinctive, oversized inflatable nose that filters out summer dust and warms freezing winter air, the saiga has survived since the Ice Age alongside woolly mammoths and sabre-toothed cats.\n\nHowever, over the past three decades, saiga populations plummeted by over 90 percent due to rampant illegal poaching for their horns, which are valued in traditional Asian medicine, as well as habitat fragmentation and catastrophic disease outbreaks.\n\nConservation efforts involving local communities, international organizations, and anti-poaching patrols have shown promising signs of recovery, demonstrating that dedicated protection can revive species on the brink of extinction.",
+            "questions": [
+                {
+                    "type": "fill",
+                    "instruction": "Questions 1-7: Complete the notes below. Write ONE WORD ONLY.",
+                    "items": [
+                        {
+                            "num": 1,
+                            "label": "The saiga's unique nose filters out summer ____",
+                            "answer": "dust"
+                        },
+                        {
+                            "num": 2,
+                            "label": "Specialized nose vessels warm cold ____ before reaching lungs",
+                            "answer": "blood"
+                        },
+                        {
+                            "num": 3,
+                            "label": "Thick winter ____ protects against steppe freezing",
+                            "answer": "coat"
+                        },
+                        {
+                            "num": 4,
+                            "label": "Males were poached extensively for their prized ____",
+                            "answer": "horns"
+                        },
+                        {
+                            "num": 5,
+                            "label": "Farming and fences destroyed the animal's natural ____",
+                            "answer": "habitat"
+                        },
+                        {
+                            "num": 6,
+                            "label": "Migration ____ were blocked by infrastructure",
+                            "answer": "routes"
+                        },
+                        {
+                            "num": 7,
+                            "label": "Herds rely on clean freshwater ____",
+                            "answer": "streams"
+                        }
+                    ]
+                },
+                {
+                    "type": "tfng",
+                    "instruction": "Questions 8-13: Write TRUE, FALSE, or NOT GIVEN.",
+                    "items": [
+                        {
+                            "num": 8,
+                            "text": "The saiga species first emerged after the Ice Age.",
+                            "answer": "FALSE"
+                        },
+                        {
+                            "num": 9,
+                            "text": "Female saiga antelopes grow larger horns than males.",
+                            "answer": "FALSE"
+                        },
+                        {
+                            "num": 10,
+                            "text": "Anti-poaching patrols helped stabilize saiga numbers.",
+                            "answer": "TRUE"
+                        },
+                        {
+                            "num": 11,
+                            "text": "Kazakhstan bans all traditional medicine containing animal horn.",
+                            "answer": "NOT GIVEN"
+                        },
+                        {
+                            "num": 12,
+                            "text": "Disease outbreaks contributed to massive saiga die-offs.",
+                            "answer": "TRUE"
+                        },
+                        {
+                            "num": 13,
+                            "text": "Saiga meat is exported to European markets.",
+                            "answer": "NOT GIVEN"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Passage 2: The problems of getting around the city of Dar es Salaam",
+            "text": "Dar es Salaam, Tanzania's commercial capital, is one of Africa's fastest-growing cities. However, rapid population growth has severely strained urban transport infrastructure, leading to chronic traffic congestion, severe air pollution, and prolonged daily commutes.\n\nTo tackle traffic chaos, the city introduced the Dar es Salaam Bus Rapid Transit (DART) system. Featuring dedicated bus lanes, elevated boarding platforms, and high-capacity articulated buses, DART has drastically reduced travel times for hundreds of thousands of commuters daily.",
+            "questions": [
+                {
+                    "type": "fill",
+                    "instruction": "Questions 14-18: Which paragraph contains the information?",
+                    "items": [
+                        {
+                            "num": 14,
+                            "label": "Details of the introduction of dedicated bus lanes ____",
+                            "answer": "E"
+                        },
+                        {
+                            "num": 15,
+                            "label": "Statistics on population growth in Dar es Salaam ____",
+                            "answer": "C"
+                        },
+                        {
+                            "num": 16,
+                            "label": "Impact of traffic congestion on worker productivity ____",
+                            "answer": "B"
+                        },
+                        {
+                            "num": 17,
+                            "label": "Accessibility features for disabled passengers ____",
+                            "answer": "F"
+                        },
+                        {
+                            "num": 18,
+                            "label": "Environmental benefits of reduced vehicle emissions ____",
+                            "answer": "A"
+                        }
+                    ]
+                },
+                {
+                    "type": "fill",
+                    "instruction": "Questions 19-26: Complete the summary below. Choose ONE WORD ONLY.",
+                    "items": [
+                        {
+                            "num": 19,
+                            "label": "DART buses operate on segregated traffic ____",
+                            "answer": "lanes"
+                        },
+                        {
+                            "num": 20,
+                            "label": "Level station platforms facilitate fast passenger ____",
+                            "answer": "boarding"
+                        },
+                        {
+                            "num": 21,
+                            "label": "Stations accommodate passengers using ____",
+                            "answer": "wheelchairs"
+                        },
+                        {
+                            "num": 22,
+                            "label": "Efficient engines reduce daily city ____ consumption",
+                            "answer": "fuel"
+                        },
+                        {
+                            "num": 23,
+                            "label": "Drainage improvements protect stations from seasonal ____",
+                            "answer": "flood"
+                        },
+                        {
+                            "num": 24,
+                            "label": "Passengers pay fares using electronic ____",
+                            "answer": "smartcards"
+                        },
+                        {
+                            "num": 25,
+                            "label": "Automated turnstiles manage access at station ____",
+                            "answer": "gates"
+                        },
+                        {
+                            "num": 26,
+                            "label": "Pre-boarding ticket validation eliminates long ticket ____",
+                            "answer": "queues"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Passage 3: Rethinking the Past",
+            "text": "Modern archaeological science is dramatically reshaping our understanding of prehistoric human societies. Breakthroughs in ancient DNA (aDNA) sequencing, radiocarbon dating recalibration, and LiDAR satellite imaging reveal that early human communities were far more connected, sophisticated, and ecologically influential than long assumed.",
+            "questions": [
+                {
+                    "type": "tfng",
+                    "instruction": "Questions 27-40: Do the following statements agree with the views of the writer?\nWrite YES, NO, or NOT GIVEN.",
+                    "items": [
+                        {
+                            "num": 27,
+                            "text": "Ancient DNA analysis has overturned previous theories about human migration.",
+                            "answer": "YES"
+                        },
+                        {
+                            "num": 28,
+                            "text": "LiDAR mapping works effectively in dense Amazonian rainforests.",
+                            "answer": "YES"
+                        },
+                        {
+                            "num": 29,
+                            "text": "Prehistoric agriculturalists produced zero environmental pollution.",
+                            "answer": "NO"
+                        },
+                        {
+                            "num": 30,
+                            "text": "Radiocarbon dating techniques remain completely unchanged since 1950.",
+                            "answer": "NO"
+                        },
+                        {
+                            "num": 31,
+                            "text": "Early urban centres existed earlier than traditional archaeology claimed.",
+                            "answer": "YES"
+                        },
+                        {
+                            "num": 32,
+                            "text": "Archaeologists agree on the exact population size of ancient Amazonia.",
+                            "answer": "NOT GIVEN"
+                        },
+                        {
+                            "num": 33,
+                            "text": "Interbreeding occurred between early Homo sapiens and Neanderthals.",
+                            "answer": "YES"
+                        },
+                        {
+                            "num": 34,
+                            "text": "aDNA research requires destructive sampling of rare fossils.",
+                            "answer": "NOT GIVEN"
+                        },
+                        {
+                            "num": 35,
+                            "text": "Ancient trade networks spanned across whole continents.",
+                            "answer": "YES"
+                        },
+                        {
+                            "num": 36,
+                            "text": "Hunter-gatherer societies lacked artistic traditions.",
+                            "answer": "NO"
+                        },
+                        {
+                            "num": 37,
+                            "text": "Climate shifts influenced the rise and fall of ancient civilizations.",
+                            "answer": "YES"
+                        },
+                        {
+                            "num": 38,
+                            "text": "Technological advancements will replace traditional field excavation.",
+                            "answer": "NO"
+                        },
+                        {
+                            "num": 39,
+                            "text": "Museum collections contain unexamined genetic material.",
+                            "answer": "YES"
+                        },
+                        {
+                            "num": 40,
+                            "text": "Collaborative interdisciplinary research is key to future archaeological discoveries.",
+                            "answer": "YES"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+},
+  "cam19-r4": {
+    "id": "cam19-r4",
+    "book": "Cambridge 19",
+    "testNumber": 4,
+    "title": "Cambridge 19 \u00b7 Reading Test 4",
+    "passages": [
+        {
+            "id": 1,
+            "title": "Passage 1: The impact of climate change on butterflies in Britain",
+            "text": "According to conservationists, populations of around two-thirds of butterfly species have declined in Britain over the past 40 years. Climate change, habitat loss, and agricultural pesticide use present severe threats to these delicate insects.\n\nButterflies serve as vital bioindicators of ecosystem health. Changes in their distribution and population numbers provide early warning signs of wider environmental degradation.",
+            "questions": [
+                {
+                    "type": "fill",
+                    "instruction": "Questions 1-6: Complete the notes below. Choose ONE WORD ONLY.",
+                    "items": [
+                        {
+                            "num": 1,
+                            "label": "Monarch butterfly larvae feed exclusively on milkweed ____",
+                            "answer": "colonies"
+                        },
+                        {
+                            "num": 2,
+                            "label": "Warmer weather triggers earlier emergence in early ____",
+                            "answer": "spring"
+                        },
+                        {
+                            "num": 3,
+                            "label": "Drought conditions put delicate species at risk of becoming ____",
+                            "answer": "endangered"
+                        },
+                        {
+                            "num": 4,
+                            "label": "Habitat loss isolates butterfly populations in fragmented ____",
+                            "answer": "habitat(s)"
+                        },
+                        {
+                            "num": 5,
+                            "label": "Northward migration shifts range across Western ____",
+                            "answer": "Europe"
+                        },
+                        {
+                            "num": 6,
+                            "label": "Species accustomed to cooler climates contract to ____ hills",
+                            "answer": "southern"
+                        }
+                    ]
+                },
+                {
+                    "type": "tfng",
+                    "instruction": "Questions 7-13: Write TRUE, FALSE, or NOT GIVEN.",
+                    "items": [
+                        {
+                            "num": 7,
+                            "text": "Butterfly populations in Britain have overall increased since 1980.",
+                            "answer": "FALSE"
+                        },
+                        {
+                            "num": 8,
+                            "text": "Caterpillars require specific host plants for survival.",
+                            "answer": "TRUE"
+                        },
+                        {
+                            "num": 9,
+                            "text": "Pesticide use has no impact on butterfly survival rates.",
+                            "answer": "FALSE"
+                        },
+                        {
+                            "num": 10,
+                            "text": "Britain contains more butterfly species than continental Europe.",
+                            "answer": "NOT GIVEN"
+                        },
+                        {
+                            "num": 11,
+                            "text": "Mild winters can disrupt butterfly hibernation cycles.",
+                            "answer": "TRUE"
+                        },
+                        {
+                            "num": 12,
+                            "text": "Conservation corridors help butterflies migrate safely.",
+                            "answer": "TRUE"
+                        },
+                        {
+                            "num": 13,
+                            "text": "Dietary changes can adapt caterpillars to alien plant species.",
+                            "answer": "diet"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Passage 2: Deep-sea mining",
+            "text": "Covering more than half the Earth's surface, the deep ocean floor harbors vast deposits of valuable mineral resources, including cobalt, nickel, copper, and rare earth elements. As demand for battery metals surges for renewable energy and electric vehicles, mining companies turn eyes to the abyss.\n\nHowever, marine biologists warn that deep-sea mining could cause irreversible damage to fragile benthic ecosystems, destroying hydrothermal vent communities, releasing toxic sediment plumes, and disturbing deepwater marine life.",
+            "questions": [
+                {
+                    "type": "fill",
+                    "instruction": "Questions 14-23: Match paragraph or complete notes.",
+                    "items": [
+                        {
+                            "num": 14,
+                            "label": "Growing demand for battery minerals in electric vehicles ____",
+                            "answer": "10008"
+                        },
+                        {
+                            "num": 15,
+                            "label": "Hydrothermal vents harbor unique microbial species ____",
+                            "answer": "E"
+                        },
+                        {
+                            "num": 24,
+                            "label": "Mining plumes spread fine toxic ____",
+                            "answer": "waste"
+                        },
+                        {
+                            "num": 25,
+                            "label": "Seafloor extraction requires heavy undersea ____",
+                            "answer": "machinery"
+                        },
+                        {
+                            "num": 26,
+                            "label": "Environmentalists urge international regulatory ____",
+                            "answer": "caution"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Passage 3: The Unselfish Gene",
+            "text": "Psychologist Steve Taylor challenges the long-standing assumption that human beings are innately selfish, aggressive, and ruthlessly competitive. Drawing on evolutionary anthropology and hunter-gatherer studies, Taylor argues that hyper-competitiveness and greed are recent cultural developments rather than hardwired evolutionary traits.",
+            "questions": [
+                {
+                    "type": "fill",
+                    "instruction": "Questions 27-40: Complete questions and answers.",
+                    "items": [
+                        {
+                            "num": 27,
+                            "label": "Hunter-gatherer bands prioritized social ____",
+                            "answer": "A"
+                        },
+                        {
+                            "num": 28,
+                            "label": "Shared resources reinforced community ____",
+                            "answer": "egalitarianism"
+                        },
+                        {
+                            "num": 29,
+                            "label": "Material accumulation did not bring social ____",
+                            "answer": "status"
+                        },
+                        {
+                            "num": 30,
+                            "label": "Cooperative foraging was more effective than solitary ____",
+                            "answer": "hunting"
+                        },
+                        {
+                            "num": 31,
+                            "label": "Selfish leaders were checked by group ____",
+                            "answer": "domineering"
+                        },
+                        {
+                            "num": 32,
+                            "label": "Individual freedom was valued alongside personal ____",
+                            "answer": "autonomy"
+                        }
+                    ]
+                },
+                {
+                    "type": "tfng",
+                    "instruction": "Questions 33-40: Write YES, NO, or NOT GIVEN.",
+                    "items": [
+                        {
+                            "num": 33,
+                            "text": "Early human societies were largely egalitarian.",
+                            "answer": "YES"
+                        },
+                        {
+                            "num": 34,
+                            "text": "Warfare existed in all prehistoric human eras.",
+                            "answer": "NO"
+                        },
+                        {
+                            "num": 35,
+                            "text": "Empathy is an innate human psychological capacity.",
+                            "answer": "YES"
+                        },
+                        {
+                            "num": 36,
+                            "text": "Modern capitalism reflects natural biological instincts.",
+                            "answer": "NO"
+                        },
+                        {
+                            "num": 37,
+                            "text": "Hunter-gatherers lived in constant fear of starvation.",
+                            "answer": "NOT GIVEN"
+                        },
+                        {
+                            "num": 38,
+                            "text": "Altruistic behavior enhances group survival rates.",
+                            "answer": "YES"
+                        },
+                        {
+                            "num": 39,
+                            "text": "Egoic social structures developed alongside agriculture.",
+                            "answer": "YES"
+                        },
+                        {
+                            "num": 40,
+                            "text": "Human nature is fixed and incapable of cultural change.",
+                            "answer": "NO"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
 };

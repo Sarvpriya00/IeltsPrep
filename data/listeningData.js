@@ -726,5 +726,520 @@ export const cam21ListeningData = {
       39: ["nature"],
       40: ["volume"]
     }
-  }
+  },
+  "cam19-t1": {
+    "id": "cam19-t1",
+    "book": "Cambridge 19",
+    "testNumber": 1,
+    "title": "Cambridge 19 \u00b7 Test 1",
+    "parts": {
+        "1": {
+            "title": "PART 1: Questions 1-10",
+            "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+            "notesHeader": "Hinchingbrooke Country Park Job Application",
+            "notes": [
+                "Start date: Q1 (the) 13(th) (of) January / 13.01",
+                "Total area of park: Q2 48 hectares",
+                "Caf\u00e9 refreshment specialty: Q3 pizza",
+                "Visitor origin: foreign tourists from Q4 India",
+                "Souvenir shop item: decorative Q5 mirror",
+                "Next interview date: Q6 (the) 6(th) (of) April",
+                "Required park material: Q7 natural wood",
+                "Hourly pay rate: \u00a3 Q8 67.50",
+                "Staff uniform requirement: branded Q9 shirt",
+                "Maintenance tool provided: safety Q10 hammer"
+            ]
+        },
+        "2": {
+            "title": "PART 2: Questions 11-20",
+            "instruction": "Questions 11-15: Choose the correct letter, A, B or C.\nFarley House and Gardens",
+            "mcqs": [
+                {
+                    "num": 11,
+                    "question": "What is new at Farley House this year?",
+                    "options": [
+                        "A The gift shop",
+                        "B The tearoom",
+                        "C The exhibition space"
+                    ],
+                    "answer": "C"
+                },
+                {
+                    "num": 12,
+                    "question": "The garden maze is recommended for",
+                    "options": [
+                        "A young children.",
+                        "B teenagers.",
+                        "C adults only."
+                    ],
+                    "answer": "A"
+                }
+            ]
+        },
+        "3": {
+            "title": "PART 3: Questions 21-30",
+            "instruction": "Questions 21-24: Choose TWO letters, A-E.\nDiscussion on consumer food trends",
+            "mcqs": [
+                {
+                    "num": 21,
+                    "question": "Which TWO opinions do the students share about plant-based diets?",
+                    "options": [
+                        "A They are growing fast.",
+                        "B They are overpriced.",
+                        "C They lack variety.",
+                        "D They improve health.",
+                        "E They reduce carbon footprint."
+                    ],
+                    "answer": "B"
+                },
+                {
+                    "num": 22,
+                    "question": "Which TWO opinions do they share about organic farming?",
+                    "options": [
+                        "A It requires more land.",
+                        "B It supports biodiversity.",
+                        "C It costs too much.",
+                        "D It is inefficient.",
+                        "E It tastes better."
+                    ],
+                    "answer": "D"
+                }
+            ]
+        },
+        "4": {
+            "title": "PART 4: Questions 31-40",
+            "instruction": "Questions 31-40: Complete the notes below. Write ONE WORD ONLY.",
+            "notesHeader": "Sustainable Urban Architecture",
+            "notes": [
+                "Building envelope insulated with straw Q31 walls",
+                "Solar panel orientation designed by architect's Q32 son",
+                "Biomass boiler reduces reliance on fossil Q33 fuel",
+                "Green roof increases urban Q34 oxygen output",
+                "Window frames designed in Q35 rectangular shape",
+                "Interior lighting powered by LED Q36 lamps",
+                "Residential units designed for single Q37 family living",
+                "Heating demand peaks during cold Q38 winter months",
+                "Landscaping integrates indigenous Q39 soil",
+                "Rainwater harvested from roof during heavy Q40 rain"
+            ]
+        }
+    },
+    "answerKey": {
+        "1": "(the) 13(th) (of) January / 13.01 / 13.1",
+        "2": "48 / forty-eight",
+        "3": "pizza",
+        "4": "India",
+        "5": "mirror",
+        "6": "(the) 6(th) (of) April / 06.04 / 6.4",
+        "7": "natural",
+        "8": "67.50 / sixty-seven fifty",
+        "9": "shirt",
+        "10": "hammer",
+        "11": "C",
+        "12": "A",
+        "13": "B",
+        "14": "E",
+        "15": "D",
+        "16": "F",
+        "17": "A",
+        "18": "C",
+        "19": "B",
+        "20": "D",
+        "21": "B",
+        "22": "D",
+        "23": "A",
+        "24": "C",
+        "25": "E",
+        "26": "G",
+        "27": "B",
+        "28": "D",
+        "29": "F",
+        "30": "A",
+        "31": "walls",
+        "32": "son",
+        "33": "fuel",
+        "34": "oxygen",
+        "35": "rectangular",
+        "36": "lamps",
+        "37": "family",
+        "38": "winter",
+        "39": "soil",
+        "40": "rain"
+    }
+},
+  "cam19-t2": {
+    "id": "cam19-t2",
+    "book": "Cambridge 19",
+    "testNumber": 2,
+    "title": "Cambridge 19 \u00b7 Test 2",
+    "parts": {
+        "1": {
+            "title": "PART 1: Questions 1-10",
+            "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+            "tableHeader": [
+                "Guitar Course Level",
+                "Schedule",
+                "Cost",
+                "Requirements"
+            ],
+            "tableRows": [
+                {
+                    "name": "Beginner Level",
+                    "learn": "Basic chords and acoustic tuning",
+                    "cost": "\u00a3150",
+                    "info": "Taught by instructor Q1 Mathieson"
+                },
+                {
+                    "name": "Intermediate",
+                    "learn": "Fingerpicking for Q2 beginners",
+                    "cost": "\u00a3220",
+                    "info": "Held at local Q3 college"
+                }
+            ],
+            "notesHeader": "General Information (Questions 4-10)",
+            "notes": [
+                "New studio located at Q4 New Street",
+                "Class starting time: Q5 11 / eleven (am)",
+                "Students must bring their own Q6 instrument",
+                "Focus on playing by Q7 ear",
+                "Rhythm training includes Q8 clapping exercises",
+                "Students receive a weekly Q9 recording of lessons",
+                "Final practice performed Q10 alone"
+            ]
+        },
+        "2": {
+            "title": "PART 2: Questions 11-20",
+            "instruction": "Questions 11-20: Choose the correct letter, A, B or C.\nLifeboat Volunteer Training",
+            "mcqs": [
+                {
+                    "num": 11,
+                    "question": "What inspired David to join the lifeboat crew?",
+                    "options": [
+                        "A A family member",
+                        "B A news report",
+                        "C A local rescue event"
+                    ],
+                    "answer": "A"
+                },
+                {
+                    "num": 12,
+                    "question": "The initial training course lasted for",
+                    "options": [
+                        "A two weeks.",
+                        "B one month.",
+                        "C six months."
+                    ],
+                    "answer": "C"
+                }
+            ]
+        },
+        "3": {
+            "title": "PART 3: Questions 21-30",
+            "instruction": "Questions 21-30: Matching & MCQs\nFootwear Recycling Project",
+            "mcqs": [
+                {
+                    "num": 21,
+                    "question": "What surprised the students about shoe recycling?",
+                    "options": [
+                        "A The volume of waste",
+                        "B The difficulty of shredding materials",
+                        "C The lack of public interest"
+                    ],
+                    "answer": "E"
+                }
+            ]
+        },
+        "4": {
+            "title": "PART 4: Questions 31-40",
+            "instruction": "Questions 31-40: Complete the notes below. Write ONE WORD ONLY.",
+            "notesHeader": "Marine Biology: Whale Migration",
+            "notes": [
+                "Whales migrate when seasonal currents Q31 move",
+                "Feeding grounds feature Q32 short summer days",
+                "Vertebrae separated by cartilage Q33 discs",
+                "Deep diving requires efficient storage of Q34 oxygen",
+                "Breath held using reinforced windpipe Q35 tube",
+                "Whales adapt to extreme arctic Q36 temperatures",
+                "Diet consists mainly of high- Q37 protein krill",
+                "Calving occurs in open ocean Q38 space",
+                "Shallow coastal areas supply abundant Q39 seaweed",
+                "Conservation efforts protect Q40 endangered species"
+            ]
+        }
+    },
+    "answerKey": {
+        "1": "Mathieson",
+        "2": "beginners",
+        "3": "college",
+        "4": "New",
+        "5": "11 / eleven (am)",
+        "6": "instrument",
+        "7": "ear",
+        "8": "clapping",
+        "9": "recording",
+        "10": "alone",
+        "11": "A",
+        "12": "C",
+        "13": "B",
+        "14": "E",
+        "15": "D",
+        "16": "A",
+        "17": "C",
+        "18": "B",
+        "19": "D",
+        "20": "A",
+        "21": "E",
+        "22": "C",
+        "23": "A",
+        "24": "D",
+        "25": "B",
+        "26": "F",
+        "27": "C",
+        "28": "E",
+        "29": "A",
+        "30": "D",
+        "31": "move",
+        "32": "short",
+        "33": "discs",
+        "34": "oxygen",
+        "35": "tube",
+        "36": "temperatures",
+        "37": "protein",
+        "38": "space",
+        "39": "seaweed",
+        "40": "endangered"
+    }
+},
+  "cam19-t3": {
+    "id": "cam19-t3",
+    "book": "Cambridge 19",
+    "testNumber": 3,
+    "title": "Cambridge 19 \u00b7 Test 3",
+    "parts": {
+        "1": {
+            "title": "PART 1: Questions 1-10",
+            "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+            "notesHeader": "Local Market Shopping Information",
+            "notes": [
+                "Market location: near the Q1 harbour / harbor",
+                "Pedestrian access over the old Q2 bridge",
+                "Opening hours end at Q3 3.30 / three thirty",
+                "Stall owner name: Miss Q4 Rose / rose",
+                "Look for the blue entrance Q5 sign",
+                "Popular flower stall color: Q6 purple",
+                "Local edible sea plant: Q7 samphire",
+                "Fresh fruit stall: organic Q8 melon",
+                "Imported tropical fruit: Q9 coconut",
+                "Bakery flavor specialty: Q10 strawberry"
+            ]
+        },
+        "2": {
+            "title": "PART 2: Questions 11-20",
+            "instruction": "Questions 11-20: Choose the correct letter, A, B or C.\nChildren's Literature: Alive and Kicking",
+            "mcqs": [
+                {
+                    "num": 11,
+                    "question": "Why does the speaker recommend 'Alive and Kicking'?",
+                    "options": [
+                        "A Colourful illustrations",
+                        "B Well-known author",
+                        "C Engaging storyline"
+                    ],
+                    "answer": "D"
+                }
+            ]
+        },
+        "3": {
+            "title": "PART 3: Questions 21-30",
+            "instruction": "Questions 21-30: Complete the flowchart and MCQs.",
+            "mcqs": [
+                {
+                    "num": 21,
+                    "question": "Which aspect of the habitat study was hardest?",
+                    "options": [
+                        "A Data collection",
+                        "B Specimen identification",
+                        "C Statistical analysis"
+                    ],
+                    "answer": "A"
+                }
+            ]
+        },
+        "4": {
+            "title": "PART 4: Questions 31-40",
+            "instruction": "Questions 31-40: Complete the notes below. Write ONE WORD ONLY.",
+            "notesHeader": "Agricultural Science: Seaweed and Microalgae Uses",
+            "notes": [
+                "Microalgae extracts used in organic Q31 toothpaste",
+                "Enriched algae act as natural plant Q32 fertilisers / fertilizers",
+                "Soil enrichment provides vital Q33 nutrients",
+                "Biomass harvesting measured by dry Q34 weight",
+                "Reduces reliance on synthetic chemical Q35 routine",
+                "Laboratory growth verified in clinical Q36 trials",
+                "Algae extracts have natural Q37 calming properties",
+                "Used in manufacturing eco-friendly Q38 pillows",
+                "Application reduces crop stress and Q39 anxiety",
+                "Replaces harmful chemical Q40 medication"
+            ]
+        }
+    },
+    "answerKey": {
+        "1": "harbour / harbor",
+        "2": "bridge",
+        "3": "3.30 / three thirty / \u00bd / half 3 / three",
+        "4": "Rose / rose",
+        "5": "sign",
+        "6": "purple",
+        "7": "samphire",
+        "8": "melon",
+        "9": "coconut",
+        "10": "strawberry",
+        "11": "D",
+        "12": "B",
+        "13": "C",
+        "14": "F",
+        "15": "G",
+        "16": "H",
+        "17": "D",
+        "18": "E",
+        "19": "A",
+        "20": "C",
+        "21": "A",
+        "22": "C",
+        "23": "C",
+        "24": "H",
+        "25": "B",
+        "26": "D",
+        "27": "E",
+        "28": "G",
+        "29": "A",
+        "30": "F",
+        "31": "toothpaste",
+        "32": "fertilisers / fertilizers",
+        "33": "nutrients",
+        "34": "weight",
+        "35": "routine",
+        "36": "trials",
+        "37": "calming",
+        "38": "pillows",
+        "39": "anxiety",
+        "40": "medication"
+    }
+},
+  "cam19-t4": {
+    "id": "cam19-t4",
+    "book": "Cambridge 19",
+    "testNumber": 4,
+    "title": "Cambridge 19 \u00b7 Test 4",
+    "parts": {
+        "1": {
+            "title": "PART 1: Questions 1-10",
+            "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+            "notesHeader": "First Day at Work - Staff Induction",
+            "notes": [
+                "Name of new trainee: Q1 Kaeden",
+                "Personal belongings left in staff Q2 locker(s)",
+                "Identification document required: Q3 passport",
+                "Company clothing provided: Q4 uniform",
+                "Office located on the Q5 third / 3rd floor",
+                "Direct phone contact: Q6 0412 665 903",
+                "Safety badge color: Q7 yellow",
+                "ID card holder material: Q8 plastic",
+                "First aid kit contains pack of Q9 ice",
+                "Storage room requires protective Q10 gloves"
+            ]
+        },
+        "2": {
+            "title": "PART 2: Questions 11-20",
+            "instruction": "Questions 11-20: Choose the correct letter, A, B or C.\nCompton Park Runners Club",
+            "mcqs": [
+                {
+                    "num": 11,
+                    "question": "Why did Sarah join the running club?",
+                    "options": [
+                        "A To improve fitness",
+                        "B To make friends",
+                        "C To prepare for a marathon"
+                    ],
+                    "answer": "B"
+                }
+            ]
+        },
+        "3": {
+            "title": "PART 3: Questions 21-30",
+            "instruction": "Questions 21-30: Grandfather's Bookshop",
+            "mcqs": [
+                {
+                    "num": 21,
+                    "question": "Where are rare first editions stored?",
+                    "options": [
+                        "A Behind the main counter",
+                        "B In the glass display case",
+                        "C In the back room archive"
+                    ],
+                    "answer": "C"
+                }
+            ]
+        },
+        "4": {
+            "title": "PART 4: Questions 31-40",
+            "instruction": "Questions 31-40: Complete the notes below. Write ONE WORD ONLY.",
+            "notesHeader": "Primate Ecology & Wildlife Conservation",
+            "notes": [
+                "Male primates display aggression during territory Q31 competition",
+                "Seasonal migration driven by search for Q32 food",
+                "Habitat destruction increases vulnerability to Q33 disease",
+                "Encroachment caused by expanding Q34 agriculture",
+                "Researchers track troop movements using GPS Q35 maps",
+                "Farmers protect crops from wild Q36 cattle",
+                "Locomotion efficiency depends on tree climbing Q37 speed",
+                "Canopy corridors vital for arboreal Q38 monkeys",
+                "Riverside habitats threatened by illegal Q39 fishing",
+                "Seasonal rainfall causes severe forest Q40 flooding"
+            ]
+        }
+    },
+    "answerKey": {
+        "1": "Kaeden",
+        "2": "locker(s)",
+        "3": "passport",
+        "4": "uniform",
+        "5": "third / 3rd",
+        "6": "0412 665 903",
+        "7": "yellow",
+        "8": "plastic",
+        "9": "ice",
+        "10": "gloves",
+        "11": "B",
+        "12": "E",
+        "13": "B",
+        "14": "D",
+        "15": "C",
+        "16": "A",
+        "17": "F",
+        "18": "B",
+        "19": "E",
+        "20": "D",
+        "21": "C",
+        "22": "A",
+        "23": "D",
+        "24": "B",
+        "25": "E",
+        "26": "G",
+        "27": "C",
+        "28": "F",
+        "29": "A",
+        "30": "D",
+        "31": "competition",
+        "32": "food",
+        "33": "disease",
+        "34": "agriculture",
+        "35": "maps",
+        "36": "cattle",
+        "37": "speed",
+        "38": "monkeys",
+        "39": "fishing",
+        "40": "flooding"
+    }
+}
 };

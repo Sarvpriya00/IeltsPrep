@@ -2,9 +2,11 @@
   "name": "ielts-public-prep",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "Standalone Public IELTS Preparation Website",
   "scripts": {
     "dev": "npx serve -l 3001 .",
-    "start": "npx serve -l 3001 ."
+    "start": "npx serve -l 3001 .",
+    "test": "node tests/test_runner.js"
   }
 }
