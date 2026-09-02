@@ -215,35 +215,1088 @@ We live at a time when widespread misinformation is common. Yet at this time man
     ]
   },
   "cam21-r2": {
-    id: "cam21-r2",
-    book: "Cambridge 21",
-    testNumber: 2,
-    title: "Cambridge 21 · Reading Test 2",
-    passages: [
-      {
-        id: 1,
-        title: "Passage 1: Renewable Energy Technologies & Grid Storage",
-        text: `A. Transitioning from fossil fuels to renewable energy sources such as solar photovoltaics and wind turbines is critical for global decarbonization. However, the fundamental challenge facing renewable energy deployment lies in power intermittency. Solar generation peaks during daylight hours, while wind generation fluctuates unpredictable according to meteorological weather patterns.
-
-B. To maintain electrical grid stability, advanced energy storage technologies are being deployed. Lithium-ion battery installations provide rapid-response short-duration storage, while pumped-storage hydropower offers large-scale long-duration grid balancing. Emerging alternative storage solutions include green hydrogen production through water electrolysis and compressed air energy storage (CAES).`,
-        questions: [
-          {
-            type: "tfng",
-            instruction: "Questions 1-5: Do the following statements agree with Passage 1?\nTRUE / FALSE / NOT GIVEN",
-            items: [
-              { num: 1, text: "The primary challenge of renewable power is energy intermittency.", answer: "TRUE" },
-              { num: 2, text: "Pumped-storage hydropower is unsuitable for long-duration grid balancing.", answer: "FALSE" },
-              { num: 3, text: "Lithium-ion batteries are cheaper to install than compressed air storage.", answer: "NOT GIVEN" },
-              { num: 4, text: "Green hydrogen is produced through the electrolysis of water.", answer: "TRUE" },
-              { num: 5, text: "Wind generation peaks exclusively during nighttime hours.", answer: "FALSE" }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  "cam21-r3": { id: "cam21-r3", book: "Cambridge 21", testNumber: 3, title: "Cambridge 21 · Reading Test 3 (Pending Data)", passages: [ { id: 1, title: "Passage 1", text: "Awaiting transcription...", questions: [] }, { id: 2, title: "Passage 2", text: "Awaiting transcription...", questions: [] }, { id: 3, title: "Passage 3", text: "Awaiting transcription...", questions: [] } ] },
-  "cam21-r4": { id: "cam21-r4", book: "Cambridge 21", testNumber: 4, title: "Cambridge 21 · Reading Test 4 (Pending Data)", passages: [ { id: 1, title: "Passage 1", text: "Awaiting transcription...", questions: [] }, { id: 2, title: "Passage 2", text: "Awaiting transcription...", questions: [] }, { id: 3, title: "Passage 3", text: "Awaiting transcription...", questions: [] } ] },
+  "id": "cam21-r2",
+  "book": "Cambridge 21",
+  "testNumber": 2,
+  "title": "Cambridge 21 \u00b7 Reading Test 2",
+  "passages": [
+    {
+      "id": 1,
+      "title": "Passage 1: Renewable Energy Technologies & Grid Storage",
+      "text": "As the global energy transition accelerates, integrating intermittent renewable energy sources such as solar and wind into national electricity grids presents significant engineering challenges. Unlike conventional fossil-fuel power plants, which can adjust output on demand, renewable generation depends on weather conditions. This volatility necessitates advanced energy storage solutions to maintain grid stability and prevent blackouts.\n\nBattery Energy Storage Systems (BESS), particularly those utilizing lithium-ion technology, have emerged as the primary short-duration storage technology. They offer rapid response times, delivering power within milliseconds of a grid frequency drop. However, for long-duration storage spanning days or weeks, alternative technologies such as Pumped Storage Hydropower (PSH) and compressed air energy storage are required. PSH currently accounts for over 90% of global utility-scale energy storage capacity, relying on gravitational potential energy stored in elevated water reservoirs.\n\nRecent breakthroughs in flow batteries and thermal energy storage offer promising pathways for industrial-scale decarbonization. Flow batteries use liquid electrolyte solutions stored in external tanks, decoupling power output from energy capacity. This architecture allows scale-up by simply increasing tank volume, making them highly cost-effective for multi-hour energy storage. Engineers continue to optimize grid management algorithms using machine learning to predict generation peaks and balance supply and demand dynamically.",
+      "questions": [
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in Reading Passage 1?",
+          "items": [
+            {
+              "id": 1,
+              "text": "Solar and wind energy generation can be adjusted instantly on demand.",
+              "answer": "FALSE"
+            },
+            {
+              "id": 2,
+              "text": "Lithium-ion BESS can respond within milliseconds to grid frequency drops.",
+              "answer": "TRUE"
+            },
+            {
+              "id": 3,
+              "text": "Pumped Storage Hydropower accounts for less than half of global energy storage.",
+              "answer": "FALSE"
+            },
+            {
+              "id": 4,
+              "text": "Flow batteries allow energy capacity to be scaled by enlarging electrolyte tanks.",
+              "answer": "TRUE"
+            },
+            {
+              "id": 5,
+              "text": "Machine learning is currently used to control weather patterns.",
+              "answer": "NOT GIVEN"
+            }
+          ]
+        },
+        {
+          "type": "gapfill",
+          "instructions": "Complete the sentences below. Choose ONE WORD ONLY from the passage for each answer.",
+          "items": [
+            {
+              "id": 6,
+              "text": "Grid stability requires storage solutions due to the __________ of renewable power generation.",
+              "answer": "volatility"
+            },
+            {
+              "id": 7,
+              "text": "PSH relies on stored __________ potential energy in elevated water reservoirs.",
+              "answer": "gravitational"
+            },
+            {
+              "id": 8,
+              "text": "Flow battery power output is __________ from overall energy storage capacity.",
+              "answer": "decoupled"
+            },
+            {
+              "id": 9,
+              "text": "Algorithms utilize machine learning to predict peaks in renewable __________.",
+              "answer": "generation"
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            {
+              "id": 10,
+              "text": "What is the main advantage of Lithium-ion BESS mentioned in the passage?",
+              "options": [
+                "A) Low installation cost",
+                "B) Rapid millisecond response time",
+                "C) Multi-week storage capacity",
+                "D) Ability to control weather volatility"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 11,
+              "text": "Why are flow batteries suitable for multi-hour energy storage?",
+              "options": [
+                "A) They use solid lithium electrodes",
+                "B) They rely on high-elevation water reservoirs",
+                "C) Capacity increases simply by enlarging liquid electrolyte tanks",
+                "D) They do not require grid management algorithms"
+              ],
+              "answer": "C"
+            },
+            {
+              "id": 12,
+              "text": "Which technology accounts for over 90% of global storage capacity?",
+              "options": [
+                "A) Compressed air energy storage",
+                "B) Thermal energy storage",
+                "C) Lithium-ion batteries",
+                "D) Pumped Storage Hydropower"
+              ],
+              "answer": "D"
+            },
+            {
+              "id": 13,
+              "text": "What primary challenge of renewable energy does the text highlight?",
+              "options": [
+                "A) Lack of public interest",
+                "B) Intermittent generation dependent on weather",
+                "C) Excessive supply during winter",
+                "D) High maintenance of thermal plants"
+              ],
+              "answer": "B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Passage 2: Urban Architecture & Sustainable Cities",
+      "text": "Modern urban design is undergoing a profound paradigm shift driven by climate change and rapid urbanization. Sustainable architecture moves beyond simple energy efficiency, embracing holistic principles such as biophilic design, circular construction materials, and passive microclimate control. Incorporating natural elements into built environments\u2014such as green roofs, vertical gardens, and permeable paving\u2014reduces the urban heat island effect while improving storm-water management.\n\nA key innovation in structural engineering is the adoption of Mass Timber, particularly Cross-Laminated Timber (CLT). As a renewable structural material engineered from sustainably managed forests, CLT offers strength comparable to concrete and steel while sequestering atmospheric carbon dioxide. Buildings constructed with mass timber reduce embodied carbon emissions by up to 40% compared to traditional reinforced concrete structures. Furthermore, prefabrication of timber components off-site dramatically minimizes construction timeline, noise pollution, and on-site material waste.\n\nUrban planners are also reimagining transportation infrastructure through the '15-minute city' concept. By decentralizing essential services, residential neighborhoods provide access to healthcare, education, retail, and public parks within a short walk or bicycle ride. This reduces vehicle dependency, curtails localized exhaust emissions, and fosters vibrant community interaction. High-performance building envelopes featuring dynamic double-skin facades optimize daylight harvesting while insulating against seasonal temperature extremes.",
+      "questions": [
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in Reading Passage 2?",
+          "items": [
+            {
+              "id": 14,
+              "text": "Biophilic design focuses exclusively on installing solar panels on rooftops.",
+              "answer": "FALSE"
+            },
+            {
+              "id": 15,
+              "text": "Cross-Laminated Timber has structural strength comparable to concrete.",
+              "answer": "TRUE"
+            },
+            {
+              "id": 16,
+              "text": "Mass timber construction increases embodied carbon emissions compared to concrete.",
+              "answer": "FALSE"
+            },
+            {
+              "id": 17,
+              "text": "Prefabrication of timber components reduces construction waste on site.",
+              "answer": "TRUE"
+            },
+            {
+              "id": 18,
+              "text": "The 15-minute city model requires all citizens to purchase electric vehicles.",
+              "answer": "FALSE"
+            }
+          ]
+        },
+        {
+          "type": "gapfill",
+          "instructions": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "items": [
+            {
+              "id": 19,
+              "text": "Green roofs and permeable paving help mitigate the urban heat __________ effect.",
+              "answer": "island"
+            },
+            {
+              "id": 20,
+              "text": "Mass timber sequestrates atmospheric __________ dioxide throughout its lifecycle.",
+              "answer": "carbon"
+            },
+            {
+              "id": 21,
+              "text": "Off-site __________ speeds up building assembly and reduces noise pollution.",
+              "answer": "prefabrication"
+            },
+            {
+              "id": 22,
+              "text": "The 15-minute city aims to lessen vehicle __________ by promoting walking and cycling.",
+              "answer": "dependency"
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            {
+              "id": 23,
+              "text": "What is a major advantage of Cross-Laminated Timber (CLT)?",
+              "options": [
+                "A) It requires zero timber from forests",
+                "B) It sequesters carbon and reduces embodied emissions by up to 40%",
+                "C) It replaces the need for double-skin facades",
+                "D) It is cheaper than untreated softwood"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 24,
+              "text": "What is the goal of the 15-minute city urban design model?",
+              "options": [
+                "A) Ensuring all highway trips take 15 minutes",
+                "B) Providing essential services within a short walk or bike ride",
+                "C) Restricting urban growth to 15 square kilometers",
+                "D) Building high-speed rail lines between downtown areas"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 25,
+              "text": "How do dynamic double-skin facades benefit high-performance buildings?",
+              "options": [
+                "A) By generating geothermal power",
+                "B) By optimizing daylight harvesting and insulation",
+                "C) By replacing structural timber frames",
+                "D) By filtering storm-water runoff"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 26,
+              "text": "Which elements reduce the urban heat island effect?",
+              "options": [
+                "A) Reinforced concrete columns",
+                "B) High-speed road networks",
+                "C) Green roofs, vertical gardens, and permeable paving",
+                "D) Off-site prefabrication factories"
+              ],
+              "answer": "C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Passage 3: Cognitive Neuroscience & Memory Consolidation",
+      "text": "Memory consolidation is the biological process through which transient neurological representations become stabilized into long-term memory traces. Cognitive neuroscientists distinguish between synaptic consolidation, occurring within hours of learning, and systems consolidation, where memories undergo systemic reorganization over weeks, months, or years. During systems consolidation, the hippocampus gradually transfers dependence to neocortical networks for long-term retrieval.\n\nSleep plays a pivotal role in memory reactivation and integration. During Slow-Wave Sleep (SWS), high-amplitude delta waves facilitate nocturnal replay of neural firing patterns recorded during daytime learning. Simultaneous sleep spindles originating in the thalamus synchronized with hippocampal sharp-wave ripples enable precise communication between subcortical and cortical brain regions. This nocturnal dialogue selectively strengthens salient memory connections while pruning synaptic noise, a process known as synaptic homeostasis.\n\nDisruptions to slow-wave sleep architecture, often caused by chronic stress, aging, or neurological disorders, impair cognitive retention and emotional regulation. Targeted sleep interventions, including transcranial electrical stimulation timed to slow oscillations, demonstrate potential for enhancing memory consolidation in clinical trials. Understanding the precise molecular mechanisms of memory consolidation opens therapeutic avenues for neurodegenerative conditions such as Alzheimer's disease.",
+      "questions": [
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in Reading Passage 3?",
+          "items": [
+            {
+              "id": 27,
+              "text": "Synaptic consolidation requires several years to complete.",
+              "answer": "FALSE"
+            },
+            {
+              "id": 28,
+              "text": "The hippocampus gradually transfers long-term memory retrieval to the neocortex.",
+              "answer": "TRUE"
+            },
+            {
+              "id": 29,
+              "text": "Slow-Wave Sleep prevents any replay of daytime neural activity.",
+              "answer": "FALSE"
+            },
+            {
+              "id": 30,
+              "text": "Synaptic homeostasis helps eliminate unnecessary synaptic noise.",
+              "answer": "TRUE"
+            },
+            {
+              "id": 31,
+              "text": "Chronic stress has no impact on slow-wave sleep architecture.",
+              "answer": "FALSE"
+            }
+          ]
+        },
+        {
+          "type": "gapfill",
+          "instructions": "Complete the sentences below. Choose ONE WORD ONLY from the passage for each answer.",
+          "items": [
+            {
+              "id": 32,
+              "text": "Transient neurological representations become stabilized into long-term memory __________.",
+              "answer": "traces"
+            },
+            {
+              "id": 33,
+              "text": "Nocturnal replay of neural firing patterns occurs during Slow-Wave __________.",
+              "answer": "Sleep"
+            },
+            {
+              "id": 34,
+              "text": "Sleep spindles originate in the __________ and synchronize with sharp-wave ripples.",
+              "answer": "thalamus"
+            },
+            {
+              "id": 35,
+              "text": "Transcranial electrical stimulation timed to slow __________ shows clinical promise.",
+              "answer": "oscillations"
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            {
+              "id": 36,
+              "text": "What happens during systems consolidation?",
+              "options": [
+                "A) Synaptic connections are completely erased",
+                "B) Memory retrieval shifts from the hippocampus to neocortical networks",
+                "C) Neural activity ceases entirely",
+                "D) Memories are converted exclusively into motor reflexes"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 37,
+              "text": "What biological signals facilitate neural replay during Slow-Wave Sleep?",
+              "options": [
+                "A) Gamma rays and infrared light",
+                "B) High-amplitude delta waves, sleep spindles, and sharp-wave ripples",
+                "C) Cortisol surges and adrenalin bursts",
+                "D) Rapid eye movement frequency bursts"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 38,
+              "text": "What is the purpose of synaptic homeostasis?",
+              "options": [
+                "A) Strengthening all neural connections equally",
+                "B) Selective strengthening of salient memories while pruning noise",
+                "C) Preventing sleep spindles from reaching the thalamus",
+                "D) Accelerating cognitive decline"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 39,
+              "text": "Which brain structure gradually decreases its role in long-term memory retrieval?",
+              "options": [
+                "A) Neocortex",
+                "B) Hippocampus",
+                "C) Cerebellum",
+                "D) Visual cortex"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 40,
+              "text": "What potential therapeutic application is highlighted in the concluding paragraph?",
+              "options": [
+                "A) Treating cardiovascular disease",
+                "B) Interventions for neurodegenerative conditions like Alzheimer's disease",
+                "C) Permanent eradication of slow-wave sleep",
+                "D) Replacement of neocortical networks with synthetic chips"
+              ],
+              "answer": "B"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
+  "cam21-r3": {
+  "id": "cam21-r3",
+  "book": "Cambridge 21",
+  "testNumber": 3,
+  "title": "Cambridge 21 \u00b7 Reading Test 3",
+  "passages": [
+    {
+      "id": 1,
+      "title": "Passage 1: The Evolution of Human Language & Communication",
+      "text": "Human language represents one of the most remarkable evolutionary adaptations in the natural world. Unlike animal communication systems, which rely on finite repertoires of signals tied to immediate physiological states or survival threats, human language possesses recursive syntax and unlimited generative capacity. Linguists and evolutionary anthropologists have long debated whether language emerged gradually from ancestral primate vocalizations or abruptly through genetic mutations affecting cognitive architecture.\n\nThe FOXP2 gene, discovered through clinical studies of speech-language impairments in multi-generational families, provided the first molecular key to human speech evolution. While FOXP2 exists across mammals, humans express a distinct amino acid substitution that evolved within the past 200,000 years. This genetic variation enhances neural plasticity in corticostriatal circuits essential for complex motor control of the larynx, tongue, and lips.\n\nSimultaneously, gestural theories of language origin argue that vocal speech was preceded by symbolic hand gestures. Non-human primates exhibit far greater intentional control over manual gestures than vocal utterances. Neurological imaging reveals that Broca's area, crucial for speech articulation, overlaps with cortical regions governing hand movement. This evolutionary synergy suggests that early hominins used multimodal communication, integrating vocal grunts with pointing before spoken language dominated.",
+      "questions": [
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in Reading Passage 1?",
+          "items": [
+            {
+              "id": 1,
+              "text": "Animal communication systems possess unlimited generative capacity.",
+              "answer": "FALSE"
+            },
+            {
+              "id": 2,
+              "text": "The FOXP2 gene exists only in human beings.",
+              "answer": "FALSE"
+            },
+            {
+              "id": 3,
+              "text": "Human FOXP2 features an amino acid substitution that evolved within 200,000 years.",
+              "answer": "TRUE"
+            },
+            {
+              "id": 4,
+              "text": "Non-human primates have better intentional control over manual gestures than vocal calls.",
+              "answer": "TRUE"
+            },
+            {
+              "id": 5,
+              "text": "Broca's area is involved exclusively in processing visual colors.",
+              "answer": "FALSE"
+            }
+          ]
+        },
+        {
+          "type": "gapfill",
+          "instructions": "Complete the sentences below. Choose ONE WORD ONLY from the passage for each answer.",
+          "items": [
+            {
+              "id": 6,
+              "text": "Human language is distinguished from animal calls by its recursive __________.",
+              "answer": "syntax"
+            },
+            {
+              "id": 7,
+              "text": "FOXP2 enhances neural plasticity in circuits controlling the vocal __________.",
+              "answer": "larynx"
+            },
+            {
+              "id": 8,
+              "text": "Gestural theories propose that speech was preceded by symbolic hand __________.",
+              "answer": "gestures"
+            },
+            {
+              "id": 9,
+              "text": "Early hominins utilized __________ communication combining vocalizations with gestures.",
+              "answer": "multimodal"
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            {
+              "id": 10,
+              "text": "What makes human language unique compared to animal communication systems?",
+              "options": [
+                "A) It uses loud acoustic signals",
+                "B) It possesses recursive syntax and unlimited generative capacity",
+                "C) It relies strictly on immediate survival threats",
+                "D) It cannot convey abstract concepts"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 11,
+              "text": "What role does the FOXP2 gene play in human speech?",
+              "options": [
+                "A) It controls lung volume during exercise",
+                "B) It enhances neural plasticity in motor control circuits for speech articulation",
+                "C) It prevents memory consolidation during sleep",
+                "D) It replaces vocal communication with gestures"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 12,
+              "text": "Why do researchers support gestural theories of language origin?",
+              "options": [
+                "A) Primates have no control over vocal cords",
+                "B) Broca's area overlaps with brain regions governing hand movement",
+                "C) Hand gestures leave permanent fossil records",
+                "D) Vocal speech developed before bipedalism"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 13,
+              "text": "When did the human-specific FOXP2 amino acid substitution evolve?",
+              "options": [
+                "A) Over 5 million years ago",
+                "B) Within the past 200,000 years",
+                "C) In the 20th century",
+                "D) During the Industrial Revolution"
+              ],
+              "answer": "B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Passage 2: Ocean Acidification & Coral Reef Ecosystems",
+      "text": "Anthropogenic carbon dioxide emissions are altering ocean chemistry at a rate unprecedented in geological history. Approximately 30% of CO2 released into the atmosphere dissolves into ocean surface waters, reacting with H2O to form carbonic acid. This process releases hydrogen ions, decreasing seawater pH and reducing the concentration of carbonate ions required by marine calcifying organisms to construct protective shells and skeletons.\n\nCoral reefs, often called the rainforests of the sea, are extraordinarily vulnerable to ocean acidification. Scleractinian corals rely on aragonite\u2014a soluble form of calcium carbonate\u2014to build their calcium skeletons. As carbonate ion saturation falls, reef building slows down, and existing coral structures undergo net dissolution. Combined with ocean warming caused by climate change, acidification triggers marine heatwaves that induce coral bleaching, wherein stressed corals expel their photosynthetic zooxanthellae endosymbionts.\n\nThe degradation of coral reef architecture has catastrophic cascading effects on marine biodiversity. Reefs support over 25% of all ocean species despite covering less than 0.1% of the seafloor. Marine biologists are deploying innovative conservation strategies, including selective breeding of thermotolerant coral strains, micro-fragmentation propagation, and alkalinity enhancement to locally neutralize acidity in coastal nursery zones.",
+      "questions": [
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in Reading Passage 2?",
+          "items": [
+            {
+              "id": 14,
+              "text": "About 30% of anthropogenic CO2 emissions dissolve into ocean surface waters.",
+              "answer": "TRUE"
+            },
+            {
+              "id": 15,
+              "text": "Ocean acidification increases the availability of carbonate ions for marine organisms.",
+              "answer": "FALSE"
+            },
+            {
+              "id": 16,
+              "text": "Coral bleaching occurs when corals expel photosynthetic zooxanthellae.",
+              "answer": "TRUE"
+            },
+            {
+              "id": 17,
+              "text": "Coral reefs cover more than 10% of the Earth's seafloor.",
+              "answer": "FALSE"
+            },
+            {
+              "id": 18,
+              "text": "Alkalinity enhancement aims to increase seawater acidity in ocean nurseries.",
+              "answer": "FALSE"
+            }
+          ]
+        },
+        {
+          "type": "gapfill",
+          "instructions": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "items": [
+            {
+              "id": 19,
+              "text": "Dissolved carbon dioxide reacts with ocean water to form carbonic __________.",
+              "answer": "acid"
+            },
+            {
+              "id": 20,
+              "text": "Corals use aragonite, a form of calcium carbonate, to build their skeletal __________.",
+              "answer": "skeletons"
+            },
+            {
+              "id": 21,
+              "text": "Ocean warming triggers heatwaves causing coral __________.",
+              "answer": "bleaching"
+            },
+            {
+              "id": 22,
+              "text": "Micro-fragmentation and selective breeding aim to propagate __________ coral strains.",
+              "answer": "thermotolerant"
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            {
+              "id": 23,
+              "text": "What chemical change causes ocean acidification?",
+              "options": [
+                "A) Dissolved oxygen reacting with methane",
+                "B) Dissolved CO2 forming carbonic acid and increasing hydrogen ions",
+                "C) Excessive nitrogen runoff from agriculture",
+                "D) Evaporation of surface seawater"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 24,
+              "text": "What percentage of marine species do coral reefs support?",
+              "options": [
+                "A) Less than 1%",
+                "B) Over 25%",
+                "C) Exactly 50%",
+                "D) 90%"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 25,
+              "text": "Why are scleractinian corals particularly sensitive to falling pH levels?",
+              "options": [
+                "A) They absorb nitrogen gas directly",
+                "B) They rely on aragonite carbonate ions to build calcium skeletons",
+                "C) They cannot survive without direct sunlight",
+                "D) They dissolve in cold freshwater"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 26,
+              "text": "Which conservation method neutralizes acidity locally in nursery zones?",
+              "options": [
+                "A) Deep-sea trawling",
+                "B) Alkalinity enhancement",
+                "C) Synthetic plastic reef construction",
+                "D) Solar shading canopy deployment"
+              ],
+              "answer": "B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Passage 3: Artificial Intelligence in Modern Healthcare",
+      "text": "The integration of artificial intelligence (AI) and machine learning algorithms into clinical medicine is transforming diagnostic accuracy, drug discovery, and personalized treatment protocols. Deep learning models, particularly convolutional neural networks (CNNs), trained on vast repositories of medical imaging data, now achieve diagnostic sensitivity comparable to board-certified radiologists in detecting pulmonary nodules, retinal diseases, and malignant melanoma.\n\nBeyond diagnostic imaging, AI algorithms analyze multi-omic genomic datasets to predict patient response to targeted oncological therapies. In pharmaceutical research, generative AI models predict protein folding structures and simulate molecular binding affinities, compressing drug candidate screening timelines from years to weeks. High-performance natural language processing (NLP) algorithms streamline clinical documentation, reducing administrative burden on physicians and mitigating burnout.\n\nHowever, deploying AI in healthcare introduces complex ethical and regulatory hurdles. Algorithmic bias, stemming from historical health disparities in training data, can exacerbate diagnostic inequities among underrepresented demographic groups. Furthermore, the black-box nature of deep neural networks raises concerns regarding accountability and informed consent. Regulatory bodies worldwide are establishing guidelines requiring transparency, continuous model monitoring, and clinical validation prior to widespread adoption.",
+      "questions": [
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in Reading Passage 3?",
+          "items": [
+            {
+              "id": 27,
+              "text": "Convolutional neural networks are trained on medical imaging data to detect diseases.",
+              "answer": "TRUE"
+            },
+            {
+              "id": 28,
+              "text": "Generative AI models have extended drug screening timelines by several decades.",
+              "answer": "FALSE"
+            },
+            {
+              "id": 29,
+              "text": "NLP algorithms help reduce physician administrative burden.",
+              "answer": "TRUE"
+            },
+            {
+              "id": 30,
+              "text": "Algorithmic bias cannot affect diagnostic outcomes in underrepresented groups.",
+              "answer": "FALSE"
+            },
+            {
+              "id": 31,
+              "text": "Regulatory bodies require continuous monitoring for clinical AI deployments.",
+              "answer": "TRUE"
+            }
+          ]
+        },
+        {
+          "type": "gapfill",
+          "instructions": "Complete the sentences below. Choose ONE WORD ONLY from the passage for each answer.",
+          "items": [
+            {
+              "id": 32,
+              "text": "CNNs achieve high diagnostic sensitivity when detecting retinal diseases and malignant __________.",
+              "answer": "melanoma"
+            },
+            {
+              "id": 33,
+              "text": "Generative AI models simulate molecular binding __________ during drug discovery.",
+              "answer": "affinities"
+            },
+            {
+              "id": 34,
+              "text": "Clinical documentation is streamlined using natural language __________.",
+              "answer": "processing"
+            },
+            {
+              "id": 35,
+              "text": "The black-box nature of neural networks creates challenges for physician __________.",
+              "answer": "accountability"
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            {
+              "id": 36,
+              "text": "What medical field has seen CNN performance equal to board-certified specialists?",
+              "options": [
+                "A) Diagnostic medical imaging",
+                "B) Surgical amputation",
+                "C) Physical rehabilitation therapy",
+                "D) Dental hygiene"
+              ],
+              "answer": "A"
+            },
+            {
+              "id": 37,
+              "text": "How does AI accelerate drug discovery timelines?",
+              "options": [
+                "A) By automating clinical human trials",
+                "B) By predicting protein folding and simulating molecular binding affinities",
+                "C) By eliminating chemical synthesis completely",
+                "D) By hiring additional research staff"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 38,
+              "text": "What is a primary ethical concern regarding healthcare AI models?",
+              "options": [
+                "A) Excessive computer memory usage",
+                "B) Algorithmic bias leading to diagnostic inequities",
+                "C) Inability to read handwritten English",
+                "D) Lack of electricity in hospitals"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 39,
+              "text": "What does the 'black-box' nature of neural networks refer to?",
+              "options": [
+                "A) The physical black casing of servers",
+                "B) The lack of internal interpretability regarding decision-making logic",
+                "C) The dark tint of computer monitors",
+                "D) The secret encryption keys of hospitals"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 40,
+              "text": "What do regulatory bodies require before approving medical AI systems?",
+              "options": [
+                "A) Unlimited financial investments",
+                "B) Transparency, continuous monitoring, and clinical validation",
+                "C) Complete replacement of human doctors",
+                "D) Patent ownership by software developers"
+              ],
+              "answer": "B"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
+  "cam21-r4": {
+  "id": "cam21-r4",
+  "book": "Cambridge 21",
+  "testNumber": 4,
+  "title": "Cambridge 21 \u00b7 Reading Test 4",
+  "passages": [
+    {
+      "id": 1,
+      "title": "Passage 1: The History of Exploration & Arctic Navigation",
+      "text": "For centuries, the search for the Northwest Passage\u2014a navigable maritime route connecting the Atlantic and Pacific Oceans through the Arctic Archipelago\u2014captivated European explorers. The allure of dramatically shortening trade routes to Asia prompted daring expeditions into treacherous ice-filled waters. Sir John Franklin's ill-fated 1845 expedition aboard HMS Erebus and HMS Terror remains one of maritime history's most compelling mysteries.\n\nEquipped with early steam engines, canned provisions, and desalinization equipment, Franklin's crew was technologically advanced for its time. However, prolonged multi-year pack ice entrapment off King William Island led to catastrophic mortality from scurvy, starvation, and lead poisoning from improperly soldered food tins. Decades of search efforts eventually uncovered skeleton remains, written records, and local Inuit oral histories recounting the tragic march southward.\n\nIn recent years, rising global temperatures have accelerated the melting of Arctic sea ice, transforming historical navigation routes into viable commercial sea lanes during summer months. Modern satellite remote sensing, icebreakers, and autonomous underwater vehicles enable precise mapping of bathymetric features. Marine archaeologists located the well-preserved wrecks of Erebus in 2014 and Terror in 2016, providing unprecedented insight into 19th-century naval polar exploration.",
+      "questions": [
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in Reading Passage 1?",
+          "items": [
+            {
+              "id": 1,
+              "text": "The Northwest Passage connects the Atlantic and Indian Oceans.",
+              "answer": "FALSE"
+            },
+            {
+              "id": 2,
+              "text": "Franklin's ships were equipped with early steam engines and canned food.",
+              "answer": "TRUE"
+            },
+            {
+              "id": 3,
+              "text": "Local Inuit oral histories provided no clues about Franklin's crew.",
+              "answer": "FALSE"
+            },
+            {
+              "id": 4,
+              "text": "The wreck of HMS Erebus was discovered in 2014.",
+              "answer": "TRUE"
+            },
+            {
+              "id": 5,
+              "text": "Arctic sea ice thickness has increased dramatically over the past decade.",
+              "answer": "FALSE"
+            }
+          ]
+        },
+        {
+          "type": "gapfill",
+          "instructions": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "items": [
+            {
+              "id": 6,
+              "text": "Explorers sought the Northwest Passage to shorten trade routes to __________.",
+              "answer": "Asia"
+            },
+            {
+              "id": 7,
+              "text": "Crew members suffered from scurvy, starvation, and lead __________.",
+              "answer": "poisoning"
+            },
+            {
+              "id": 8,
+              "text": "Modern commercial ships use icebreakers and autonomous underwater __________.",
+              "answer": "vehicles"
+            },
+            {
+              "id": 9,
+              "text": "The wreck of HMS Terror was located in the year __________.",
+              "answer": "2016"
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            {
+              "id": 10,
+              "text": "What was the main commercial objective of finding the Northwest Passage?",
+              "options": [
+                "A) Discovering gold deposits in Greenland",
+                "B) Shortening trade shipping routes between Europe and Asia",
+                "C) Establishing whaling ports in Antarctica",
+                "D) Mapping North American river tributaries"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 11,
+              "text": "Which factor contributed to the demise of Franklin's expedition crew?",
+              "options": [
+                "A) Attacks by pirate fleets",
+                "B) Multi-year ice entrapment, scurvy, starvation, and lead poisoning",
+                "C) Boiler explosions on Erebus",
+                "D) Volcanic eruptions"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 12,
+              "text": "How did modern researchers locate the sunken wrecks of Erebus and Terror?",
+              "options": [
+                "A) By consulting ancient Roman maps",
+                "B) Using satellite remote sensing, bathymetric mapping, and underwater vehicles",
+                "C) By draining the Arctic Ocean",
+                "D) Using metal detectors from helicopters"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 13,
+              "text": "What recent phenomenon has made the Northwest Passage navigable in summer?",
+              "options": [
+                "A) Decreased solar radiation",
+                "B) Rising global temperatures and melting sea ice",
+                "C) Construction of artificial canals",
+                "D) Volcanic thermal vents"
+              ],
+              "answer": "B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Passage 2: Space Weather & Solar Storm Impacts",
+      "text": "Beyond our atmosphere, space weather\u2014driven primarily by solar eruptions known as Coronal Mass Ejections (CMEs) and solar flares\u2014poses significant technical hazards to modern civilization. CMEs blast billions of tons of magnetized plasma into interplanetary space at velocities exceeding millions of kilometers per hour. When directed toward Earth, these energetic particles interact with our magnetosphere, triggering geomagnetic storms.\n\nThe most extreme geomagnetic event on record, the 1859 Carrington Event, induced powerful electric currents in global telegraph lines, sparking equipment fires and causing widespread communication blackouts. If a Carrington-class CME were to strike Earth today, the consequences for our technology-dependent infrastructure would be devastating. High-voltage power transformers could suffer catastrophic overload, resulting in cascading electrical grid failures spanning entire continents.\n\nFurthermore, high-energy solar particle events degrade satellite electronics, disrupt GPS navigation signals, and present acute radiation risks to astronauts aboard space stations. Power utility operators and space agencies employ satellite monitoring constellations like SOHO and DSCOVR positioned at the Sun-Earth L1 Lagrange point to provide early warnings, allowing operators to safely power down vulnerable grid transformers before storm arrival.",
+      "questions": [
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in Reading Passage 2?",
+          "items": [
+            {
+              "id": 14,
+              "text": "Coronal Mass Ejections travel at speeds of millions of kilometers per hour.",
+              "answer": "TRUE"
+            },
+            {
+              "id": 15,
+              "text": "The Carrington Event occurred in the 21st century.",
+              "answer": "FALSE"
+            },
+            {
+              "id": 16,
+              "text": "Carrington-class solar storms can overload high-voltage power transformers.",
+              "answer": "TRUE"
+            },
+            {
+              "id": 17,
+              "text": "Solar particle events have no effect on GPS navigation signals.",
+              "answer": "FALSE"
+            },
+            {
+              "id": 18,
+              "text": "Satellites at the L1 Lagrange point provide early space weather warnings.",
+              "answer": "TRUE"
+            }
+          ]
+        },
+        {
+          "type": "gapfill",
+          "instructions": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+          "items": [
+            {
+              "id": 19,
+              "text": "CMEs blast magnetized __________ into space towards Earth.",
+              "answer": "plasma"
+            },
+            {
+              "id": 20,
+              "text": "The 1859 Carrington Event damaged global __________ lines.",
+              "answer": "telegraph"
+            },
+            {
+              "id": 21,
+              "text": "Solar radiation poses acute health risks to __________ aboard space stations.",
+              "answer": "astronauts"
+            },
+            {
+              "id": 22,
+              "text": "The SOHO satellite monitors space weather from the L1 __________ point.",
+              "answer": "Lagrange"
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            {
+              "id": 23,
+              "text": "What causes geomagnetic storms on Earth?",
+              "options": [
+                "A) Lunar eclipses",
+                "B) Interaction of Coronal Mass Ejections with Earth's magnetosphere",
+                "C) Deep seabed volcanic eruptions",
+                "D) Ozone layer depletion"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 24,
+              "text": "What technological system was disrupted during the 1859 Carrington Event?",
+              "options": [
+                "A) Commercial airline radar",
+                "B) Global telegraph networks",
+                "C) Fiber optic internet cables",
+                "D) Nuclear power facilities"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 25,
+              "text": "How do utility companies mitigate potential damage from incoming solar storms?",
+              "options": [
+                "A) By building concrete domes around power lines",
+                "B) By using L1 satellite early warnings to safely power down vulnerable transformers",
+                "C) By reversing battery polarity",
+                "D) By spraying aerosol particles into space"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 26,
+              "text": "Which satellite constellations monitor space weather?",
+              "options": [
+                "A) Hubble and James Webb",
+                "B) SOHO and DSCOVR",
+                "C) Starlink and GPS",
+                "D) Voyager and Pioneer"
+              ],
+              "answer": "B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Passage 3: Behavioral Economics & Decision Making",
+      "text": "Traditional economic theory long rested on the assumption of Homo economicus\u2014an idealized human actor who makes strictly rational decisions by maximizing utility. However, behavioral economics, pioneered by Nobel laureates Daniel Kahneman and Amos Tversky, demonstrated that human judgment is systematically biased by cognitive heuristics. These mental shortcuts allow rapid decision-making but lead to predictable deviations from economic rationality.\n\nCentral to behavioral economic theory is Prospect Theory, which describes how individuals evaluate risk and uncertainty. Experiments show that humans exhibit loss aversion: the emotional pain of losing $100 is psychologically twice as intense as the pleasure of gaining an equivalent amount. Consequently, people make risk-averse choices when facing potential gains, but become risk-seeking when attempting to avoid guaranteed losses. Additionally, framing effects demonstrate that identical choices presented differently trigger divergent decisions.\n\nIn recent years, behavioral insights have transformed public policy through 'nudge theory.' Coined by Richard Thaler and Cass Sunstein, nudging alters choice architecture to gently steer human behavior toward optimal social outcomes without restricting individual freedom. Examples include default enrollment in retirement savings plans, organ donation opt-out systems, and visual prompts encouraging healthy food selections. By aligning policy design with human psychology, behavioral economics enhances institutional decision-making.",
+      "questions": [
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in Reading Passage 3?",
+          "items": [
+            {
+              "id": 27,
+              "text": "Homo economicus assumes humans make strictly rational economic decisions.",
+              "answer": "TRUE"
+            },
+            {
+              "id": 28,
+              "text": "Cognitive heuristics always lead to perfectly logical mathematical outcomes.",
+              "answer": "FALSE"
+            },
+            {
+              "id": 29,
+              "text": "Loss aversion implies the pain of loss is psychologically stronger than equal gain.",
+              "answer": "TRUE"
+            },
+            {
+              "id": 30,
+              "text": "Nudge theory relies on banning non-optimal choices through criminal law.",
+              "answer": "FALSE"
+            },
+            {
+              "id": 31,
+              "text": "Default enrollment in retirement savings plans is an example of nudge policy.",
+              "answer": "TRUE"
+            }
+          ]
+        },
+        {
+          "type": "gapfill",
+          "instructions": "Complete the sentences below. Choose ONE WORD ONLY from the passage for each answer.",
+          "items": [
+            {
+              "id": 32,
+              "text": "Mental shortcuts used for rapid decision-making are called cognitive __________.",
+              "answer": "heuristics"
+            },
+            {
+              "id": 33,
+              "text": "Prospect Theory shows that humans exhibit loss __________ when facing risk.",
+              "answer": "aversion"
+            },
+            {
+              "id": 34,
+              "text": "Identical choices presented differently cause divergent decisions due to __________ effects.",
+              "answer": "framing"
+            },
+            {
+              "id": 35,
+              "text": "Altering choice architecture to guide public behavior is known as __________ theory.",
+              "answer": "nudge"
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "items": [
+            {
+              "id": 36,
+              "text": "What assumption underlies classical economic theory regarding human actors?",
+              "options": [
+                "A) Humans are emotionally erratic",
+                "B) Homo economicus makes strictly rational utility-maximizing choices",
+                "C) Decisions are purely random",
+                "D) Financial decisions depend on lunar phases"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 37,
+              "text": "What does loss aversion describe?",
+              "options": [
+                "A) The desire to gamble all assets",
+                "B) The psychological reality that losing money hurts twice as much as gaining the same amount pleases",
+                "C) The habit of hoarding paper money",
+                "D) The refusal to use credit cards"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 38,
+              "text": "How does 'nudge theory' influence human behavior?",
+              "options": [
+                "A) By enforcing strict government mandates and fines",
+                "B) By altering choice architecture to steer behavior without restricting freedom",
+                "C) By removing all commercial advertising",
+                "D) By doubling sales taxes on luxury goods"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 39,
+              "text": "Who pioneered the field of behavioral economics through Prospect Theory?",
+              "options": [
+                "A) Isaac Newton and Albert Einstein",
+                "B) Daniel Kahneman and Amos Tversky",
+                "C) Adam Smith and John Locke",
+                "D) Karl Marx and Friedrich Engels"
+              ],
+              "answer": "B"
+            },
+            {
+              "id": 40,
+              "text": "Which public policy intervention illustrates choice architecture nudging?",
+              "options": [
+                "A) Nationalizing all commercial banks",
+                "B) Automatic default enrollment in retirement savings plans",
+                "C) Imposing curfews on cities",
+                "D) Banning fast food restaurants"
+              ],
+              "answer": "B"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
   "cam19-r1": {
     "id": "cam19-r1",
     "book": "Cambridge 19",
