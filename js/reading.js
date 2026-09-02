@@ -15,6 +15,10 @@ let currentFontSize = 1.0; // rem
 export function initReadingEngine() {
   const testSelector = document.getElementById('reading-test-selector');
   if (testSelector) {
+    testSelector.innerHTML = Object.keys(readingData).map(key => {
+      const t = readingData[key];
+      return `<option value="${key}">${t.title || key}</option>`;
+    }).join('');
     testSelector.value = currentTestId;
     testSelector.addEventListener('change', (e) => {
       currentTestId = e.target.value;

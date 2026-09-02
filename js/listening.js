@@ -13,6 +13,10 @@ let timerInterval = null;
 export function initListeningEngine() {
   const selector = document.getElementById('test-selector');
   if (selector) {
+    selector.innerHTML = Object.keys(cam21ListeningData).map(key => {
+      const t = cam21ListeningData[key];
+      return `<option value="${key}">${t.title || key}</option>`;
+    }).join('');
     selector.value = currentTestId;
     selector.addEventListener('change', (e) => {
       currentTestId = e.target.value;
