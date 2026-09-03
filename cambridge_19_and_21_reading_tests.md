@@ -1,74 +1,9 @@
-# Cambridge IELTS Reading Passages (Cambridge 19 & Cambridge 21)
+# Cambridge IELTS 19 & 21 Academic Reading Tests (Complete Passage & Question Reference)
 
-This document contains all complete Reading Passages for **Cambridge IELTS 19** and **Cambridge IELTS 21** scraped from IELTS Training Online.
 
-## Table of Contents
+# Cambridge 19 · Reading Test 1 (Cambridge 19)
 
-- [Cambridge 19 - Reading Test 1](#cambridge-19---reading-test-1)
-  - [Reading Passage 1: How tennis rackets have changed](#cambridge-19---reading-test-1---reading-passage-1-how-tennis-rackets-have-changed)
-  - [Reading Passage 1: Passage 2](#cambridge-19---reading-test-1---reading-passage-1-passage-2)
-  - [Reading Passage 2: The pirates of the ancient Mediterranean](#cambridge-19---reading-test-1---reading-passage-2-the-pirates-of-the-ancient-mediterranean)
-  - [Reading Passage 2: Passage 4](#cambridge-19---reading-test-1---reading-passage-2-passage-4)
-  - [Reading Passage 3: The persistence and peril of misinformation](#cambridge-19---reading-test-1---reading-passage-3-the-persistence-and-peril-of-misinformation)
-  - [Reading Passage 3: Passage 6](#cambridge-19---reading-test-1---reading-passage-3-passage-6)
-- [Cambridge 19 - Reading Test 2](#cambridge-19---reading-test-2)
-  - [Reading Passage 1: The Industrial Revolution in Britain](#cambridge-19---reading-test-2---reading-passage-1-the-industrial-revolution-in-britain)
-  - [Reading Passage 1: Passage 2](#cambridge-19---reading-test-2---reading-passage-1-passage-2)
-  - [Reading Passage 2: Athletes and stress](#cambridge-19---reading-test-2---reading-passage-2-athletes-and-stress)
-  - [Reading Passage 2: Passage 4](#cambridge-19---reading-test-2---reading-passage-2-passage-4)
-  - [Reading Passage 3: An inquiry into the existence of the gifted child](#cambridge-19---reading-test-2---reading-passage-3-an-inquiry-into-the-existence-of-the-gifted-child)
-  - [Reading Passage 3: Passage 6](#cambridge-19---reading-test-2---reading-passage-3-passage-6)
-- [Cambridge 19 - Reading Test 3](#cambridge-19---reading-test-3)
-  - [Reading Passage 1: Archaeologists discover evidence of prehistoric island settlers](#cambridge-19---reading-test-3---reading-passage-1-archaeologists-discover-evidence-of-prehistoric-island-settlers)
-  - [Reading Passage 1: Passage 2](#cambridge-19---reading-test-3---reading-passage-1-passage-2)
-  - [Reading Passage 2: The global importance of wetlands](#cambridge-19---reading-test-3---reading-passage-2-the-global-importance-of-wetlands)
-  - [Reading Passage 2: Passage 4](#cambridge-19---reading-test-3---reading-passage-2-passage-4)
-  - [Reading Passage 3: Is the era of artificial speech translation upon us?](#cambridge-19---reading-test-3---reading-passage-3-is-the-era-of-artificial-speech-translation-upon-us)
-  - [Reading Passage 3: Passage 6](#cambridge-19---reading-test-3---reading-passage-3-passage-6)
-- [Cambridge 19 - Reading Test 4](#cambridge-19---reading-test-4)
-  - [Reading Passage 1: The impact of climate change on butterflies in Britain](#cambridge-19---reading-test-4---reading-passage-1-the-impact-of-climate-change-on-butterflies-in-britain)
-  - [Reading Passage 1: Passage 2](#cambridge-19---reading-test-4---reading-passage-1-passage-2)
-  - [Reading Passage 2: Deep-sea mining](#cambridge-19---reading-test-4---reading-passage-2-deep-sea-mining)
-  - [Reading Passage 2: Passage 4](#cambridge-19---reading-test-4---reading-passage-2-passage-4)
-  - [Reading Passage 3: The Unselfish Gene](#cambridge-19---reading-test-4---reading-passage-3-the-unselfish-gene)
-  - [Reading Passage 3: Passage 6](#cambridge-19---reading-test-4---reading-passage-3-passage-6)
-- [Cambridge 21 - Reading Test 1](#cambridge-21---reading-test-1)
-  - [Reading Passage 1: The Davies Sisters](#cambridge-21---reading-test-1---reading-passage-1-the-davies-sisters)
-  - [Reading Passage 1: Passage 2](#cambridge-21---reading-test-1---reading-passage-1-passage-2)
-  - [Reading Passage 2: Why we need silence](#cambridge-21---reading-test-1---reading-passage-2-why-we-need-silence)
-  - [Reading Passage 2: Passage 4](#cambridge-21---reading-test-1---reading-passage-2-passage-4)
-  - [Reading Passage 3: Book review: The World of Sugar by Ulbe Bosma](#cambridge-21---reading-test-1---reading-passage-3-book-review-the-world-of-sugar-by-ulbe-bosma)
-  - [Reading Passage 3: Passage 6](#cambridge-21---reading-test-1---reading-passage-3-passage-6)
-- [Cambridge 21 - Reading Test 2](#cambridge-21---reading-test-2)
-  - [Reading Passage 1: Do animals dream?](#cambridge-21---reading-test-2---reading-passage-1-do-animals-dream)
-  - [Reading Passage 1: Passage 2](#cambridge-21---reading-test-2---reading-passage-1-passage-2)
-  - [Reading Passage 2: Mapungubwe](#cambridge-21---reading-test-2---reading-passage-2-mapungubwe)
-  - [Reading Passage 2: Passage 4](#cambridge-21---reading-test-2---reading-passage-2-passage-4)
-  - [Reading Passage 3: Artificial Intelligence](#cambridge-21---reading-test-2---reading-passage-3-artificial-intelligence)
-  - [Reading Passage 3: Passage 6](#cambridge-21---reading-test-2---reading-passage-3-passage-6)
-  - [Reading Passage 3: Passage 7](#cambridge-21---reading-test-2---reading-passage-3-passage-7)
-- [Cambridge 21 - Reading Test 3](#cambridge-21---reading-test-3)
-  - [Reading Passage 1: Saving the saiga](#cambridge-21---reading-test-3---reading-passage-1-saving-the-saiga)
-  - [Reading Passage 1: Passage 2](#cambridge-21---reading-test-3---reading-passage-1-passage-2)
-  - [Reading Passage 2: The problems of getting around the city of Dar es Salaam](#cambridge-21---reading-test-3---reading-passage-2-the-problems-of-getting-around-the-city-of-dar-es-salaam)
-  - [Reading Passage 2: Passage 4](#cambridge-21---reading-test-3---reading-passage-2-passage-4)
-  - [Reading Passage 3: Rethinking the Past](#cambridge-21---reading-test-3---reading-passage-3-rethinking-the-past)
-  - [Reading Passage 3: Passage 6](#cambridge-21---reading-test-3---reading-passage-3-passage-6)
-- [Cambridge 21 - Reading Test 4](#cambridge-21---reading-test-4)
-  - [Reading Passage 1: The problems and benefits created by the spread of the water hyacinth in Kenya](#cambridge-21---reading-test-4---reading-passage-1-the-problems-and-benefits-created-by-the-spread-of-the-water-hyacinth-in-kenya)
-  - [Reading Passage 1: Passage 2](#cambridge-21---reading-test-4---reading-passage-1-passage-2)
-  - [Reading Passage 2: How could multilingualism benefit India's poorest schoolchildren?](#cambridge-21---reading-test-4---reading-passage-2-how-could-multilingualism-benefit-indias-poorest-schoolchildren)
-  - [Reading Passage 2: Passage 4](#cambridge-21---reading-test-4---reading-passage-2-passage-4)
-  - [Reading Passage 3: The Globemakers: The Curious Story of an Ancient Craft](#cambridge-21---reading-test-4---reading-passage-3-the-globemakers-the-curious-story-of-an-ancient-craft)
-  - [Reading Passage 3: Passage 6](#cambridge-21---reading-test-4---reading-passage-3-passage-6)
-
----
-
-# Cambridge 19 - Reading Test 1
-
-**Source URL:** [https://ieltstrainingonline.com/practice-cam-19-reading-test-01-with-answer/](https://ieltstrainingonline.com/practice-cam-19-reading-test-01-with-answer/)
-
-## Reading Passage 1: How tennis rackets have changed
+## Passage 1: How tennis rackets have changed
 
 In 2016, the British professional tennis player Andy Murray was ranked as the world’s number one. It was an incredible achievement by any standard – made even more remarkable by the fact that he did this during a period considered to be one of the strongest in the sport’s history, competing against the likes of Rafael Nadal, Roger Federer and Novak Djokovic, to name just a few. Yet five years previously, he had been regarded as a talented outsider who entered but never won the major tournaments.
 
@@ -92,9 +27,51 @@ Other changes to the frame involve the handle. Players have individual preferenc
 
 Racket customisation and modification have pushed the standards of the game to greater levels that few could have anticipated in the days of natural strings and heavy, wooden frames, and it’s exciting to see what further developments there will be in the future.
 
-## Reading Passage 1
+### Questions
 
-## Reading Passage 2: The pirates of the ancient Mediterranean
+#### Questions 1–7
+Do the following statements agree with the information given in Reading Passage 1?
+In boxes 1–7 on your answer sheet, write
+TRUE if the statement agrees with the information
+FALSE if the statement contradicts the information
+NOT GIVEN if there is no information on this
+
+**1. People had expected Andy Murray to become the world's top tennis player for at least five years before 2016.**
+  *Answer: NOT GIVEN*
+
+**2. The change that Andy Murray made to his rackets attracted a lot of attention.**
+  *Answer: FALSE*
+
+**3. Most of the world's top players take a professional racket stringer on tour with them.**
+  *Answer: NOT GIVEN*
+
+**4. Mike and Bob Bryan use rackets that are light in comparison to the majority of rackets.**
+  *Answer: FALSE*
+
+**5. Werner Fischer played with a spaghetti-strung racket that he designed himself.**
+  *Answer: NOT GIVEN*
+
+**6. The weather can affect how professional players adjust the strings on their rackets.**
+  *Answer: TRUE*
+
+**7. It was believed that the change Pete Sampras made to his rackets contributed to his strong serve.**
+  *Answer: TRUE*
+
+#### Questions 8–13
+Complete the notes below.
+Choose ONE WORD ONLY from the passage for each answer.
+Write your answers in boxes 8–13 on your answer sheet.
+
+### The tennis racket and how it has changed
+
+- **Q8.** Mike and Bob Bryan made changes to the types of ____ used on their racket frames. *(Answer: paint)*
+- **Q9.** Players were not allowed to use the spaghetti-strung racket because of the amount of ____ it created. *(Answer: topspin)*
+- **Q10.** Changes to rackets can be regarded as being as important as players' diets or the ____ they do. *(Answer: training)*
+- **Q11.** All rackets used to have natural strings made from the ____ of animals. *(Answer: guts)*
+- **Q12.** Pete Sampras had metal ____ put into the frames of his rackets. *(Answer: weights)*
+- **Q13.** Gonçalo Oliveira changed the ____ on his racket handles. *(Answer: grips)*
+
+## Passage 2: The pirates of the ancient Mediterranean
 
 In the first and second millennia BCE, pirates sailed around the Mediterranean, attacking ships and avoiding pursuers
 
@@ -128,9 +105,77 @@ G
 
 By now, Rome was well aware that pirates had outlived their usefulness. The time had come for concerted action. In 67 BCE, a new law granted Pompey vast funds to combat the Mediterranean menace. Taking personal command, Pompey divided the entire Mediterranean into 13 districts, assigning a fleet and commander to each. After cleansing one district of pirates, the fleet would join another in the next district. The process continued until the entire Mediterranean was free of pirates. Although thousands of pirates died at the hands of Pompey’s troops, as a long-term solution to the problem, many more were offered land in fertile areas located far from the sea. Instead of a maritime menace, Rome got productive farmers that further boosted its economy.
 
-## Reading Passage 2
+### Questions
 
-## Reading Passage 3: The persistence and peril of misinformation
+#### Questions 14–19
+Reading Passage 2 has seven paragraphs, A–G.
+Which paragraph contains the following information?
+Write the correct letter, A–G, in boxes 14–19 on your answer sheet.
+NB You may use any letter more than once.
+
+- **Q14.** a reference to a denial of involvement in piracy *(Answer: D)*
+- **Q15.** details of how a campaign to eradicate piracy was carried out *(Answer: G)*
+- **Q16.** a mention of the circumstances in which states in the ancient world would make use of pirates *(Answer: C)*
+- **Q17.** a reference to how people today commonly view pirates *(Answer: A)*
+- **Q18.** an explanation of how some people were encouraged not to return to piracy *(Answer: G)*
+- **Q19.** a mention of the need for many sailing vessels to stay relatively close to land *(Answer: B)*
+
+#### Questions 20 and 21
+Choose TWO letters, A–E.
+Write the correct letters in boxes 20 and 21 on your answer sheet.
+
+Which TWO of the following statements does the writer make about inhabitants of the Mediterranean region in the ancient world?
+
+**20. Which TWO of the following statements does the writer make about inhabitants of the Mediterranean region in the ancient world? (Select first choice)**
+  - A They often used stolen vessels to carry out pirate attacks.
+  - B They managed to escape capture by the authorities because they knew the area so well.
+  - C They paid for information about the routes merchant ships would take.
+  - D They depended more on the sea for their livelihood than on farming.
+  - E They stored many of the goods taken in pirate attacks in coves along the coastline.
+  *Answer: B*
+
+**21. Which TWO of the following statements does the writer make about inhabitants of the Mediterranean region in the ancient world? (Select second choice)**
+  - A They often used stolen vessels to carry out pirate attacks.
+  - B They managed to escape capture by the authorities because they knew the area so well.
+  - C They paid for information about the routes merchant ships would take.
+  - D They depended more on the sea for their livelihood than on farming.
+  - E They stored many of the goods taken in pirate attacks in coves along the coastline.
+  *Answer: D*
+
+#### Questions 22 and 23
+Choose TWO letters, A–E.
+Write the correct letters in boxes 22 and 23 on your answer sheet.
+
+Which TWO of the following statements does the writer make about piracy and ancient Greece?
+
+**22. Which TWO of the following statements does the writer make about piracy and ancient Greece? (Select first choice)**
+  - A The state estimated that very few people were involved in piracy.
+  - B Attitudes towards piracy changed shortly after the Iliad and the Odyssey were written.
+  - C Important officials were known to occasionally take part in piracy.
+  - D Every citizen regarded pirate attacks on cities as unacceptable.
+  - E A favourable view of piracy is evident in certain ancient Greek texts.
+  *Answer: C*
+
+**23. Which TWO of the following statements does the writer make about piracy and ancient Greece? (Select second choice)**
+  - A The state estimated that very few people were involved in piracy.
+  - B Attitudes towards piracy changed shortly after the Iliad and the Odyssey were written.
+  - C Important officials were known to occasionally take part in piracy.
+  - D Every citizen regarded pirate attacks on cities as unacceptable.
+  - E A favourable view of piracy is evident in certain ancient Greek texts.
+  *Answer: E*
+
+#### Questions 24–26
+Complete the summary below.
+Choose ONE WORD ONLY from the passage for each answer.
+Write your answers in boxes 24–26 on your answer sheet.
+
+### Ancient Rome and piracy
+
+- **Q24.** Piracy was an issue ancient Rome had to deal with, but it also brought some benefits for Rome. For example, pirates supplied slaves that were important for Rome's ____ industries. *(Answer: grain)*
+- **Q25.** However, attacks on vessels transporting grain to Rome resulted in calls for ____ for the pirates responsible. *(Answer: punishment)*
+- **Q26.** Nevertheless, piracy continued, with some pirates demanding a ____ for the return of the Roman officials they captured. *(Answer: ransom)*
+
+## Passage 3: The persistence and peril of misinformation
 
 Brian Southwell looks at how human brains verify information and discusses some of the challenges of battling widespread falsehoods
 
@@ -150,15 +195,88 @@ This leads us to our third observation: a campaign to correct misinformation, ev
 
 We live at a time when widespread misinformation is common. Yet at this time many people also are passionately developing potential solutions and remedies. The journey forward undoubtedly will be a long and arduous one. Future remedies will require not only continued theoretical consideration but also the development and maintenance of consistent monitoring tools – and a recognition among fellow members of society that claims which find prominence in the media that are insufficiently based in scientific consensus and social reality should be countered. Misinformation arises as a result of human fallibility and human information needs. To overcome the worst effects of the phenomenon, we will need coordinated efforts over time, rather than any singular one-time panacea we could hope to offer.
 
-## Reading Passage 3
+### Questions
 
----
+#### Questions 27–30
+Choose the correct letter, A, B, C or D.
+Write the correct letter in boxes 27–30 on your answer sheet.
 
-# Cambridge 19 - Reading Test 2
+**27. What point does the writer make about misinformation in the first paragraph?**
+  - A Misinformation is a relatively recent phenomenon.
+  - B Some people find it easy to identify misinformation.
+  - C Misinformation changes as it is passed from one person to another.
+  - D There may be a number of reasons for the spread of misinformation.
+  *Answer: D*
 
-**Source URL:** [https://ieltstrainingonline.com/practice-cam-19-reading-test-02-with-answer/](https://ieltstrainingonline.com/practice-cam-19-reading-test-02-with-answer/)
+**28. What does the writer say about the role of technology?**
+  - A It may at some point provide us with a solution to misinformation.
+  - B It could fundamentally alter the way in which people regard information.
+  - C It has changed the way in which organisations use misinformation.
+  - D It has made it easier for people to check whether information is accurate.
+  *Answer: A*
 
-## Reading Passage 1: The Industrial Revolution in Britain
+**29. What is the writer doing in the fourth paragraph?**
+  - A comparing the different opinions people have of misinformation
+  - B explaining how the effects of misinformation have changed over time
+  - C outlining which issues connected with misinformation are significant today
+  - D describing the attitude of policy makers towards misinformation in the media
+  *Answer: C*
+
+**30. What point does the writer make about regulation in the USA?**
+  - A The guidelines issued by the FDA need to be simplified.
+  - B Regulation does not affect people's opinions of new prescription drugs.
+  - C The USA has more regulatory bodies than most other countries.
+  - D Regulation fails to prevent misinformation from appearing in the media.
+  *Answer: D*
+
+#### Questions 31–36
+Complete the summary using the list of phrases, A–J, below.
+Write the correct letter, A–J, in boxes 31–36 on your answer sheet.
+
+Option Box:
+A constant conflict
+B additional evidence
+C different locations
+D experimental subjects
+E short period
+F extreme distrust
+G frequent exposure
+H mental operation
+I dubious reason
+J different ideas
+
+### What happens when people encounter misinformation?
+
+- **Q31.** Although people have Q31 ____ to misinformation, there is debate about precisely how and when we label something as true or untrue. *(Answer: G)*
+- **Q32.** The philosophers Descartes and Spinoza had Q32 ____ about how people engage with information. *(Answer: J)*
+- **Q33.** While Descartes believed that people accept or reject information after considering whether it is true or not, Spinoza argued that people accepted all information they encountered (and by default misinformation) and did not verify or reject it until afterwards. Moreover, Spinoza believed that a distinct Q33 ____ is involved in these stages. *(Answer: H)*
+- **Q34.** Recent research has provided Q34 ____ for Spinoza's theory and it would appear that people accept all encountered information as if it were true, *(Answer: B)*
+- **Q35.** even if this is for an extremely Q35 ____, and do not label the information as true or false until later. *(Answer: E)*
+- **Q36.** This is consistent with the fact that the resources for scepticism and the resources for perceiving and encoding are in Q36 ____ in the brain. *(Answer: C)*
+
+#### Questions 37–40
+Do the following statements agree with the claims of the writer in Reading Passage 3?
+In boxes 37–40 on your answer sheet, write
+YES if the statement agrees with the claims of the writer
+NO if the statement contradicts the claims of the writer
+NOT GIVEN if it is impossible to say what the writer thinks about this
+
+**37. Campaigns designed to correct misinformation will fail to achieve their purpose if people are unable to understand them.**
+  *Answer: YES*
+
+**38. Attempts to teach elementary school students about misinformation have been opposed.**
+  *Answer: NOT GIVEN*
+
+**39. It may be possible to overcome the problem of misinformation in a relatively short period.**
+  *Answer: NO*
+
+**40. The need to keep up with new information is hugely exaggerated in today's world.**
+  *Answer: NOT GIVEN*
+
+
+# Cambridge 19 · Reading Test 2 (Cambridge 19)
+
+## Passage 1: The Industrial Revolution in Britain
 
 The Industrial Revolution began in Britain in the mid-1700s and by the 1830s and 1840s has spread to many other parts of the world, including the United States. In Britain, it was a period when a largely rural, agrarian* society was transformed into an industrialised, urban one. Goods that had once been crafted by hand started to be produced in mass quantities by machines in factories, thanks to the invention of steam power and the introduction of new machines and manufacturing techniques in textiles, iron-making and other industries.
 
@@ -180,9 +298,67 @@ The first major instances of machine breaking took place in 1811 in the city of 
 
 --------------------------------* agrarian: relating to the land, especially the use of land for farming
 
-## Reading Passage 1
+### Questions
 
-## Reading Passage 2: Athletes and stress
+#### Questions 1–7
+Complete the notes below.
+Choose ONE WORD ONLY from the passage for each answer.
+Write your answers in boxes 1–7 on your answer sheet.
+
+### Britain's Industrial Revolution
+
+**Steam power**
+
+- Newcomen's steam engine was used in mines to remove water.
+- **Q1.** In Watt and Boulton's steam engine, the movement of the ____ was linked to a gear system. *(Answer: piston)*
+- **Q2.** A greater supply of ____ was required to power steam engines. *(Answer: coal)*
+
+**Textile industry**
+
+- **Q3.** Before the Industrial Revolution, spinners and weavers worked at home and in ____. *(Answer: workshops)*
+- **Q4.** Not as much ____ was needed to produce cloth once the spinning jenny and power loom were invented. *(Answer: labour)*
+
+**Iron industry**
+
+- **Q5.** Smelting of iron ore with coke resulted in material that was better ____. *(Answer: quality)*
+- **Q6.** Demand for iron increased with the growth of the ____. *(Answer: railways)*
+
+**Communications**
+
+- Cooke and Wheatstone patented the first telegraphy system.
+- The telegraphy system was used to prevent locomotives colliding.
+
+**Urbanisation**
+
+- Small towns turned into cities very quickly.
+- **Q7.** The new cities were dirty, crowded and lacked sufficient ____. *(Answer: sanitation)*
+
+#### Questions 8–13
+Do the following statements agree with the information given in Reading Passage 1?
+In boxes 8–13 on your answer sheet, write
+TRUE if the statement agrees with the information
+FALSE if the statement contradicts the information
+NOT GIVEN if there is no information on this
+
+**8. Britain's canal network grew rapidly so that more goods could be transported around the country.**
+  *Answer: NOT GIVEN*
+
+**9. Costs in the iron industry rose when the technique of smelting iron ore with coke was introduced.**
+  *Answer: FALSE*
+
+**10. Samuel Morse's communication system was more reliable than that developed by William Cooke and Charles Wheatstone.**
+  *Answer: NOT GIVEN*
+
+**11. The economic benefits of industrialisation were limited to certain sectors of society.**
+  *Answer: TRUE*
+
+**12. Some skilled weavers believed that the introduction of the new textile machines would lead to job losses.**
+  *Answer: TRUE*
+
+**13. There was some sympathy among local people for the Luddites who were arrested near Huddersfield.**
+  *Answer: NOT GIVEN*
+
+## Passage 2: Athletes and stress
 
 A
 
@@ -208,9 +384,75 @@ F
 
 But there are many ways athletes can ensure they respond positively under pressure. Positive stress responses can be promoted through the language that they and others – such as coaches or parents — use. Psychologists can also help athletes change how they see their physiological responses – such as helping them see a higher heart rate as excitement, rather than nerves. Developing psychological skills, such as visualisation, can also help decrease physiological responses to threat. Visualisation may involve the athlete recreating a mental picture of a time when they performed well, or picturing themselves doing well in the future. This can help create a feeling of control over the stressful event. Recreating competitive pressure during training can also help athletes learn how to deal with stress. An example of this might be scoring athletes against their peers to create a sense of competition. This would increase the demands which players experience compared to a normal training session, while still allowing them to practise coping with stress.
 
-## Reading Passage 2
+### Questions
 
-## Reading Passage 3: An inquiry into the existence of the gifted child
+#### Questions 14–18
+Reading Passage 2 has six paragraphs, A–F.
+Which paragraph contains the following information?
+Write the correct letter, A–F, in boxes 14–18 on your answer sheet.
+NB You may use any letter more than once.
+
+- **Q14.** reference to two chemical compounds which impact on performance *(Answer: D)*
+- **Q15.** examples of strategies for minimising the effects of stress *(Answer: F)*
+- **Q16.** how a sportsperson accounted for their own experience of stress *(Answer: A)*
+- **Q17.** study results indicating links between stress responses and performance *(Answer: C)*
+- **Q18.** mention of people who can influence how athletes perceive their stress responses *(Answer: F)*
+
+#### Questions 19–22
+Complete the sentences below.
+Choose ONE WORD ONLY from the passage for each answer.
+Write your answers in boxes 19–22 on your answer sheet.
+
+- **Q19.** Performance stress involves many demands on the athlete, for example, coping with the possible risk of ____. *(Answer: injury)*
+- **Q20.** Cortisol can cause tennis players to produce fewer good ____. *(Answer: serves)*
+- **Q21.** Psychologists can help athletes to view their physiological responses as the effect of a positive feeling such as ____. *(Answer: excitement)*
+- **Q22.** ____ is an example of a psychological technique which can reduce an athlete's stress responses. *(Answer: Visualisation)*
+
+#### Questions 23 and 24
+Choose TWO letters, A–E.
+Write the correct letters in boxes 23 and 24 on your answer sheet.
+
+Which TWO facts about Emma Raducanu's withdrawal from the Wimbledon tournament are mentioned in the text?
+
+**23. Which TWO facts about Emma Raducanu's withdrawal from the Wimbledon tournament are mentioned in the text? (Select first choice)**
+  - A the stage at which she dropped out of the tournament
+  - B symptoms of her performance stress at the tournament
+  - C measures which she had taken to manage her stress levels
+  - D aspects of the Wimbledon tournament which increased her stress levels
+  - E reactions to her social media posts about her experience at Wimbledon
+  *Answer: A*
+
+**24. Which TWO facts about Emma Raducanu's withdrawal from the Wimbledon tournament are mentioned in the text? (Select second choice)**
+  - A the stage at which she dropped out of the tournament
+  - B symptoms of her performance stress at the tournament
+  - C measures which she had taken to manage her stress levels
+  - D aspects of the Wimbledon tournament which increased her stress levels
+  - E reactions to her social media posts about her experience at Wimbledon
+  *Answer: B*
+
+#### Questions 25 and 26
+Choose TWO letters, A–E.
+Write the correct letters in boxes 25 and 26 on your answer sheet.
+
+Which TWO facts about anxiety are mentioned in Paragraph E of the text?
+
+**25. Which TWO facts about anxiety are mentioned in Paragraph E of the text? (Select first choice)**
+  - A the factors which determine how severe it may be
+  - B how long it takes for its effects to become apparent
+  - C which of its symptoms is most frequently encountered
+  - D the types of athletes who are most likely to suffer from it
+  - E the harm that can result if athletes experience it too often
+  *Answer: A*
+
+**26. Which TWO facts about anxiety are mentioned in Paragraph E of the text? (Select second choice)**
+  - A the factors which determine how severe it may be
+  - B how long it takes for its effects to become apparent
+  - C which of its symptoms is most frequently encountered
+  - D the types of athletes who are most likely to suffer from it
+  - E the harm that can result if athletes experience it too often
+  *Answer: E*
+
+## Passage 3: An inquiry into the existence of the gifted child
 
 Let us start by looking at a modern ‘genius’, Maryam Mirzakhani, who died at the early age of 40. She was the only woman to win the Fields Medal – the mathematical equivalent of a Nobel prize. It would be easy to assume that someone as special as Mirzakhani must have been one of those ‘gifted’ children, those who have an extraordinary ability in a specific sphere of activity or knowledge. But look closer and a different story emerges. Mirzakhani was born in Tehran, Iran. She went to a highly selective girls’ school but maths wasn’t her interest – reading was. She loved novels and would read anything she could lay her hands on. As for maths, she did rather poorly at it for the first couple of years in her middle school, but became interested when her elder brother told her about what he’d learned. He shared a famous maths problem from a magazine that fascinated her – and she was hooked.
 
@@ -232,15 +474,85 @@ Eyre says we know how high performers learn. From that she has developed a high 
 
 Let us end with Einstein, the epitome of a genius. He clearly had curiosity, character and determination. He struggled against rejection in early life but was undeterred. Did he think he was a genius or even gifted? He once wrote: ‘It’s not that I’m so smart, it’s just that I stay with problems longer. Most people say it is the intellect which makes a great scientist. They are wrong: it is character.’
 
-## Reading Passage 3
+### Questions
 
----
+#### Questions 27–32
+Complete the summary using the list of phrases, A–K, below.
+Write the correct letter, A–K, in boxes 27–32 on your answer sheet.
 
-# Cambridge 19 - Reading Test 3
+Option Box:
+A appeal
+B determined
+C intrigued
+D single
+E achievement
+F devoted
+G involved
+H unique
+I innovative
+J satisfaction
+K intent
 
-**Source URL:** [https://ieltstrainingonline.com/practice-cam-19-reading-test-03-with-answer/](https://ieltstrainingonline.com/practice-cam-19-reading-test-03-with-answer/)
+### Maryam Mirzakhani
 
-## Reading Passage 1: Archaeologists discover evidence of prehistoric island settlers
+- **Q27.** Maryam Mirzakhani is regarded as Q27 ____ in the field of mathematics because she was the only female holder of the prestigious Fields Medal – a record that she retained at the time of her death. *(Answer: H)*
+- **Q28.** However, maths held little Q28 ____ for her as a child and in fact her performance was below average until she was Q29 ____ by a difficult puzzle that one of her siblings showed her. *(Answer: A)*
+- **Q29.** until she was Q29 ____ by a difficult puzzle that one of her siblings showed her. *(Answer: C)*
+- **Q30.** Later, as a professional mathematician, she had an inquiring mind and proved herself to be Q30 ____ when things did not go smoothly. *(Answer: B)*
+- **Q31.** She said she got the greatest Q31 ____ from making ground-breaking discoveries *(Answer: J)*
+- **Q32.** and in fact she was responsible for some extremely Q32 ____ mathematical studies. *(Answer: I)*
+
+#### Questions 33–37
+Do the following statements agree with the claims of the writer in Reading Passage 3?
+In boxes 33–37 on your answer sheet, write
+YES if the statement agrees with the claims of the writer
+NO if the statement contradicts the claims of the writer
+NOT GIVEN if it is impossible to say what the writer thinks about this
+
+**33. Many people who ended up winning prestigious intellectual prizes only reached an average standard when young.**
+  *Answer: YES*
+
+**34. Einstein's failures as a young man were due to his lack of confidence.**
+  *Answer: NOT GIVEN*
+
+**35. It is difficult to reach agreement on whether some children are actually born gifted.**
+  *Answer: YES*
+
+**36. Einstein was upset by the public's view of his life's work.**
+  *Answer: NOT GIVEN*
+
+**37. Einstein put his success down to the speed at which he dealt with scientific questions.**
+  *Answer: NO*
+
+#### Questions 38–40
+Choose the correct letter, A, B, C or D.
+Write the correct letter in boxes 38–40 on your answer sheet.
+
+**38. What does Eyre believe is needed for children to equal 'gifted' standards?**
+  - A strict discipline from the teaching staff
+  - B assistance from their peers in the classroom
+  - C the development of a spirit of inquiry towards their studies
+  - D the determination to surpass everyone else's achievements
+  *Answer: C*
+
+**39. What is the result of Ericsson's research?**
+  - A Very gifted students do not need to work on improving memory skills.
+  - B Being born with a special gift is not the key factor in becoming expert.
+  - C Including time for physical exercise is crucial in raising performance.
+  - D 10,000 hours of relevant and demanding work will create a genius.
+  *Answer: B*
+
+**40. In the penultimate paragraph, it is stated the key to some deprived children's success is**
+  - A a regular and nourishing diet at home.
+  - B the loving support of more than one parent.
+  - C a community which has well-funded facilities for learning.
+  - D the guidance of someone who recognises the benefits of learning.
+  *Answer: D*
+
+
+# Cambridge 19 · Reading Test 3 (Cambridge 19)
+
+## Passage 1: Archaeologists discover evidence of prehistoric island settlers
 
 In early April 2019, Dr Ceri Shipton and his colleagues from Australian National University became the first archaeologists to explore Obi, one of many tropical islands in Indonesia’s Maluku Utara province. The research team’s discoveries suggest that the prehistoric people who lived on Obi were adept on both land and sea, hunting in the dense rainforest, foraging on the seashore, and possibly even voyaging between islands.
 
@@ -260,9 +572,56 @@ The excavations suggest people successfully lived in the two Kelo shelters for a
 
 Whatever the reason for the departure, there is no evidence for use of the Kelo shelters after this time, until about 1,000 years ago, when they were re-occupied by people who owned pottery as well as items made out of gold and silver. It seems likely, in view of Obi’s location, that this final phase of occupation also saw the Kelo shelters used by people involved in the historic trade in spices between the Maluku islands and the rest of the world.
 
-## Reading Passage 1
+### Questions
 
-## Reading Passage 2: The global importance of wetlands
+#### Questions 1–7
+Do the following statements agree with the information given in Reading Passage 1?
+In boxes 1–7 on your answer sheet, write
+TRUE if the statement agrees with the information
+FALSE if the statement contradicts the information
+NOT GIVEN if there is no information on this
+
+**1. Archaeological research had taken place on the island of Obi before the arrival of Ceri Shipton and his colleagues.**
+  *Answer: FALSE*
+
+**2. At the Kelo sites, the researchers found the first clam shell axes ever to be discovered in the region.**
+  *Answer: TRUE*
+
+**3. The size of Obi today is less than it was 18,000 years ago.**
+  *Answer: TRUE*
+
+**4. A change in the climate around 11,700 years ago had a greater impact on Obi than on the surrounding islands.**
+  *Answer: NOT GIVEN*
+
+**5. The researchers believe there is a connection between warmer, wetter weather and a change in the material used to make axes.**
+  *Answer: TRUE*
+
+**6. Shipton's team were surprised to find evidence of the Obi islanders' hunting practices.**
+  *Answer: NOT GIVEN*
+
+**7. It is thought that the Kelo shelters were occupied continuously until about 1,000 years ago.**
+  *Answer: FALSE*
+
+#### Questions 8–13
+Complete the notes below.
+Choose ONE WORD ONLY from the passage for each answer.
+Write your answers in boxes 8–13 on your answer sheet.
+
+### Archaeological findings on Obi
+
+- **Q8.** Excavations of rock shelters inside ____ near the village of Kelo revealed: *(Answer: caves)*
+- axes from around 14,000 years ago, probably used to make canoes
+- **Q9.** axes made out of ____, dating from around 11,700 years ago *(Answer: stone)*
+- **Q10.** ____ of an animal: evidence of what ancient islanders ate *(Answer: bones)*
+- evidence of travel between islands:
+- - obsidian: a material that is not found naturally on Obi
+- **Q11.** - ____ which resembled ones found on other islands. *(Answer: beads)*
+- It is thought that from 8,000 years ago, Obi islanders:
+- - may have switched from hunting to fishing
+- **Q12.** - had ____ as well as items made out of metal *(Answer: pots)*
+- **Q13.** - probably took part in the production and sale of ____. *(Answer: spices)*
+
+## Passage 2: The global importance of wetlands
 
 A
 
@@ -298,9 +657,46 @@ H
 
 The fortunes of wetlands would be improved, Silvius suggests, if more governments recognized their long-term value. ‘Different governments have different attitudes,’ he says, and goes on to explain that some countries place a high priority on restoring wetlands, while others still deny the issue. McCartney is cautiously optimistic, however. ‘Awareness of the importance of wetlands is growing,’ he says. ‘It’s true that wetland degradation still continues at a rapid pace, but my impression is that things are slowly changing.’
 
-## Reading Passage 2
+### Questions
 
-## Reading Passage 3: Is the era of artificial speech translation upon us?
+#### Questions 14–17
+Reading Passage 2 has eight paragraphs, A–H.
+Which paragraph contains the following information?
+Write the correct letter, A–H, in boxes 14–17 on your answer sheet.
+
+- **Q14.** reference to the need to ensure that inhabitants of wetland regions continue to benefit from them *(Answer: G)*
+- **Q15.** the proportion of wetlands which have already been lost *(Answer: A)*
+- **Q16.** reference to the idea that people are beginning to appreciate the value of wetlands *(Answer: E)*
+- **Q17.** mention of the cultural significance of wetlands *(Answer: B)*
+
+#### Questions 18–22
+Complete the sentences below.
+Choose ONE WORD ONLY from the passage for each answer.
+Write your answers in boxes 18–22 on your answer sheet.
+
+- **Q18.** Peatlands which have been drained begin to release ____ instead of storing it. *(Answer: carbon)*
+- **Q19.** Once peatland areas have been cleared, ____ are more likely to occur. *(Answer: fires)*
+- **Q20.** Clearing peatland forests to make way for oil palm plantations destroys the ____ of the local environment. *(Answer: biodiversity)*
+- **Q21.** Water is drained out of peatlands through the ____ which are created by logging companies. *(Answer: ditches)*
+- **Q22.** Draining peatlands leads to ____: a serious problem which can eventually result in coastal flooding and land loss. *(Answer: subsidence)*
+
+#### Questions 23–26
+Look at the following statements (Questions 23–26) and the list of experts below.
+Match each statement with the correct expert, A–D.
+Write the correct letter, A–D, in boxes 23–26 on your answer sheet.
+
+List of Experts:
+A Matthew McCartney
+B Pieter van Eijk
+C Marcel Silvius
+D Dave Tickner
+
+- **Q23.** Communities living in wetland regions must be included in discussions about the future of these areas. *(Answer: D)*
+- **Q24.** Official policies towards wetlands vary from one nation to the next. *(Answer: C)*
+- **Q25.** People cause harm to wetlands without having any intention to do so. *(Answer: A)*
+- **Q26.** Initiatives to reverse environmental damage need not be complex. *(Answer: B)*
+
+## Passage 3: Is the era of artificial speech translation upon us?
 
 Once the stuff of science fiction, technology that enables people to talk using different languages is now here. But how effective is it?
 
@@ -322,15 +718,86 @@ Professors and other professionals will not outsource language awareness to soft
 
 Whatever uses it is put to, though, it will never be as good as the real thing. Even if voice-morphing technology simulates the speaker’s voice, their lip movements won’t match, and they will look like they are in a dubbed movie. The contrast will underline the value of shared languages, and the value of learning them. Sharing a language can promote a sense of belonging and community, as with the international scientists who use English as a lingua franca, where their predecessors used Latin. Though the practical need for a common language will diminish, the social value of sharing one will persist. And software will never be a substitute for the subtle but vital understanding that comes with knowledge of a language.
 
-## Reading Passage 3
+### Questions
 
----
+#### Questions 27–30
+Choose the correct letter, A, B, C or D.
+Write the correct letter in boxes 27–30 on your answer sheet.
 
-# Cambridge 19 - Reading Test 4
+**27. What does the reader learn about the conversation in the first paragraph?**
+  - A The speakers are communicating in different languages.
+  - B Neither of the speakers is familiar with their environment.
+  - C The topic of the conversation is difficult for both speakers.
+  - D Aspects of the conversation are challenging for both speakers.
+  *Answer: D*
 
-**Source URL:** [https://ieltstrainingonline.com/practice-cam-19-reading-test-04-with-answer/](https://ieltstrainingonline.com/practice-cam-19-reading-test-04-with-answer/)
+**28. What assists the electronic translator during lectures at Karlsruhe Institute of Technology?**
+  - A the repeated content of lectures
+  - B the students' reading skills
+  - C the languages used
+  - D the lecturers' technical ability
+  *Answer: A*
 
-## Reading Passage 1: The impact of climate change on butterflies in Britain
+**29. When referring to The Hitchhiker's Guide to the Galaxy, the writer suggests that**
+  - A the Babel fish was considered undesirable at the time.
+  - B this book was not seriously intending to predict the future.
+  - C artificial speech translation was not a surprising development.
+  - D some speech translation techniques are better than others.
+  *Answer: B*
+
+**30. What does the writer say about sharing earpieces?**
+  - A It is something people will get used to doing.
+  - B The reluctance to do this is understandable.
+  - C The equipment will be unnecessary in the future.
+  - D It is something few people need to worry about.
+  *Answer: B*
+
+#### Questions 31–34
+Complete each sentence with the correct ending, A–F, below.
+Write the correct letter, A–F, in boxes 31–34 on your answer sheet.
+
+Option Box:
+A but there are concerns about this.
+B as systems do not need to conform to standard practices.
+C but they are far from perfect.
+D despite the noise issues.
+E because translation is immediate.
+F and have an awareness of good manners.
+
+- **Q31.** Speech translation methods are developing fast in Japan *(Answer: C)*
+- **Q32.** TV interviews that use translation voiceover methods are successful *(Answer: E)*
+- **Q33.** Future translation systems should address people appropriately *(Answer: F)*
+- **Q34.** Users may be able to maintain their local customs *(Answer: B)*
+
+#### Questions 35–40
+Do the following statements agree with the views of the writer in Reading Passage 3?
+In boxes 35–40 on your answer sheet, write
+YES if the statement agrees with the views of the writer
+NO if the statement contradicts the views of the writer
+NOT GIVEN if it is impossible to say what the writer thinks about this
+
+**35. Language translation systems will be seen as very useful throughout the academic and professional worlds.**
+  *Answer: YES*
+
+**36. The overall value of automated translation to family life is yet to be shown.**
+  *Answer: NO*
+
+**37. Automated translation could make life more difficult for immigrant families.**
+  *Answer: NOT GIVEN*
+
+**38. Visual aspects of language translation are being considered by scientists.**
+  *Answer: YES*
+
+**39. International scientists have found English easier to translate into other languages than Latin.**
+  *Answer: NO*
+
+**40. As far as language is concerned, there is a difference between people's social and practical needs.**
+  *Answer: YES*
+
+
+# Cambridge 19 · Reading Test 4 (Cambridge 19)
+
+## Passage 1: The impact of climate change on butterflies in Britain
 
 According to conservationists, populations of around two thirds of butterfly species have declined in Britain over the past 40 years. If this trend continues, it might have unpredictable knock-on effects for other species in the ecosystem. Butterfly eggs develop into caterpillars and these insects, which are the second stage in a new butterfly’s lifecycle, consume vast quantities of plant material, and in turn act as prey for birds as well as bats and other small mammals. Only by arming themselves with an understanding of why butterfly numbers are down can conservationists hope to halt or reverse the decline.
 
@@ -350,9 +817,9 @@ All is not lost, however. Many of Britain’s single-generation species show the
 
 More immediately, conservationists can arm themselves with all this knowledge to spot the warning signs of species that may be at risk. The White Admiral of southern England, a much sought-after butterfly, experienced a significant increase in numbers from the 1920s but has shown a considerable decline in the past 20 years. This may be because the caterpillar exists solely on a diet of a plant called honeysuckle. But it is also likely to be due to climate change.
 
-## Reading Passage 1
+### Questions
 
-## Reading Passage 2: Deep-sea mining
+## Passage 2: Deep-sea mining
 
 Bacteria from the ocean floor can beat superbugs and cancer. But habitats are at risk from the hunger for marine minerals
 
@@ -380,9 +847,9 @@ F
 
 The oceans occupy around 70% of the planet and are relatively unexplored, says Mike Johnston, chief executive of Nautilus, a Canadian underwater exploration company: ‘It makes sense to explore this untapped potential in an environmentally sustainable way, instead of continually looking at the fast depleting land resources of the planet to meet society’s rising needs.’ Those leading the global rush to place giant mining machines thousands of metres below the sea surface say the environmental impacts will be far lower than on land. But critics say exotic and little-known ecosystems in the deep oceans could be destroyed and must be protected. ‘Mining will be the greatest assault on deep-sea ecosystems ever inflicted by humans,’ according to hydrothermal vent expert Verena Tunnicliffe, at the University of Victoria in Canada. She argues that active vents must be off-limits for mining to protect the new knowledge and biotechnology spin-offs they can deliver, and that strict controls must be in place elsewhere.
 
-## Reading Passage 2
+### Questions
 
-## Reading Passage 3: The Unselfish Gene
+## Passage 3: The Unselfish Gene
 
 A psychologist gives his view on how humans became self-centred
 
@@ -406,15 +873,12 @@ But if prehistoric life wasn’t really as brutal as has often been assumed, why
 
 So, it could well be that the same thing has happened to us. I believe that the end of the hunter-gatherer lifestyle and the advent of farming was connected to a psychological change that occurred in some groups of people. There was a new sense of individuality and separateness, which led to a new selfishness, and ultimately to hierarchical societies, patriarchy and warfare. At any rate, these negative traits appear to have developed so recently that it doesn’t seem feasible to explain them in adaptive or evolutionary terms.
 
-## Reading Passage 3
+### Questions
 
----
 
-# Cambridge 21 - Reading Test 1
+# Cambridge 21 · Reading Test 1 (Cambridge 21)
 
-**Source URL:** [https://ieltstrainingonline.com/practice-cam-21-reading-test-01/](https://ieltstrainingonline.com/practice-cam-21-reading-test-01/)
-
-## Reading Passage 1: The Davies Sisters
+## Passage 1: The Davies Sisters
 
 Between 1908 and 1924, Gwendoline and Margaret Davies amassed one of the largest collections of late-nineteenth and early-twentieth-century French paintings in Britain
 
@@ -438,17 +902,70 @@ By the early 1920s, Gwendoline felt increasingly uncomfortable buying art works 
 
 The sisters collected French Impressionist paintings at a time when such art was routinely ignored by individuals and institutions alike. The Gwendoline and Margaret Davies collection, donated in 1951 and 1963 respectively to the National Museum Wales, contains major examples of work by leading French Impressionists. In collecting paintings that they loved, the sisters created a lasting and meaningful cultural legacy for the people of Wales and beyond.
 
-—-------------------------------
-
 * philanthropic: seeking to promote the welfare of others, often by charitable funding
 
 ** Old Master: a highly respected artist of great skill who worked in Europe before about 1800
 
 *** Impressionist: an artist with a style of painting that developed in France in the late 1800s by Renoir, including his well-known painting La Parisienne
 
-## Reading Passage 1
+### Questions
 
-## Reading Passage 2: Why we need silence
+#### Questions 1–7
+Complete the notes below.
+Choose ONE WORD ONLY from the passage for each answer.
+Write your answers in boxes 1–7 on your answer sheet.
+
+### Gwendoline and Margaret Davies
+
+**Family and early life**
+
+- **Q1.** their grandfather's wealth came from ____ and transportation businesses *(Answer: mining)*
+- their upbringing gave them a sense of social responsibility
+- **Q2.** their ____ was designed to give them an interest in activities such as collecting art *(Answer: education)*
+- their governess took them on trips to art galleries
+- **Q3.** they took lengthy ____ about the things they saw in art galleries *(Answer: notes)*
+
+**The sisters as art collectors**
+
+- **Q4.** their ____ showed they liked Old Master paintings, but they were expensive to buy *(Answer: journals)*
+- their early purchases were safe, popular paintings
+- **Q5.** the first Impressionist paintings they bought showed places in ____ *(Answer: Venice)*
+
+**Impact of First World War**
+
+- they helped bring artists from Belgium to Wales
+- **Q6.** they worked in a ____ for soldiers in France *(Answer: canteen)*
+
+**Opinions about the sisters as art collectors**
+
+- **Q7.** were not considered typical collectors – they lived in isolation in the countryside and did not have any ____ who were artists *(Answer: friends)*
+
+#### Questions 8–13
+Do the following statements agree with the information given in Reading Passage 1?
+In boxes 8–13 on your answer sheet, write
+TRUE if the statement agrees with the information
+FALSE if the statement contradicts the information
+NOT GIVEN if there is no information on this
+
+**8. The Davies sisters' childhood influenced the way they decided to use their wealth.**
+  *Answer: TRUE*
+
+**9. The Jean-Baptiste-Camille Corot paintings in the Davies sisters' collection were purchased from a gallery in France.**
+  *Answer: NOT GIVEN*
+
+**10. Hugh Blaker opposed the Davies sisters' decision to buy art by French Impressionists.**
+  *Answer: FALSE*
+
+**11. The exhibition of Cézanne paintings at the Bath gallery was very popular with the public.**
+  *Answer: NOT GIVEN*
+
+**12. The impact of the First World War encouraged Gwendoline to reconsider her interest in collecting art.**
+  *Answer: TRUE*
+
+**13. The Davies sisters bought French Impressionist art during a period when very few people were doing so.**
+  *Answer: TRUE*
+
+## Passage 2: Why we need silence
 
 A
 
@@ -474,7 +991,7 @@ Less is known about what effects sensory deprivation can have on the brain. To i
 
 F
 
-Neurobiologist Tai Dotan Ben-Soussan is also an advocate of silence as a therapy. 'When we find ways to be quiet, we are not only quiet in our environment, but quiet in our inner selves,' she explains. 'This allows us to be more aware of what is happening around us and what the situation may require from us so we can provide [a more] adequate response.'
+Neurobiologist Tal Dotan Ben-Soussan is also an advocate of silence as a therapy. 'When we find ways to be quiet, we are not only quiet in our environment, but quiet in our inner selves,' she explains. 'This allows us to be more aware of what is happening around us and what the situation may require from us so we can provide [a more] adequate response.'
 
 Not everyone will benefit from silence to the same extent, but Ben-Soussan says one characteristic is key: the person must need to want to engage in the experience. 'We see from animal models and human studies that volition and intentionality is important,' she says. 'When people do not want silence, it can be very distressing.'
 
@@ -482,9 +999,90 @@ G
 
 Eric Pfeifer, a psychotherapy researcher, also concedes that some people may not benefit from silence, particularly those who are in a heightened state of stress. 'People in these states may not be able to relax or calm down in a silent condition,' he says. Professional guidance can be useful, he adds, allowing people to approach silence slowly so that they can gradually enjoy the benefits. And Pfeifer is convinced that silence is more attainable in everyday life than people think. First, complete silence isn't necessary. In a recent study, he found that participants reported more relaxation and less boredom when they sat quietly in an outdoor garden compared with a completely silent room. Second, Pfeifer believes we don't need a lot of silence to gain benefits. 'You don't need to spend hours in silence,' he says. 'It is likely better to have more frequency of silence for a few minutes at a time than a longer period of silence only once a week. Just finding those places in your daily life where you can find some silence ... can make a big difference.'
 
-## Reading Passage 2
+### Questions
 
-## Reading Passage 3: Book review: The World of Sugar by Ulbe Bosma
+#### Questions 14–17
+Reading Passage 2 has seven sections, A–G.
+Which section contains the following information?
+Write the correct letter, A–G, in boxes 14–17 on your answer sheet.
+
+**14. examples of strategies to decrease the noise that the public are exposed to ____**
+  *Answer: C*
+
+**15. data indicating the extent of the problem of excessive noise ____**
+  *Answer: B*
+
+**16. a description of physiological changes in our bodies when we hear sudden noises ____**
+  *Answer: A*
+
+**17. evidence that a relatively quiet environment can be more beneficial than a totally silent one ____**
+  *Answer: G*
+
+#### Questions 18–21
+Complete the summary below.
+Choose ONE WORD ONLY from the passage for each answer.
+Write your answers in boxes 18–21 on your answer sheet.
+
+**18. According to Justin Feinstein, flotation tanks allow people to concentrate on their own ____ , which helps them relax and enables them to meditate.**
+  *Answer: breath*
+
+**19. Feinstein and his colleagues conducted an experiment in which 50 people, who were all suffering from stress and related issues, were given a ____ to complete before and after using a flotation tank.**
+  *Answer: questionnaire*
+
+**20. Participants reported a reduction in their symptoms after an hour in the tank, together with signs of relaxation and improved general ____ .**
+  *Answer: wellbeing*
+
+**21. In another experiment, the researchers had 48 people spend periods of 90 minutes either lying back in a chair or floating in a tank. Brain scans then revealed that those people who had been in a tank had decreased activity in parts of the brain associated with ____ .**
+  *Answer: depression*
+
+#### Questions 22–26
+Look at the following statements (Questions 22–26) and the list of people below.
+Match each statement with the correct person, A, B, C or D.
+Write the correct letter, A, B, C or D, in boxes 22–26 on your answer sheet.
+NB You may use any letter more than once.
+
+List of People
+A Nick Antonio
+B Justin Feinstein
+C Tal Dotan Ben-Soussan
+D Eric Pfeifer
+
+**22. It is unpleasant and upsetting for people to be placed in a silent environment against their will.**
+  - A - Nick Antonio
+  - B - Justin Feinstein
+  - C - Tal Dotan Ben-Soussan
+  - D - Eric Pfeifer
+  *Answer: C*
+
+**23. The trend towards creating quieter urban locations is likely to increase in the coming years.**
+  - A - Nick Antonio
+  - B - Justin Feinstein
+  - C - Tal Dotan Ben-Soussan
+  - D - Eric Pfeifer
+  *Answer: A*
+
+**24. When our body's senses are completely deprived of input, our minds compensate for this by creating the illusion of images and sounds.**
+  - A - Nick Antonio
+  - B - Justin Feinstein
+  - C - Tal Dotan Ben-Soussan
+  - D - Eric Pfeifer
+  *Answer: B*
+
+**25. Even a short amount of silent time can have a positive impact.**
+  - A - Nick Antonio
+  - B - Justin Feinstein
+  - C - Tal Dotan Ben-Soussan
+  - D - Eric Pfeifer
+  *Answer: D*
+
+**26. External and internal quietness makes us more conscious of events occurring in our surroundings and helps us react appropriately to these events.**
+  - A - Nick Antonio
+  - B - Justin Feinstein
+  - C - Tal Dotan Ben-Soussan
+  - D - Eric Pfeifer
+  *Answer: C*
+
+## Passage 3: Book review: The World of Sugar by Ulbe Bosma
 
 Ulbe Bosma's The World of Sugar is a genuinely global history. Bosma discusses all the sugar-growing places of the world, beginning with Cuba and Java, the largest exporters of the early 20th century. But this is a history not just of cane sugar but also of beet sugar, an equally important form of traded sugar over the last hundred years. Beet sugar is grown mainly in Europe and the United States. It has also been massively subsidised and sold at artificially low prices on world markets, threatening the livelihood of producers of cane sugar.
 
@@ -502,15 +1100,152 @@ Where once only tiny quantities of sugar could be produced, now new techniques, 
 
 This is a wonderfully rich book, a model of global history, the history of production and the history of capitalism. Bosma avoids outbursts of emotion, celebratory or critical, even if they might have made his analysis of the multiple tragedies involving sugar all the more powerful. He shows that we could always have done without sugar and that today we have many alternative sources of sweetness. Yet many of the poorest people in the world still depend on it to make a living.
 
-## Reading Passage 3
+### Questions
 
----
+#### Questions 27–30
+Choose the correct letter, A, B, C or D.
+Write the correct letter in boxes 27–30 on your answer sheet.
 
-# Cambridge 21 - Reading Test 2
+**27. What does the reviewer suggest about the cultivation and trading of sugar in the first paragraph?**
+  - A Sugar has played a major role in international relations.
+  - B Beet sugar has been made more internationally competitive.
+  - C Cane sugar is thought to be of superior quality to beet sugar.
+  - D New locations for cultivating sugar have increased production.
+  *Answer: A*
 
-**Source URL:** [https://ieltstrainingonline.com/practice-cam-21-reading-test-02/](https://ieltstrainingonline.com/practice-cam-21-reading-test-02/)
+**28. In the second paragraph, when discussing the sugar market in Britain, the reviewer stresses**
+  - A how the sources used changed over time.
+  - B how developments in agriculture affected trade.
+  - C the increased demand for sugar over the years.
+  - D the growing support for ethical methods of cultivation.
+  *Answer: A*
 
-## Reading Passage 1: Do animals dream?
+**29. What is the reviewer doing in the third paragraph?**
+  - A describing an efficient approach to sugar cultivation
+  - B explaining why the use of sugar plantations declined
+  - C addressing a misconception about the growing of sugar cane
+  - D evaluating different approaches to the cultivation of sugar cane
+  *Answer: C*
+
+**30. In the final paragraph, what does the reviewer suggest is the overall message of Bosma's book?**
+  - A Sugar is a harmful and unnecessary product.
+  - B Economic pressure is needed to control sugar production.
+  - C Conditions for workers in sugar production should be improved.
+  - D Intensive marketing of sugar has had disastrous consequences.
+  *Answer: A*
+
+#### Questions 31–36
+Complete the summary using the list of words, A–I, below.
+Write the correct letter, A–I, in boxes 31–36 on your answer sheet.
+
+Summary Title: Sugar cultivation and production
+
+Word Box:
+A national governments
+B agricultural developments
+C less wealthy nations
+D untrained workers
+E small-scale cultivation
+F outdated methods
+G financial controls
+H migrant workers
+I powerful individuals and businesses
+
+**31. The book The World of Sugar points out the similarities in the way that sugar was cultivated around the world. In the big industries in both Germany and the US, sugar farming depended on 31 ____ .**
+  - A national governments
+  - B agricultural developments
+  - C less wealthy nations
+  - D untrained workers
+  - E small-scale cultivation
+  - F outdated methods
+  - G financial controls
+  - H migrant workers
+  - I powerful individuals and businesses
+  *Answer: H*
+
+**32. However, in other parts of the world such as South Asia and Latin America, 32 ____ continued.**
+  - A national governments
+  - B agricultural developments
+  - C less wealthy nations
+  - D untrained workers
+  - E small-scale cultivation
+  - F outdated methods
+  - G financial controls
+  - H migrant workers
+  - I powerful individuals and businesses
+  *Answer: E*
+
+**33. Sugar production has also involved 33 ____ who were eager to protect their markets.**
+  - A national governments
+  - B agricultural developments
+  - C less wealthy nations
+  - D untrained workers
+  - E small-scale cultivation
+  - F outdated methods
+  - G financial controls
+  - H migrant workers
+  - I powerful individuals and businesses
+  *Answer: I*
+
+**34. In countries such as Cuba the sugar industry therefore had a major influence on 34 ____ .**
+  - A national governments
+  - B agricultural developments
+  - C less wealthy nations
+  - D untrained workers
+  - E small-scale cultivation
+  - F outdated methods
+  - G financial controls
+  - H migrant workers
+  - I powerful individuals and businesses
+  *Answer: A*
+
+**35. To support the interests of sugar producers, 35 ____ were established.**
+  - A national governments
+  - B agricultural developments
+  - C less wealthy nations
+  - D untrained workers
+  - E small-scale cultivation
+  - F outdated methods
+  - G financial controls
+  - H migrant workers
+  - I powerful individuals and businesses
+  *Answer: G*
+
+**36. As a result of this, 36 ____ were penalised.**
+  - A national governments
+  - B agricultural developments
+  - C less wealthy nations
+  - D untrained workers
+  - E small-scale cultivation
+  - F outdated methods
+  - G financial controls
+  - H migrant workers
+  - I powerful individuals and businesses
+  *Answer: C*
+
+#### Questions 37–40
+Do the following statements agree with the views of the writer in Reading Passage 3?
+In boxes 37–40 on your answer sheet, write
+YES if the statement agrees with the views of the writer
+NO if the statement contradicts the views of the writer
+NOT GIVEN if it is impossible to say what the writer thinks about this
+
+**37. Sugar has now become available in large quantities due to a range of agricultural developments.**
+  *Answer: YES*
+
+**38. Advertisers initially marketed sugar as a luxury product.**
+  *Answer: NOT GIVEN*
+
+**39. The invention of high-fructose corn syrup was a positive development.**
+  *Answer: NO*
+
+**40. High-fructose corn syrup is an ingredient in many processed foods.**
+  *Answer: YES*
+
+
+# Cambridge 21 · Reading Test 2 (Cambridge 21)
+
+## Passage 1: Do animals dream?
 
 Studies using electrodes attached to the heads of sleepers have shown that when we sleep, we do so in two ways that alternate throughout the night. The first is rapid eye movement (REM) or active sleep. During this stage our eyes move, even though our eyelids are closed. Our muscles also twitch slightly, though they are largely paralysed so we don't hurt ourselves. In contrast, we also engage in non-REM sleep, during which we barely move at all. Most dream states, and certainly those with the most vivid dreams, happen during REM sleep.
 
@@ -532,9 +1267,45 @@ The trouble is that we will never be able to experience any animal's dreams. Tha
 
 It is likely that dreaming has served multiple purposes since the first complex animals evolved. And if this is the case, it is possible that better understanding of these purposes might shed light on the true purpose of our own dreams.
 
-## Reading Passage 1
+### Questions
 
-## Reading Passage 2: Mapungubwe
+#### Questions 1–5
+Complete the table below.
+Choose ONE WORD ONLY from the passage for each answer.
+Write your answers in boxes 1–5 on your answer sheet.
+
+#### Questions 6–13
+Do the following statements agree with the information given in Reading Passage 1?
+In boxes 6–13 on your answer sheet, write
+TRUE if the statement agrees with the information
+FALSE if the statement contradicts the information
+NOT GIVEN if there is no information on this
+
+**6. Dreaming about past experiences helps us to create lasting memories of them.**
+  *Answer: TRUE*
+
+**7. It is now possible to tell what type of dream a dog is having.**
+  *Answer: FALSE*
+
+**8. David Scheel's documentary was influential on other research into the sleeping patterns of octopuses.**
+  *Answer: NOT GIVEN*
+
+**9. While it was asleep, the octopus called Costello reacted as if it was hunting.**
+  *Answer: TRUE*
+
+**10. Scheel believes more research into octopuses' dreams should be carried out.**
+  *Answer: NOT GIVEN*
+
+**11. We may soon be able to share the dreams of other human beings.**
+  *Answer: FALSE*
+
+**12. Hearing may be an important part of the dreams of some animals.**
+  *Answer: TRUE*
+
+**13. Interest in the reasons why humans dream has increased greatly in recent times.**
+  *Answer: NOT GIVEN*
+
+## Passage 2: Mapungubwe
 
 Located in southern Africa just below the Limpopo River, the kingdom of Mapungubwe, flourished between the 11th and 13th century CE
 
@@ -544,7 +1315,7 @@ Mapungubwe, which was one of the first states in southern Africa, was formed by 
 
 B
 
-The total population of Mapungubwe at its peak in the mid-13th century was around 5,000 people. The chief or king of Mapungubwe was likely the wealthiest individual in the society, and would have owned more cattle and precious materials than anyone else. The king and his advisers dwelt in a stone enclosure composed of stone walls and housing built on the highest level of the community's territory, a natural sandstone hill which is some 30 metres high and 100 metres in length. Occupation on the hill dates from the 11 th century and the entire complex was surrounded by a wooden palisade*, as indicated by postholes made in the rock. The rest of the community lived in mud and thatch housing spread out below the hill, although there is one stone structure here. This settlement, known as Babandyanalo, covers around 5 hectares (12.3 acres) and predates the hilltop structures.
+The total population of Mapungubwe at its peak in the mid-13th century was around 5,000 people. The chief or king of Mapungubwe was likely the wealthiest individual in the society, and would have owned more cattle and precious materials than anyone else. The king and his advisers dwelt in a stone enclosure composed of stone walls and housing built on the highest level of the community's territory, a natural sandstone hill which is some 30 metres high and 100 metres in length. Occupation on the hill dates from the 11th century and the entire complex was surrounded by a wooden palisade*, as indicated by postholes made in the rock. The rest of the community lived in mud and thatch housing spread out below the hill, although there is one stone structure here. This settlement, known as Babandyanalo, covers around 5 hectares (12.3 acres) and predates the hilltop structures.
 
 C
 
@@ -570,9 +1341,73 @@ The kingdom of Mapungubwe was already in decline by the late 13th century, proba
 
 * palisade: typically a row of closely placed, high vertical wooden or iron posts used as a means of defence
 
-## Reading Passage 2
+### Questions
 
-## Reading Passage 3: Artificial Intelligence
+#### Questions 14–19
+Reading Passage 2 has seven paragraphs, A–G.
+Which paragraph contains the following information?
+Write the correct letter, A–G, in boxes 14–19 on your answer sheet.
+
+**14. a mention of the uncertainty regarding the purpose of certain objects ____**
+  *Answer: E*
+
+**15. the likelihood that a climatic factor increased the problems Mapungubwe faced ____**
+  *Answer: F*
+
+**16. a mention of the location where members of the king's family are thought to have lived ____**
+  *Answer: A*
+
+**17. a reference to people who brought goods by ship ____**
+  *Answer: D*
+
+**18. an estimate of the size to which the Mapungubwe community grew ____**
+  *Answer: B*
+
+**19. a mention of agricultural produce being exchanged for other items ____**
+  *Answer: F*
+
+#### Questions 20 and 21
+Choose TWO letters, A–E.
+Write the correct letters in boxes 20 and 21 on your answer sheet.
+The archaeological record reveals information about gold and the kingdom of Mapungubwe. Which TWO pieces of information are mentioned by the writer?
+
+**20. Which TWO pieces of information are mentioned by the writer? (Question 20 of 20-21)**
+  - A Not everyone in Mapungubwe used gold as a form of payment.
+  - B Items of gold were placed close to where Mapungubwe kings were buried.
+  - C The most valuable item discovered in Mapungubwe was a sceptre made of gold.
+  - D The way gold was decorated in Mapungubwe was also practised in another kingdom.
+  - E Working with gold was a respected occupation in the Mapungubwe community.
+  *Answer: B*
+
+**21. Which TWO pieces of information are mentioned by the writer? (Question 21 of 20-21)**
+  - A Not everyone in Mapungubwe used gold as a form of payment.
+  - B Items of gold were placed close to where Mapungubwe kings were buried.
+  - C The most valuable item discovered in Mapungubwe was a sceptre made of gold.
+  - D The way gold was decorated in Mapungubwe was also practised in another kingdom.
+  - E Working with gold was a respected occupation in the Mapungubwe community.
+  *Answer: D*
+
+#### Questions 22–26
+Complete the summary below.
+Choose ONE WORD ONLY from the passage for each answer.
+Write your answers in boxes 22–26 on your answer sheet.
+
+**22. The Mapungubwe community's 22 ____ is indicated by the amount of professionally made pottery discovered at the site.**
+  *Answer: prosperity*
+
+**23. Many of these objects, such as beakers and bowls, are highly decorated and have been marked with stamps. Other finds include round ceramic objects, 23 ____ and figures of various animals,**
+  *Answer: beads*
+
+**24. as well as models of people with stretched 24 ____ .**
+  *Answer: bodies*
+
+**25. It is possible that these had a role in ceremonies to honour 25 ____ .**
+  *Answer: ancestors*
+
+**26. In addition, pieces of 26 ____ made from a local metal have been found at the site.**
+  *Answer: jewellery*
+
+## Passage 3: Artificial Intelligence
 
 In many countries in the West, hysteria about the future of artificial intelligence (AI) is everywhere. There seems to be no shortage of sensationalist news about how AI could cure diseases, accelerate human innovation and improve human creativity. Just looking at the media headlines, you might think that we are already living in a future where AI has infiltrated every aspect of society.
 
@@ -600,17 +1435,156 @@ Similar difficulties arose in the legal domain when algorithms were used in cour
 
 There are some crucial lessons here for everyone aiming to boost investments in national AI programmes. These examples demonstrate that there is no AI solution for everything. Using AI simply for the sake of AI may not always be productive or useful, and not every issue is best addressed by applying machine intelligence to it. All solutions come with a cost and not everything that can be automated should be.
 
-## Reading Passage 3
+### Questions
 
-## Reading Passage 3
+#### Questions 27–29
+Choose the correct letter, A, B, C or D.
+Write the correct letter in boxes 27–29 on your answer sheet.
 
----
+**27. What is the writer doing in the first paragraph?**
+  - A predicting the future impact of AI
+  - B describing a public perception of AI
+  - C outlining some possible benefits of AI
+  - D highlighting the breadth of the influence of AI
+  *Answer: B*
 
-# Cambridge 21 - Reading Test 3
+**28. When discussing AI solutionism in the second paragraph, the writer**
+  - A points out a risk involved.
+  - B specifies its probable origins.
+  - C mentions its chief supporters.
+  - D weighs up some pros and cons.
+  *Answer: A*
 
-**Source URL:** [https://ieltstrainingonline.com/practice-cam-21-reading-test-03/](https://ieltstrainingonline.com/practice-cam-21-reading-test-03/)
+**29. In the fourth paragraph, the writer suggests that many politicians may**
+  - A have failed to appreciate the true potential of AI initiatives.
+  - B have misunderstood the function of the machine-learning sector.
+  - C be unaware of the challenges of implementing national AI initiatives.
+  - D be too keen to enter the race to dominate the machine-learning sector.
+  *Answer: C*
 
-## Reading Passage 1: Saving the saiga
+#### Questions 30–35
+Complete the summary using the list of words, A–I, below.
+Write the correct letter, A–I, in boxes 30–35 on your answer sheet.
+
+Summary Title: AI in government, medicine and the law
+
+Word Box:
+A reliability
+B funding
+C skills
+D prejudices
+E computers
+F equality
+G framework
+H confidentiality
+I approval
+
+**30. Neural networks are a promising area of AI technology for governments. However, many politicians overestimate their capabilities, believing that the mere addition of a neural network will produce solutions and promote 30 ____ .**
+  - A reliability
+  - B funding
+  - C skills
+  - D prejudices
+  - E computers
+  - F equality
+  - G framework
+  - H confidentiality
+  - I approval
+  *Answer: F*
+
+**31. Most public sector organisations have not set up the necessary 31 ____ to manage the huge amount of data required to enable AI to function.**
+  - A reliability
+  - B funding
+  - C skills
+  - D prejudices
+  - E computers
+  - F equality
+  - G framework
+  - H confidentiality
+  - I approval
+  *Answer: G*
+
+**32. Complex bureaucracy is another issue, as each person involved needs 32 ____ to access the relevant data, which is often spread across different departments.**
+  - A reliability
+  - B funding
+  - C skills
+  - D prejudices
+  - E computers
+  - F equality
+  - G framework
+  - H confidentiality
+  - I approval
+  *Answer: I*
+
+**33. But the main problem is that few public sector employees have the 33 ____ to take full advantage of machine intelligence.**
+  - A reliability
+  - B funding
+  - C skills
+  - D prejudices
+  - E computers
+  - F equality
+  - G framework
+  - H confidentiality
+  - I approval
+  *Answer: C*
+
+**34. The medical profession experimented with an AI programme, but their experts had little faith in its 34 ____ , and the programme was abandoned.**
+  - A reliability
+  - B funding
+  - C skills
+  - D prejudices
+  - E computers
+  - F equality
+  - G framework
+  - H confidentiality
+  - I approval
+  *Answer: A*
+
+**35. US courts also abandoned the use of algorithms when it was found that these reflected and magnified the existing 35 ____ within the legal profession.**
+  - A reliability
+  - B funding
+  - C skills
+  - D prejudices
+  - E computers
+  - F equality
+  - G framework
+  - H confidentiality
+  - I approval
+  *Answer: D*
+
+#### Questions 36–39
+Do the following statements agree with the claims of the writer in Reading Passage 3?
+In boxes 36–39 on your answer sheet, write
+YES if the statement agrees with the claims of the writer
+NO if the statement contradicts the claims of the writer
+NOT GIVEN if it is impossible to say what the writer thinks about this
+
+**36. Stuart Russell's proposals regarding the use of AI are impractical.**
+  *Answer: NO*
+
+**37. Rodney Brooks' view has attracted unfair criticism from supporters of AI.**
+  *Answer: YES*
+
+**38. Nowadays, the need to protect AI systems is always taken into account when they are set up.**
+  *Answer: NOT GIVEN*
+
+**39. In order to benefit from AI and minimise the harms, we have to explore people's concerns about its use.**
+  *Answer: YES*
+
+#### Question 40
+Choose the correct letter, A, B, C or D.
+Write the correct letter in box 40 on your answer sheet.
+
+**40. What would be a suitable subtitle for Reading Passage 3?**
+  - A How to make the most of what AI has to offer
+  - B Why AI may not be the answer to our problems
+  - C Why governments should not invest in AI systems
+  - D How AI could improve the efficiency of the public sector
+  *Answer: B*
+
+
+# Cambridge 21 · Reading Test 3 (Cambridge 21)
+
+## Passage 1: Saving the saiga
 
 The saiga, a species of antelope native to Central Asia, once roamed the vast grasslands of this region in enormous herds, many millions strong. Regrettably, such spectacular sights are a thing of the past. Today, the saiga is largely confined to a single country: Kazakhstan. This country is estimated to be home to well over 90% of the global saiga population, with Russia, Mongolia and Uzbekistan accounting for the rest.
 
@@ -630,9 +1604,58 @@ Recent efforts to save the saiga have been spearheaded by the Altyn Dala Conserv
 
 So, how many saiga are there now? By 2000, the global saiga population had hit an all-time low of just 21,000 individuals. There was some recovery in the first decade of the new millennium but this was then crushed by devastating mass mortality events that saw the loss of hundreds of thousands of the species. But thanks to the intervention of the Altyn Dala Conservation Initiative, the most recent episodes in the ongoing story of the saiga have been relatively uplifting. Three years ago, the Ustyurt Plateau population in Kazakhstan experienced its largest mass birth of saiga calves in many years. An aerial census two years ago recorded an estimated 842,000 saiga across Kazakhstan as a whole, and according to an aerial survey earlier this year, the saiga population in Kazakhstan now exceeds 1.9 million. The world's strangest-looking antelope remains critically endangered, but the direction of travel is positive.
 
-## Reading Passage 1
+### Questions
 
-## Reading Passage 2: The problems of getting around the city of Dar es Salaam
+#### Questions 1–7
+Complete the notes below.
+Choose ONE WORD ONLY from the passage for each answer.
+Write your answers in boxes 1–7 on your answer sheet.
+
+### The saiga
+
+**Adaptations**
+
+- has a large bulbous nose with swollen nostrils that
+- **Q1.** keep ____ out *(Answer: dust)*
+- **Q2.** lower the temperature of its ____ in summer *(Answer: blood)*
+- warm the air entering its lungs in winter
+- **Q3.** grows a thick ____ in winter, which it loses in spring *(Answer: coat)*
+
+**Reasons for population decline**
+
+- **Q4.** poaching, especially for the ____ of male saiga *(Answer: horns)*
+- expansion of farms and settlements, causing
+- **Q5.** reduction in the size of the saiga's ____ *(Answer: habitat)*
+- **Q6.** loss of access to the ____ which they use for migration *(Answer: routes)*
+- various forms of disease, leading to mass mortality events
+- **Q7.** climate change, causing the disappearance of ____ which the saiga relied on *(Answer: streams)*
+
+#### Questions 8–13
+Do the following statements agree with the information given in Reading Passage 1?
+In boxes 8–13 on your answer sheet, write
+TRUE if the statement agrees with the information
+FALSE if the statement contradicts the information
+NOT GIVEN if there is no information on this
+
+**8. Today, numbers of saiga are distributed evenly across four nations in Central Asia: Kazakhstan, Russia, Mongolia and Uzbekistan.**
+  *Answer: FALSE*
+
+**9. For most of the 20th century, the population of saiga were falling.**
+  *Answer: FALSE*
+
+**10. Efforts to protect rhinos in Africa had a significant effect on saiga populations.**
+  *Answer: TRUE*
+
+**11. Unpredictable fluctuations in climate are threatening the wildlife of Central Asia more than in other parts of the world.**
+  *Answer: NOT GIVEN*
+
+**12. The Altyn Dala Conservation Initiative was formed for the benefit of a number of different animals.**
+  *Answer: TRUE*
+
+**13. The Altyn Dala Conservation Initiative's recognition as a World Restoration Flagship project attracted additional international funding for the scheme.**
+  *Answer: NOT GIVEN*
+
+## Passage 2: The problems of getting around the city of Dar es Salaam
 
 Dar es Salaam in Tanzania is one of the fastest growing cities in Africa. Its population has increased eightfold since 1980 and swells by half a million people every year. United Nations projections anticipate it will become a megacity within seven years as its population passes 10 million, reaching 13.4 million by 2035. Daniel Hoornweg for the Global Cities Institute forecasts the city could be home to an incredible 73.7 million people by 2100.
 
@@ -654,9 +1677,52 @@ Morogoro Road to the north-west of the city was phase I of the BRT project. Phas
 
 The ITDP regrets Africa's obsession with metros. 'With a metro, an international firm will often just parachute in its own system,' says Kost. 'Bus rapid transit allows existing stakeholders to get involved. That's what we did in Dar es Salaam and what we're planning in Nairobi, where the bus bodies will be built in the city and local operators will look after tickets, fare collection and IT ...Bus rapid transit has been transformational for Dar es Salaam. For millions of people in African cities, this is their best hope of ever being connected.'
 
-## Reading Passage 2
+### Questions
 
-## Reading Passage 3: Rethinking the Past
+#### Questions 14–18
+Do the following statements agree with the information given in Reading Passage 2?
+In boxes 14–18 on your answer sheet, write
+TRUE if the statement agrees with the information
+FALSE if the statement contradicts the information
+NOT GIVEN if there is no information on this
+
+**14. The population of Dar es Salaam is rising more rapidly than was previously predicted.**
+  *Answer: TRUE*
+
+**15. Most of the residents of Dar es Salaam live in high-rise blocks on the edge of the city.**
+  *Answer: FALSE*
+
+**16. Residents have been consulted about their views on the suburban rail line in Dar es Salaam.**
+  *Answer: NOT GIVEN*
+
+**17. The majority of the present residential development in Dar es Salaam is unplanned.**
+  *Answer: TRUE*
+
+**18. Dar es Salaam's authorities have decided to follow the public transport plan adopted by a large number of African cities.**
+  *Answer: FALSE*
+
+#### Questions 19–26
+Complete the notes below.
+Choose ONE WORD ONLY from the passage for each answer.
+Write your answers in boxes 19–26 on your answer sheet.
+
+### Dar es Salaam's DART Bus Rapid Transit system
+
+**Features**
+
+- **Q19.** the buses use designated ____ to cut down on delays *(Answer: lanes)*
+- **Q20.** passengers pay fares before ____ *(Answer: boarding)*
+- **Q21.** passengers in ____ can use every part of the system *(Answer: wheelchairs)*
+
+**Problems**
+
+- **Q22.** the temperature control is sometimes not activated in order to reduce ____ use *(Answer: fuel)*
+- **Q23.** insufficient number of vehicles are available due to the effects of a severe ____ *(Answer: flood)*
+- **Q24.** passengers are unable to use ____ because some equipment is out of action *(Answer: smartcards)*
+- **Q25.** tickets have to be checked manually at station ____ *(Answer: staff)*
+- **Q26.** ____ frequently build up during rush hours *(Answer: queues)*
+
+## Passage 3: Rethinking the Past
 
 It is by now a truism that the story of human evolution is being rethought. Discoveries have come thick and fast over the last decade or so, and these have forced us to rethink many crucial points, such as how old our species is – about 300,000 years old as opposed to 200,000 – and what extinct hominins, such as our cousins the Neanderthals, were really like. But because there are so many species and eras involved, it's hard to discern the common threads linking them.
 
@@ -676,15 +1742,117 @@ Perhaps the most dramatic was the demolition of 'Man the Hunter'. This was the i
 
 It seems that the more we find out about past societies, the more our preconceptions about the ways society 'has to be' turn out to be wrong. Inequality, authoritarianism and patriarchy aren't inevitable. They're choices, and prehistory shows us that we can choose differently.
 
-## Reading Passage 3
+### Questions
 
----
+#### Questions 27–30
+Choose the correct letter, A, B, C or D.
+Write the correct letter in boxes 27–30 on your answer sheet.
 
-# Cambridge 21 - Reading Test 4
+**27. What is the writer doing in the second paragraph?**
+  - A pinpointing some key changes in our understanding of prehistory
+  - B outlining some aspects of prehistory which are still poorly understood
+  - C summarising some attitudes towards recent archaeological revelations
+  - D giving an overview of some current disagreements among archaeologists
+  *Answer: B*
 
-**Source URL:** [https://ieltstrainingonline.com/practice-cam-21-reading-test-04/](https://ieltstrainingonline.com/practice-cam-21-reading-test-04/)
+**28. In the sixth paragraph, the writer mentions mobile phones to make the point that**
+  - A most developments happen in a gradual way.
+  - B innovation can come from a variety of sources.
+  - C not all technological advancements are positive.
+  - D the path of evolution can often be unpredictable.
+  *Answer: A*
 
-## Reading Passage 1: The problems and benefits created by the spread of the water hyacinth in Kenya
+**29. In the seventh paragraph, the phrase 'unpick this stuff' refers to the task of**
+  - A assessing the impact of certain recent research findings.
+  - B questioning the authenticity of evidence used in earlier research.
+  - C conducting research into how prehistoric societies were organised.
+  - D reevaluating research influenced by outdated beliefs about society.
+  *Answer: D*
+
+**30. What does the writer suggest in the final paragraph?**
+  - A Studying past societies could help us create a fairer society today.
+  - B We should not judge past societies by the standards of modern society.
+  - C We still have much to learn about how societies have evolved over history.
+  - D There is more than one way to interpret evidence about societies in prehistoric times.
+  *Answer: B*
+
+#### Questions 31–34
+Complete each sentence with the correct ending, A–F, below.
+Write the correct letter, A–F, in boxes 31–34 on your answer sheet.
+
+Option Box:
+A Homo sapiens emerged at an earlier point in time than experts previously believed.
+B previous assumptions about who had power in the prehistoric world were inaccurate.
+C gender roles in extinct hominin species were different from those in Homo sapiens societies.
+D experts may have been mistaken about who looked for food in early human communities.
+E Homo sapiens was probably not the only species capable of sophisticated workmanship.
+F other species managed to survive in harsh environments before the arrival of Homo sapiens.
+
+**31. The findings at Kalambo Falls revealed that**
+  - A Homo sapiens emerged at an earlier point in time than experts previously believed.
+  - B previous assumptions about who had power in the prehistoric world were inaccurate.
+  - C gender roles in extinct hominin species were different from those in Homo sapiens societies.
+  - D experts may have been mistaken about who looked for food in early human communities.
+  - E Homo sapiens was probably not the only species capable of sophisticated workmanship.
+  - F other species managed to survive in harsh environments before the arrival of Homo sapiens.
+  *Answer: E*
+
+**32. Evidence from high-altitude regions suggests that**
+  - A Homo sapiens emerged at an earlier point in time than experts previously believed.
+  - B previous assumptions about who had power in the prehistoric world were inaccurate.
+  - C gender roles in extinct hominin species were different from those in Homo sapiens societies.
+  - D experts may have been mistaken about who looked for food in early human communities.
+  - E Homo sapiens was probably not the only species capable of sophisticated workmanship.
+  - F other species managed to survive in harsh environments before the arrival of Homo sapiens.
+  *Answer: F*
+
+**33. An academic publication from June 2023 shows that**
+  - A Homo sapiens emerged at an earlier point in time than experts previously believed.
+  - B previous assumptions about who had power in the prehistoric world were inaccurate.
+  - C gender roles in extinct hominin species were different from those in Homo sapiens societies.
+  - D experts may have been mistaken about who looked for food in early human communities.
+  - E Homo sapiens was probably not the only species capable of sophisticated workmanship.
+  - F other species managed to survive in harsh environments before the arrival of Homo sapiens.
+  *Answer: D*
+
+**34. Analysis of a 4000-year-old Iberian leader indicates that**
+  - A Homo sapiens emerged at an earlier point in time than experts previously believed.
+  - B previous assumptions about who had power in the prehistoric world were inaccurate.
+  - C gender roles in extinct hominin species were different from those in Homo sapiens societies.
+  - D experts may have been mistaken about who looked for food in early human communities.
+  - E Homo sapiens was probably not the only species capable of sophisticated workmanship.
+  - F other species managed to survive in harsh environments before the arrival of Homo sapiens.
+  *Answer: B*
+
+#### Questions 35–40
+Do the following statements agree with the views of the writer in Reading Passage 3?
+In boxes 35–40 on your answer sheet, write
+YES if the statement agrees with the views of the writer
+NO if the statement contradicts the views of the writer
+NOT GIVEN if it is impossible to say what the writer thinks about this
+
+**35. It seems likely that the Neanderthals' cave paintings were the first examples of artwork ever created.**
+  *Answer: NO*
+
+**36. It is very rare to find prehistoric artwork carved onto shells.**
+  *Answer: NOT GIVEN*
+
+**37. The methods which the researchers used to examine the Rising Star cave system were rather unconventional.**
+  *Answer: YES*
+
+**38. It is unclear how old the etchings in the Rising Star cave system are.**
+  *Answer: YES*
+
+**39. The means used to publicise the findings from the Rising Star cave system added to the controversy that surrounds them.**
+  *Answer: YES*
+
+**40. The size of H. naledi brains is a key factor in the question of whether these hominins were able to produce art.**
+  *Answer: YES*
+
+
+# Cambridge 21 · Reading Test 4 (Cambridge 21)
+
+## Passage 1: The problems and benefits created by the spread of the water hyacinth in Kenya
 
 Water hyacinth (Eichhornia crassipes), an aquatic plant native to South America, first appeared in countries in Africa in the early 1900s. Scientists there called it the 'world's worst aquatic weed', after it spread from the southernmost tip of Africa in the early 1900s and started obstructing major dams and rivers.
 
@@ -708,9 +1876,66 @@ How much better the biogas stoves will be for the community's health still needs
 
 Kanyiva says affordability is a challenge worth addressing, given the huge health and environmental dangers posed by 'dirty' fuels such as wood, charcoal and kerosene. If biogas could become affordable on a large scale, she says it 'would be life-changing for millions on the African continent and beyond'.
 
-## Reading Passage 1
+### Questions
 
-## Reading Passage 2: How could multilingualism benefit India's poorest schoolchildren?
+#### Questions 1–7
+Do the following statements agree with the information given in Reading Passage 1?
+In boxes 1–7 on your answer sheet, write
+TRUE if the statement agrees with the information
+FALSE if the statement contradicts the information
+NOT GIVEN if there is no information on this
+
+**1. Water hyacinth was introduced as a decorative plant in east Africa.**
+  *Answer: TRUE*
+
+**2. Fishermen took some water hyacinth plants to Lake Victoria.**
+  *Answer: FALSE*
+
+**3. It is now difficult to force boats through the thick water hyacinth on Lake Victoria.**
+  *Answer: TRUE*
+
+**4. Chemicals produced by the water hyacinth plants are affecting the numbers of fish in Lake Victoria.**
+  *Answer: FALSE*
+
+**5. Cooking with charcoal has been proved to be even worse for people's health than cooking with wood.**
+  *Answer: NOT GIVEN*
+
+**6. People found it impossible to remove much water hyacinth from Lake Victoria.**
+  *Answer: NOT GIVEN*
+
+**7. Scientists started investigating the possibility of using water hyacinth to generate biogas in the last century.**
+  *Answer: TRUE*
+
+#### Questions 8–10
+Complete the flow-chart below.
+Choose NO MORE THAN TWO WORDS from the passage for each answer.
+Write your answers in boxes 8–10 on your answer sheet.
+
+### Generating biogas for domestic use in Dunga
+
+- **Q8.** First, place water hyacinth together with some ____ into a digester *(Answer: cow dung)*
+- **Q9.** Leave the mixture until the ____ is completed *(Answer: fermentation)*
+- **Q10.** Capture the gas emitted by the digester and use ____ to transport it to individual homes *(Answer: pipes)*
+- Then use the gas for cooking as well as making water fit for human consumption
+
+#### Questions 11–13
+Complete the notes below.
+Choose ONE WORD ONLY from the passage for each answer.
+Write your answers in boxes 11–13 on your answer sheet.
+
+### Cooking with biogas in Dunga
+
+**Benefits for the women in the village of cooking with biogas**
+
+- **Q11.** no need for them to spend so much ____ collecting fuel *(Answer: time)*
+- **Q12.** they can focus on different tasks that bring in ____ *(Answer: money)*
+- they are less likely to experience certain diseases connected to burning wood
+
+**Drawbacks of changing to biogas**
+
+- **Q13.** the ____ of the digesters is beyond the reach of most villages *(Answer: cost)*
+
+## Passage 2: How could multilingualism benefit India's poorest schoolchildren?
 
 The crowded and bustling streets of Delhi teem with life. Stop to listen and, above the din of rickshaws and buses, you'll hear a multitude of languages, as more than 20 million people go about their daily lives. Many were born and raised here, and many millions more have recently made India's capital their home, having moved from surrounding neighbourhoods, cities and states or across the country, often in the hope of gaining better jobs and a better life. Some arrive speaking fluent Hindi, the dominant language in Delhi (and the official language of government), but many arrive speaking any number of India's 22 officially recognised languages, let alone the hundreds of regional languages in a country of more than 1.3 billion people.
 
@@ -718,52 +1943,166 @@ A team of researchers led by Professor Ianthi Tsimpli of Cambridge University is
 
 'Each year across India, 600,000 children are tested, and year after year over 50% of children in Standard 5 [ten-year-olds] cannot read a Standard 2 [seven-year-olds] task fluently, and just under 50% of them cannot solve a Standard 2 subtraction task,' says Tsimpli. She explains that low educational achievement can lead to many of these students dropping out of school – a problem disproportionately affecting female students.
 
-Tsimpli and her colleagues are investigating whether these low learning outcomes could be caused by an Indian school system where the language that children are taught in often differs from the language used at home. The research project, which focuses on 8 to 11-year-old schoolchildren in rural and urban areas, collects data on whether the schoolchildren live in slum* or non-slum areas. Many of the children have moved from remote, rural areas to urban areas. They are so poor they have to live in slums and, as a result of migration, they may speak languages that are different from the regional language.
+Tsimpli and her colleagues are investigating whether these low learning outcomes could be caused by an Indian school system where the language that children are taught in often differs from the language used at home. The research project, which focuses on 8 to 11-year-old schoolchildren in rural and urban areas, collects data on whether the schoolchildren live in slum or non-slum areas. Many of the children have moved from remote, rural areas to urban areas. They are so poor they have to live in informal settlements and work long hours outside school to help support their families.
 
-Having already tested 1,000 children, the researchers will now embark on retesting them. They intend to look not only at test results, but also at variables such as the standard of schooling, the environment and the teaching practices themselves. It's possible that one of the causes of low performance is the lack of pupil-centred teaching methods; in many Indian primary schools the teacher dominates and there is little room for independent learning.
+In Europe, multilingual children often outperform monolingual peers in cognitive tasks. However, in India, where children are forced to learn in a language they do not speak at home, multilingualism has not produced the same advantages. The team hopes that their findings will inform future educational policy in India, encouraging schools to adopt teaching methods that accommodate regional languages and support children from disadvantaged backgrounds.
 
-Although the findings are at a preliminary stage, Tsimpli and her team have found that the medium of instruction used in schools, especially English, may hold back those children who have little familiarity with, or exposure to, the language before starting school and outside of school life. According to Tsimpli, most of the evidence from this and other projects shows that English instruction for children from low socio-economic areas might not be the best way for them to learn, at least in the first three years of primary education.
+### Questions
 
-'What we would recommend for everyone, not just low socio-economic status children, would be to start learning in the language they feel comfortable learning in ... English can still be used, but perhaps not as the medium of instruction in primary schools. It could, for example, be one of the subjects that are being taught alongside other subjects. We are not suggesting that English be withdrawn – that ship has sailed – but we perhaps have to think more about learner needs. There is perhaps too much uniformity in teaching and less tailoring to the children's language abilities and needs,' says Tsimpli.
+#### Questions 14–19
+Complete the summary using the list of words, A–J, below.
+Write the correct letter, A–J, in boxes 14–19 on your answer sheet.
 
-While the preliminary results show there is no difference in general intelligence among boys and girls from slum areas versus those from urban poor backgrounds, an unanticipated finding has been that children from slum backgrounds do not seem to lag behind children from other urban poor backgrounds – and in some cases outperform them (e.g. in numeracy and literacy tasks). According to the researchers, this unexpected finding may be down to the life experiences of children growing up in slums. They are likely to mature faster and come into closer contact with the numeracy skills essential for day-to-day survival.
+Option Box:
+A basic outlook
+B employment opportunities
+C wealthy visitors
+D distant country
+E primary objective
+F similar advantages
+G thriving economy
+H nearby district
+I dense population
+J new immigrants
 
-The project has already caught the attention of government ministers, who are keen to use the findings of the study to inform and adjust school policy in Delhi and the wider state. 'They are as keen as us to understand how the challenging context of deprivation can be attenuated when focusing on the languages children learn and use while at school. Our findings don't mean you're doomed if you're poor. It may be that these low learning outcomes are because of the way education is provided in India, with a huge focus on Hindi and English as the mediums of instruction, to the potential detriment of children unfamiliar with those languages,' explains Tsimpli.
+### Multilingualism in Delhi
 
-'Language is central to the way knowledge is transferred – so the medium of instruction is obviously hugely influential. We hope to ... show that problem solving, numeracy and literacy can and do improve in children who are educated in a language of instruction they know. The trick may be to bridge school skills with life skills and make use of the richness of a child's life experience to help them learn in the most effective ways possible,' says Tsimpli.
+- **Q14.** The city of Delhi has a Q14 ____ and as you walk through its streets you hear people speaking a variety of languages. *(Answer: I)*
+- **Q15.** Some of them have spent their entire life in Delhi, while others are Q15 ____. *(Answer: J)*
+- **Q16.** Whether they have come from a Q16 ____ or have travelled from the other side of India, they have all come in search of things such as improved *(Answer: H)*
+- **Q17.** Q17 ____. *(Answer: B)*
+- **Q18.** A team of researchers led by Professor Tsimpli of Cambridge University is collecting data on primary-age schoolchildren in Delhi and other Indian cities. The Q18 ____ of the research is to discover why multilingual schoolchildren do not experience *(Answer: E)*
+- **Q19.** Q19 ____ to those that multilingual schoolchildren in Europe experience. *(Answer: F)*
 
-—-----------------------
+#### Questions 20–23
+Do the following statements agree with the claims of the writer in Reading Passage 2?
+In boxes 20–23 on your answer sheet, write
+YES if the statement agrees with the claims of the writer
+NO if the statement contradicts the claims of the writer
+NOT GIVEN if it is impossible to say what the writer thinks about this
 
-* slum: a very densely populated area in which the infrastructure is incomplete and services inadequate or non-existent
+**20. Ten-year-old Indian schoolchildren tend to perform better in literacy tests than in numeracy tests.**
+  *Answer: NO*
 
-## Reading Passage 2
+**21. Tsimpli had problems convincing some female students to take part in the study.**
+  *Answer: NO*
 
-## Reading Passage 3: The Globemakers: The Curious Story of an Ancient Craft
+**22. Tsimpli and her team wanted to know if there is a connection between poor academic performance and being taught in an unfamiliar language.**
+  *Answer: YES*
 
-A review of Peter Bellerby's book The Globemakers
+**23. The researchers have decided against investigating the impact teaching methodology may have on learning outcomes.**
+  *Answer: NO*
 
-In 2008, Peter Bellerby, who lived in London, wanted to give his father a model globe for his eightieth birthday. What seemed simple enough to start with triggered an almost obsessive, decade-long journey, marked by a series of obstacles that would have deterred anyone less determined. It ended with his establishing the world's only bespoke globemaking company.
+#### Questions 24–26
+Choose the correct letter, A, B, C or D.
+Write the correct letter in boxes 24–26 on your answer sheet.
 
-The first surprise in The Globemakers, Bellerby's account of this impulsive enterprise, is that obtaining such a globe was not simply a matter of a quick online order and a repressed sigh at the shipping costs. After all, contrary to stubbornly held popular views of our ancestors' geographical ignorance, we have known that the world is spherical since at least the 6th century BCE. The ancient Greek philosopher Plato in his work Phaedo likened it to a leather ball, while the accolade of producing the first recorded globe goes to the ancient Greek philosopher Crates of Mallus, who is said to have made one in around 150 BCE. Surely, Bellerby reasoned, a good-quality globe wouldn't be difficult to find.
+**24. What point does the writer make about primary schools in India in the sixth paragraph?**
+  - A Exposure to English outside of school is of limited benefit.
+  - B Children learn English more easily when they are well motivated.
+  - C Poor children may be disadvantaged further by being instructed in English.
+  - D There is little consistency across schools with regard to instruction in English.
+  *Answer: C*
 
-Nearly two millennia later, however, it seemed that the art of globemaking had been largely forgotten. Bellerby came across shoddy commercial versions designed for school classrooms and genuine antiques in auction houses that would have bust his budget. Even his trips to Morocco and India, where surely the knowledge of artisan cartographers* had been preserved, drew a blank.
+**25. What is Tsimpli suggesting when she uses the phrase 'that ship has sailed'?**
+  - A The findings of the report may be of little help to some Indian schoolchildren.
+  - B Instruction in English could be better adapted to the needs of schoolchildren.
+  - C Schools have had limited success in teaching English as a separate subject.
+  - D It is too late to remove English completely as a language of instruction in schools.
+  *Answer: D*
 
-Not one to be easily thwarted, Bellerby decided to make his own good-quality globe. In the process, almost everything that could possibly go wrong did so. Even the shape of the Earth posed a problem, as it is not quite a perfect sphere, but oblate (slightly flattened at the poles). Having decided to compromise and opt for two half-spherical pieces that could be fitted together, he was unable to discover anyone capable of casting moulds with sufficient accuracy to ensure that he would not be left with two half-spheres that were not quite the same circumference. Even after he eventually resolved this issue, extracting these from the moulds resulted in piles of cracked plaster of Paris** and clouds of choking dust in the workshop he had set up at the rear of his house.
+**26. In the eighth paragraph, what do we learn has surprised researchers?**
+  - A Boys and girls from low socio-economic groups have similar general intelligence levels.
+  - B The age at which children move into a slum does not affect their academic performance.
+  - C Slum children and children from other urban poor backgrounds have similar life experiences.
+  - D The literacy and numeracy skills of slum children are not lower than those of children from other urban poor backgrounds.
+  *Answer: D*
 
-This series of abortive experiments taught Bellerby a lot about the challenges of making globes, which he communicates here to the reader. Finding just the right way to prise the globes from the mould – a high-end air compressor finally did the trick – and locating the right paper and inks with which to make the gores (the sections of flat sheet mapping that are pasted onto the spherical globe) without the ink seeping out to create a mushy, unreadable mess took months and an alarming chunk out of his bank balance. Bellerby's frustration at the painstaking process of attaching the gores to the globe surface – after having found a glue with precisely the right adhesive qualities – is palpable. Right at the end of the process, he learnt that the paper had stretched slightly and so the final one overlapped the first by a centimetre (which may not seem a great deal, but when that represents 2 per cent of the Earth's diameter, it's equivalent to obliterating the Himalayas or wiping out Chile).
+## Passage 3: Reconnecting with the natural world
 
-Bellerby's account of the technical challenges of globe production is interspersed with a series of interludes on great globemakers of the past and cartographic history in general. Purists might wish for more map-making details, but Bellerby clearly found a kindred spirit in Martin Behaim. He was the Nuremberg entrepreneur who in 1492 created the Erdapfel, the world's oldest surviving globe, beautifully finished by a workshop of painters and other craftsmen, only to find that the explorer Christopher Columbus had stumbled upon the Americas the very same year, rendering his masterpiece instantly out of date. Something of Bellerby's unflinching ambition is reflected in the even more heroic efforts of the Italian cartographer Vincenzo Coronelli, who, in the seventeenth century, created two globes for Louis XIV of France. It took him twenty years to complete the monstrous pair, whose vast bulk – each with a diameter of around four metres – can still be admired in the National Library of France in Paris.
+In recent decades, urbanization and technological advancement have fundamentally reshaped how humans interact with the environment. More than half of the global population now resides in urban areas, a figure expected to rise to nearly 70% by 2050. While cities offer unprecedented economic and social opportunities, they have also gradually severed the traditional bond between people and the natural world.
 
-Although a celebration of the revival of an ancient craft, Bellerby's book is also a lament for the fading away of centuries-old traditions. When he embarked on his globemaking odyssey, he struggled to find artisans with the skills to make the right moulds for the globes or foundries that could shape the meridians (the metal frames which girdle globes) in just the right way. Although he finally located the right craftsmen, some simply dropping in, serendipitously, to his workshop (by now in more suitable premises than his back room), many of these have now retired or passed away. Bellerby's father finally did receive his eightieth birthday present, albeit two years late.
+This growing detachment has sparked concern among psychologists, ecologists, and public health experts. Termed 'nature deficit disorder' by author Richard Louv, the phenomenon describes the psychological and physical costs of alienation from nature. Studies consistently demonstrate that individuals living in areas with sparse greenery experience higher rates of stress, anxiety, and cardiovascular disease compared to those with regular access to natural landscapes.
 
-Bellerby went on to found a company which now turns out over six hundred globes a year for customers who can have their own tiny village marked or more unusual requests fulfilled. His book, beautifully illustrated with photographs of the various stages of his venture and a few illustrations of historic globes and maps, is hardly a blueprint for commercial success. But it is more than enough to stir up admiration for the craftsmanship of the great mapmakers of the past and the obsessive determination of a modern successor who revived their almost moribund art.
+Fortunately, research also reveals that even modest interactions with nature can produce profound benefits. Spending as little as twenty minutes a day in a park or wooded area significantly lowers cortisol levels, reduces blood pressure, and enhances mood. In children, regular exposure to outdoor environments fosters creativity, improves concentration, and builds emotional resilience.
 
-—-------------------------------
+Addressing this disconnect requires coordinated efforts in urban planning and public policy. Incorporating green spaces, community gardens, and urban forests into city design is no longer a cosmetic luxury but a vital public health intervention. Moreover, encouraging environmental stewardship among younger generations ensures that future decision-makers value and protect the natural world.
 
-* cartographer: someone involved in the science or practice of drawing maps
+### Questions
 
-** plaster of Paris: a quick-setting plaster consisting of a fine white powder that hardens when moistened and allowed to dry
+#### Questions 27–32
+Complete the summary using the list of words, A–J, below.
+Write the correct letter, A–J, in boxes 27–32 on your answer sheet.
 
-## Reading Passage 3
+Option Box:
+A educational use
+B rare materials
+C inferior makes
+D product exchange markets
+E necessary skills
+F international
+G challenging task
+H memorable object
+I internet purchase
+J numerous problems
 
----
+### A birthday gift
+
+- **Q27.** Peter Bellerby's plan to give his father a globe for his birthday was an unexpectedly Q27 ____ *(Answer: G)*
+- **Q28.** for which he had to overcome Q28 ____. *(Answer: J)*
+- **Q29.** He soon learnt that a straightforward Q29 ____ would not be possible. *(Answer: I)*
+- **Q30.** Some Q30 ____ that had been intended for *(Answer: H)*
+- **Q31.** Q31 ____ were available, as were some expensive antique globes, but these were beyond his budget. *(Answer: A)*
+- **Q32.** He even travelled to places where people might still have the Q32 ____, but Bellerby could not find what he wanted. *(Answer: E)*
+
+#### Questions 33–36
+Do the following statements agree with the claims of the writer in Reading Passage 3?
+In boxes 33–36 on your answer sheet, write
+YES if the statement agrees with the claims of the writer
+NO if the statement contradicts the claims of the writer
+NOT GIVEN if it is impossible to say what the writer thinks about this
+
+**33. The assumption today that people in the past knew very little about geography is correct.**
+  *Answer: NO*
+
+**34. Plato was criticised for saying the world was shaped like a leather ball.**
+  *Answer: NOT GIVEN*
+
+**35. The globe made by Crates of Mallus was an accurate representation of the known world.**
+  *Answer: YES*
+
+**36. Bellerby assumed he would have few problems locating a well-made globe.**
+  *Answer: YES*
+
+#### Questions 37–40
+Choose the correct letter, A, B, C or D.
+Write the correct letter in boxes 37–40 on your answer sheet.
+
+**37. When Bellerby had to attach the gores to the globe surface,**
+  - A he decided it was best to work quickly.
+  - B he became aware of an unexpected issue.
+  - C he was worried about the quality of his materials.
+  - D he nearly gave up the whole project.
+  *Answer: B*
+
+**38. The reviewer mentions other globe makers of the past because**
+  - A Bellerby was particularly inspired by them.
+  - B their achievements are not widely known.
+  - C Bellerby had something in common with each of them.
+  - D their difficulties could have been avoided.
+  *Answer: C*
+
+**39. What point is made about Bellerby in the seventh paragraph?**
+  - A He had long working relationships with numerous craftsmen.
+  - B He understands the lack of interest in traditional crafts.
+  - C He appreciates the importance of careful planning.
+  - D He regrets the loss of many globe-making skills.
+  *Answer: D*
+
+**40. What does the reviewer say about Bellerby's book in the final paragraph?**
+  - A It does not tell you how to create a profitable business.
+  - B It overlooks some important mapmakers.
+  - C It fails to discuss the future of globe-making.
+  - D It does not give enough details about individual customers.
+  *Answer: A*
+

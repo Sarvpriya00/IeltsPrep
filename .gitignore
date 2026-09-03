@@ -29,3 +29,7 @@ ielts-writing-tests/
 # *.png
 # *.gif
 # *.webp
+
+# Scratch scripts
+scratch/
+

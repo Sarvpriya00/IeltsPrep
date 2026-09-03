@@ -563,4 +563,180 @@ body {
   text-decoration: underline;
 }
 
+/* IELTS Text Highlighting Engine Styles */
+mark.ielts-highlight {
+  background-color: #fef08a;
+  color: #0f172a;
+  padding: 1px 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  transition: all 0.15s ease;
+  user-select: text;
+}
+
+mark.ielts-highlight:hover {
+  filter: brightness(0.95);
+  box-shadow: 0 0 0 2px rgba(250, 204, 21, 0.5);
+}
+
+[data-theme="dark"] mark.ielts-highlight {
+  background-color: #854d0e;
+  color: #fef08a;
+}
+
+[data-theme="dark"] mark.ielts-highlight:hover {
+  filter: brightness(1.15);
+  box-shadow: 0 0 0 2px rgba(234, 179, 8, 0.5);
+}
+
+mark.ielts-highlight.ielts-hl-yellow {
+  background-color: #fef08a;
+  color: #0f172a;
+}
+[data-theme="dark"] mark.ielts-highlight.ielts-hl-yellow {
+  background-color: #854d0e;
+  color: #fef08a;
+}
+
+mark.ielts-highlight.ielts-hl-green {
+  background-color: #bbf7d0;
+  color: #064e3b;
+}
+[data-theme="dark"] mark.ielts-highlight.ielts-hl-green {
+  background-color: #166534;
+  color: #dcfce7;
+}
+
+mark.ielts-highlight.ielts-hl-cyan {
+  background-color: #bae6fd;
+  color: #0c4a6e;
+}
+[data-theme="dark"] mark.ielts-highlight.ielts-hl-cyan {
+  background-color: #075985;
+  color: #e0f2fe;
+}
+
+mark.ielts-highlight.ielts-hl-pink {
+  background-color: #fbcfe8;
+  color: #831843;
+}
+[data-theme="dark"] mark.ielts-highlight.ielts-hl-pink {
+  background-color: #9d174d;
+  color: #fce7f3;
+}
+
+/* Floating Selection Toolbar */
+.highlight-popover-toolbar {
+  position: absolute;
+  z-index: 9999;
+  background: #1e293b;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-sans);
+  animation: popoverFadeIn 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+@keyframes popoverFadeIn {
+  from { opacity: 0; transform: translateY(4px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.hl-tb-btn {
+  background: transparent;
+  border: none;
+  color: #f8fafc;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: background 0.15s ease;
+  white-space: nowrap;
+}
+
+.hl-tb-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+  color: #38bdf8;
+}
+
+.hl-tb-divider {
+  width: 1px;
+  height: 16px;
+  background: #475569;
+  margin: 0 2px;
+}
+
+.hl-color-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.4);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.hl-color-dot:hover {
+  transform: scale(1.25);
+}
+
+/* Custom Context Menu */
+.ielts-context-menu {
+  position: fixed;
+  z-index: 10000;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  padding: 6px 0;
+  min-width: 190px;
+  font-family: var(--font-sans);
+  animation: contextMenuIn 0.12s ease-out;
+}
+
+@keyframes contextMenuIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.ielts-cm-item {
+  padding: 7px 14px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  transition: background 0.12s ease, color 0.12s ease;
+}
+
+.ielts-cm-item:hover {
+  background: rgba(0, 113, 227, 0.08);
+  color: var(--accent-blue);
+}
+
+.ielts-cm-item.danger:hover {
+  background: rgba(255, 59, 48, 0.1);
+  color: var(--accent-red);
+}
+
+.ielts-cm-divider {
+  height: 1px;
+  background: var(--border-color);
+  margin: 4px 0;
+}
+
+
 
