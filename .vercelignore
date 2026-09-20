@@ -1,0 +1,19 @@
+# Dependency & build directories
+node_modules
+dist
+.git
+.vercel
+
+# Exclude raw camera phone photo dumps (which exceed Vercel API payload limits)
+images/cam21/1788*
+ielts-book-pics
+ielts reading and listening
+ielts-listening-test
+ielts-writing-tests
+training
+tests
+scratch
+
+# Local OS files
+.DS_Store
+.env*

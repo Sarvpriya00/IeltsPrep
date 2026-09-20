@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IELTS Writing Masterclass | Presentation Tool</title>
+    <!-- Google Fonts: Newsreader Editorial Serif + Plus Jakarta Sans UI -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- External Masterclass Data Engine -->
+    <script src="data/masterclassData.js"></script>
+
+    <style>
+        :root {
+            --bg-paper: #FAF8F5;
+            --card-bg: #FFFFFF;
+            --card-subtle: #F4F1EB;
+            --text-main: #232220;
+            --text-muted: #6B6862;
+            --border: #E8E4DC;
+            --border-dark: #D4CEBF;
+
+            /* Ali Abdaal Pastel Palette */
+            --pastel-sage: #E8F1EC;
+            --sage-text: #265B43;
+            --pastel-blue: #EBF3F8;
+            --blue-text: #1E4E6D;
+            --pastel-terracotta: #F8ECE8;
+            --terracotta-text: #823824;
+            --pastel-amber: #FDF3E7;
+            --amber-text: #825316;
+
+            --accent: #2C2A26;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.08);
+            --radius: 12px;
+            --font-serif: 'Newsreader', serif;
+            --font-sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
+            --scale-factor: 1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-paper);
+            color: var(--text-main);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            padding: 28px 24px 80px 24px;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            position: relative;
+            transition: padding 0.3s ease, background 0.3s ease;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.025'/%3E%3C/svg%3E");
+            z-index: 9999;
+        }
+
+        .container {
+            max-width: 1180px;
+            margin: 0 auto;
+            transition: max-width 0.3s ease, transform 0.3s ease;
+        }
+
+        /* --- PRESENTATION MODE --- */
+        body.presentation-mode {
+            padding: 20px 32px 100px 32px;
+            background-color: #F8F5F0;
+        }
+
+        body.presentation-mode .container {
+            max-width: 1420px;
+            transform: scale(var(--scale-factor));
+            transform-origin: top center;
+        }
+
+        body.presentation-mode header { display: none !important; }
+        body.presentation-mode .section-head h1 { font-size: 38px; }
+        body.presentation-mode .section-head p { font-size: 17px; }
+        body.presentation-mode .card { box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06); }
+        body.presentation-mode .presentation-toolbar { display: flex !important; }
+
+        .presentation-toolbar {
+            display: none;
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: #232220;
+            color: #FFF;
+            padding: 10px 18px;
+            border-radius: 40px;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+            z-index: 10000;
+            align-items: center;
+            gap: 12px;
+            font-size: 13px;
+            font-weight: 600;
+            backdrop-filter: blur(8px);
+            animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .toolbar-btn {
+            background: rgba(255, 255, 255, 0.12);
+            border: none; color: #FFF;
+            padding: 6px 14px; border-radius: 20px;
+            cursor: pointer; font-size: 12px; font-weight: 600;
+            display: inline-flex; align-items: center; gap: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .toolbar-btn:hover { background: rgba(255, 255, 255, 0.25); transform: translateY(-1px); }
+
+        .toolbar-badge {
+            background: #EF4444; color: white;
+            font-size: 10px; font-weight: 700;
+            padding: 3px 8px; border-radius: 10px;
+            text-transform: uppercase; letter-spacing: 0.5px;
+            display: inline-flex; align-items: center; gap: 5px;
+        }
+
+        .recording-dot {
+            width: 7px; height: 7px; background: white; border-radius: 50%;
+            animation: pulseDot 1.2s infinite alternate;
+        }
+
+        @keyframes pulseDot { from { opacity: 0.3; } to { opacity: 1; } }
+
+        /* --- HEADER --- */
+        header {
+            display: flex; justify-content: space-between; align-items: center;
+            padding-bottom: 20px; border-bottom: 1px solid var(--border); margin-bottom: 28px;
+        }
+
+        .brand { display: flex; align-items: center; gap: 12px; }
+
+        .brand-badge {
+            background: var(--text-main); color: #fff;
+            font-size: 11px; font-weight: 700; padding: 5px 10px;
+            border-radius: 6px; letter-spacing: 0.6px; text-transform: uppercase;
+        }
+
+        .brand-title {
+            font-family: var(--font-serif); font-size: 22px;
+            font-weight: 500; color: var(--text-main); letter-spacing: -0.3px;
+        }
+
+        .nav-tabs {
+            display: flex; background: var(--card-subtle);
+            padding: 4px; border-radius: 10px; gap: 4px;
+        }
+
+        .tab-btn {
+            background: none; border: none; padding: 8px 16px;
+            font-size: 13px; font-weight: 600; color: var(--text-muted);
+            cursor: pointer; border-radius: 7px; transition: all 0.2s ease; font-family: inherit;
+        }
+
+        .tab-btn.active {
+            background: var(--card-bg); color: var(--text-main);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .pres-toggle-btn {
+            background: var(--card-subtle); border: 1px solid var(--border-dark);
+            padding: 8px 14px; border-radius: 8px; font-size: 12px;
+            font-weight: 600; color: var(--text-main); cursor: pointer;
+            display: flex; align-items: center; gap: 6px; transition: all 0.2s;
+        }
+
+        .pres-toggle-btn:hover { background: var(--accent); color: #FFF; }
+
+        /* --- VIEW PANELS --- */
+        .view-panel { display: none; animation: fadeIn 0.3s ease; }
+        .view-panel.active { display: block; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-head { margin-bottom: 24px; }
+        .section-head h1 {
+            font-family: var(--font-serif); font-size: 32px;
+            font-weight: 400; letter-spacing: -0.5px; margin-bottom: 6px;
+        }
+        .section-head p { color: var(--text-muted); font-size: 15px; }
+
+        .selector-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            background: var(--card-bg); border: 1px solid var(--border);
+            padding: 12px 18px; border-radius: 10px; margin-bottom: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .selector-label {
+            font-size: 12px; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.6px; color: var(--text-muted);
+        }
+
+        .custom-select {
+            background: var(--card-subtle); border: 1px solid var(--border-dark);
+            color: var(--text-main); padding: 8px 14px; border-radius: 6px;
+            font-size: 13.5px; font-weight: 600; font-family: inherit;
+            cursor: pointer; outline: none; min-width: 320px;
+        }
+
+        /* --- CARDS & PROMPTS --- */
+        .card {
+            background: var(--card-bg); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); margin-bottom: 24px;
+        }
+
+        .prompt-box {
+            background: var(--pastel-amber); border-left: 4px solid var(--amber-text);
+            padding: 18px 22px; border-radius: 0 10px 10px 0; margin-bottom: 24px; transition: all 0.2s ease;
+        }
+
+        .prompt-label {
+            font-size: 11px; font-weight: 700; color: var(--amber-text);
+            text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 4px;
+        }
+
+        .prompt-text { font-size: 16px; font-weight: 500; color: #3B260A; line-height: 1.55; }
+
+        /* --- ESSAY BUILDER GRID --- */
+        .builder-layout {
+            display: grid; grid-template-columns: 1.15fr 0.85fr;
+            gap: 24px; align-items: start;
+        }
+
+        .essay-slots-container { display: flex; flex-direction: column; gap: 16px; }
+
+        .slot-card {
+            background: var(--card-bg); border: 1.5px dashed var(--border-dark);
+            border-radius: 10px; padding: 16px 18px; transition: all 0.2s ease;
+            position: relative; cursor: pointer;
+        }
+
+        .slot-card.drag-over { border-color: var(--accent); background: #F4F8F6; transform: scale(1.01); }
+        .slot-card.filled { border: 1.5px solid #CBD5E1; background: #FAFBFD; }
+        .slot-card.selected-active { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+        .slot-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+        .slot-role { font-size: 11.5px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text-muted); }
+        .slot-band-tag { font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 20px; display: none; }
+        .slot-content { font-size: 14.5px; color: var(--text-muted); font-style: italic; line-height: 1.55; }
+        .slot-content.has-text { color: var(--text-main); font-style: normal; font-weight: 500; }
+
+        .bank-sidebar { position: sticky; top: 24px; }
+        .bank-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+        .bank-presets { display: flex; gap: 6px; }
+        .preset-chip {
+            background: var(--card-subtle); border: 1px solid var(--border);
+            padding: 5px 11px; border-radius: 6px; font-size: 12px;
+            font-weight: 600; cursor: pointer; color: var(--text-muted); transition: all 0.2s;
+        }
+        .preset-chip:hover { background: #EAE6DD; color: var(--text-main); }
+
+        .bank-filters {
+            display: flex; gap: 4px; margin-bottom: 14px; overflow-x: auto; padding-bottom: 4px;
+        }
+
+        .filter-chip {
+            background: var(--card-subtle); border: 1px solid var(--border);
+            padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;
+            color: var(--text-muted); cursor: pointer; transition: all 0.2s; white-space: nowrap;
+        }
+
+        .filter-chip.active {
+            background: var(--accent); color: #FFF; border-color: var(--accent);
+        }
+
+        .sentence-options-list {
+            display: flex; flex-direction: column; gap: 12px;
+            max-height: 560px; overflow-y: auto; padding-right: 4px;
+        }
+
+        .sentence-card {
+            background: #FFFFFF; border: 1px solid var(--border);
+            border-radius: 8px; padding: 14px 16px; cursor: grab;
+            transition: all 0.2s ease; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+            user-select: none; position: relative;
+        }
+        .sentence-card:active { cursor: grabbing; }
+        .sentence-card:hover { border-color: #A8A29E; transform: translateX(4px); box-shadow: var(--shadow-hover); }
+        .sentence-card.dragging { opacity: 0.4; transform: scale(0.98); }
+        .sentence-card.is-assigned {
+            border-color: #10B981; background: #F0FDF4;
+        }
+
+        .assigned-badge {
+            display: inline-block; background: #10B981; color: white;
+            font-size: 9.5px; font-weight: 700; padding: 1px 6px;
+            border-radius: 4px; margin-left: 6px;
+        }
+
+        .sentence-meta { display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 6px; align-items: center; }
+        .target-slot { color: var(--text-muted); font-weight: 700; text-transform: uppercase; font-size: 10.5px; letter-spacing: 0.4px; }
+        .drag-handle { color: #9CA3AF; margin-right: 4px; font-size: 12px; }
+
+        .band-indicator { font-weight: 700; padding: 2px 7px; border-radius: 4px; font-size: 10.5px; }
+        .band-indicator.b5 { background: var(--pastel-terracotta); color: var(--terracotta-text); }
+        .band-indicator.b7 { background: var(--pastel-blue); color: var(--blue-text); }
+        .band-indicator.b8 { background: var(--pastel-sage); color: var(--sage-text); }
+        .sentence-text { font-size: 13.5px; line-height: 1.48; color: #374151; }
+
+        .eval-action-bar { margin-top: 24px; display: flex; gap: 14px; align-items: center; }
+        .btn-evaluate {
+            background: var(--text-main); color: #FFF; border: none; padding: 14px 28px;
+            border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer;
+            display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s ease; font-family: inherit;
+        }
+        .btn-evaluate:hover { background: #000; transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); }
+        .btn-clear {
+            background: transparent; border: 1px solid var(--border-dark); padding: 14px 20px;
+            border-radius: 8px; font-size: 14px; font-weight: 600; color: var(--text-muted); cursor: pointer; transition: all 0.2s;
+        }
+        .btn-clear:hover { background: var(--card-subtle); color: var(--text-main); }
+
+        /* --- TASK 1 VISUALIZER --- */
+        .task1-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 28px; align-items: start; }
+        .chart-container { background: #FFFFFF; border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); position: relative; }
+        .chart-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+        .chart-controls { display: flex; gap: 8px; }
+        .mode-btn { background: var(--card-subtle); border: 1px solid var(--border-dark); padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+        .mode-btn.active { background: var(--accent); color: #FFF; border-color: var(--accent); }
+        .eye-btn { background: var(--pastel-sage); color: var(--sage-text); border: 1px solid #CDE2D6; padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s; }
+        .eye-btn.active { background: var(--sage-text); color: #FFF; }
+        .graphic-viewport { position: relative; width: 100%; min-height: 340px; background: #FAFBFD; border: 1px solid var(--border); border-radius: 8px; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 12px; }
+        .graphic-viewport img { max-width: 100%; max-height: 420px; object-fit: contain; border-radius: 4px; }
+        .chart-svg-wrap { width: 100%; height: 340px; }
+
+        .hotspot-pin {
+            position: absolute; width: 24px; height: 24px; background: #EF4444; color: white;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 11.5px; font-weight: 700; cursor: pointer; box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.25);
+            transform: translate(-50%, -50%); transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); z-index: 10;
+        }
+        .hotspot-pin:hover { transform: translate(-50%, -50%) scale(1.3); box-shadow: 0 0 0 8px rgba(239, 68, 68, 0.35); }
+        .hotspot-pin.active { background: #2563EB; box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.3); }
+
+        .breakdown-notes { display: flex; flex-direction: column; gap: 16px; }
+        .annotation-card { border: 1px solid var(--border); border-radius: 10px; padding: 18px; background: #FFF; transition: all 0.2s; }
+        .annotation-card.highlighted { border-color: #265B43; background: #F4F8F6; transform: scale(1.02); box-shadow: var(--shadow-hover); }
+        .note-category { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+        .note-category.sage { color: var(--sage-text); }
+        .note-category.slate { color: var(--blue-text); }
+        .note-category.terracotta { color: var(--terracotta-text); }
+
+        /* --- BLUEPRINT TAB STYLING --- */
+        .blueprint-switcher { display: flex; gap: 10px; margin-bottom: 24px; }
+        .blueprint-tab-btn { background: var(--card-bg); border: 1px solid var(--border-dark); padding: 10px 20px; border-radius: 8px; font-size: 13.5px; font-weight: 700; color: var(--text-muted); cursor: pointer; transition: all 0.2s; }
+        .blueprint-tab-btn.active { background: var(--accent); color: #FFF; border-color: var(--accent); }
+        .blueprint-layout { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 28px; align-items: start; }
+        .blueprint-para-card { background: #FFF; border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 16px; box-shadow: var(--shadow); }
+        .blueprint-para-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+        .blueprint-para-title { font-family: var(--font-serif); font-size: 18px; font-weight: 500; color: var(--text-main); }
+        .blueprint-words-badge { background: var(--pastel-amber); color: var(--amber-text); font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 20px; }
+        .formula-box { background: #FAF8F5; border-left: 3px solid var(--accent); padding: 10px 14px; border-radius: 0 6px 6px 0; font-family: monospace; font-size: 12.5px; color: #2D3748; margin: 8px 0; white-space: pre-wrap; }
+        .blueprint-purpose { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
+        .sample-essay-card { background: #FFF; border: 1.5px solid var(--border-dark); border-radius: 12px; padding: 26px; box-shadow: var(--shadow); }
+        .sample-essay-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+        .sample-essay-title { font-family: var(--font-serif); font-size: 20px; font-weight: 500; }
+        .sample-essay-body { font-family: var(--font-serif); font-size: 15.5px; line-height: 1.7; color: #2D3748; white-space: pre-wrap; }
+        .lang-group { margin-bottom: 18px; }
+        .lang-group-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); margin-bottom: 8px; }
+        .lang-chips-wrap { display: flex; flex-wrap: wrap; gap: 6px; }
+        .lang-chip { background: var(--card-subtle); border: 1px solid var(--border); padding: 5px 10px; border-radius: 6px; font-size: 12px; font-weight: 600; color: var(--text-main); cursor: pointer; transition: all 0.2s; }
+        .lang-chip:hover { background: var(--accent); color: #FFF; }
+
+        /* --- VOCABULARY MATRIX --- */
+        .vocab-search-bar { display: flex; gap: 12px; margin-bottom: 20px; }
+        .vocab-search-input { flex: 1; padding: 10px 16px; border: 1px solid var(--border-dark); border-radius: 8px; font-size: 14px; font-family: inherit; background: #FFF; }
+        .vocab-table { display: grid; grid-template-columns: 1fr 1fr 1.3fr 80px; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: #FFF; box-shadow: var(--shadow); }
+        .vocab-header { background: var(--card-subtle); padding: 12px 16px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); border-bottom: 1px solid var(--border); }
+        .vocab-cell { padding: 14px 16px; font-size: 13.5px; border-bottom: 1px solid var(--border); display: flex; align-items: center; }
+        .vocab-cell.b5-col { color: #823824; font-weight: 500; text-decoration: line-through 1px rgba(130, 56, 36, 0.5); }
+        .vocab-cell.b8-col { color: #265B43; font-weight: 700; }
+        .copy-btn { background: var(--card-subtle); border: 1px solid var(--border); padding: 4px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+        .copy-btn:hover { background: var(--accent); color: #FFF; }
+
+        /* --- EVALUATION MODAL --- */
+        .eval-modal-overlay { position: fixed; inset: 0; background: rgba(18, 17, 16, 0.45); backdrop-filter: blur(5px); display: none; justify-content: center; align-items: center; z-index: 1000; padding: 20px; }
+        .eval-modal-overlay.open { display: flex; }
+        .eval-card { background: #FFF; border-radius: 16px; width: 100%; max-width: 700px; padding: 34px; box-shadow: 0 24px 50px rgba(0, 0, 0, 0.15); border: 1px solid var(--border); animation: popModal 0.25s cubic-bezier(0.16, 1, 0.3, 1); }
+        @keyframes popModal { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+        .modal-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+        .score-dial { display: flex; align-items: baseline; gap: 6px; }
+        .score-dial .num { font-family: var(--font-serif); font-size: 56px; font-weight: 500; color: var(--text-main); line-height: 1; }
+        .score-dial .max { font-size: 16px; color: var(--text-muted); font-weight: 600; }
+        .criteria-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px; }
+        .criterion-item { background: var(--card-subtle); padding: 14px 12px; border-radius: 10px; text-align: center; }
+        .crit-title { font-size: 10px; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 4px; letter-spacing: 0.4px; }
+        .crit-score { font-size: 20px; font-weight: 700; color: var(--text-main); }
+        .examiner-feedback { background: #FAF9F6; border-left: 4px solid var(--text-main); padding: 16px 20px; border-radius: 0 10px 10px 0; font-size: 14px; line-height: 1.6; margin-bottom: 24px; }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- MINIMALIST HEADER -->
+        <header>
+            <div class="brand">
+                <span class="brand-badge">Saurav Priyadarshi</span>
+                <span class="brand-title">IELTS Academic Masterclass</span>
+            </div>
+
+            <!-- Navigation Tabs -->
+            <div class="nav-tabs">
+                <button class="tab-btn active" onclick="switchTab('tab-essay')">Task 2 Blueprint & Evaluator</button>
+                <button class="tab-btn" onclick="switchTab('tab-task1')">Task 1 Visual Recreator</button>
+                <button class="tab-btn" onclick="switchTab('tab-blueprints')">Master Essay Blueprints & Samples</button>
+                <button class="tab-btn" onclick="switchTab('tab-vocab')">Band 7.5+ Vocab Vault</button>
+            </div>
+
+            <button class="pres-toggle-btn" onclick="togglePresentationMode()" title="Hotkey: Press 'P' or 'F'">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+                Presentation Mode [P]
+            </button>
+        </header>
+
+        <!-- TAB 1: TASK 2 INTERACTIVE ESSAY BUILDER & EVALUATOR -->
+        <main id="tab-essay" class="view-panel active">
+            <div class="section-head">
+                <h1>Interactive Essay Architecture</h1>
+                <p>Demonstrating how sentence selection and logical placement control Band 5.0 vs Band 8.5+ evaluation.</p>
+            </div>
+
+            <div class="selector-bar">
+                <span class="selector-label">Task 2 Essay Question</span>
+                <select class="custom-select" id="task2QuestionSelect" onchange="loadTask2Question(this.value)">
+                </select>
+            </div>
+
+            <div class="prompt-box">
+                <div class="prompt-label" id="task2PromptLabel">Academic Writing Task 2 Prompt</div>
+                <div class="prompt-text" id="task2PromptText">
+                    "Some people believe that unpaid community service should be a compulsory part of high school programmes. To what extent do you agree or disagree?"
+                </div>
+            </div>
+
+            <div class="builder-layout">
+                <div class="essay-slots-container">
+
+                    <div class="slot-card" id="slot-intro-paraphrase" onclick="selectSlot('intro-paraphrase')" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event, 'intro-paraphrase')">
+                        <div class="slot-meta">
+                            <span class="slot-role">1. Paraphrase of Prompt (Introduction)</span>
+                            <span class="slot-band-tag" id="tag-intro-paraphrase"></span>
+                        </div>
+                        <div class="slot-content" id="text-intro-paraphrase">Drag sentence here or click to select...</div>
+                    </div>
+
+                    <div class="slot-card" id="slot-intro-thesis" onclick="selectSlot('intro-thesis')" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event, 'intro-thesis')">
+                        <div class="slot-meta">
+                            <span class="slot-role">2. Thesis Statement & Direct Stance</span>
+                            <span class="slot-band-tag" id="tag-intro-thesis"></span>
+                        </div>
+                        <div class="slot-content" id="text-intro-thesis">Drag sentence here or click to select...</div>
+                    </div>
+
+                    <div class="slot-card" id="slot-body-topic" onclick="selectSlot('body-topic')" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event, 'body-topic')">
+                        <div class="slot-meta">
+                            <span class="slot-role">3. Body Paragraph 1: Topic Sentence</span>
+                            <span class="slot-band-tag" id="tag-body-topic"></span>
+                        </div>
+                        <div class="slot-content" id="text-body-topic">Drag sentence here or click to select...</div>
+                    </div>
+
+                    <div class="slot-card" id="slot-body-logic" onclick="selectSlot('body-logic')" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event, 'body-logic')">
+                        <div class="slot-meta">
+                            <span class="slot-role">4. Body Paragraph 1: Cause & Effect Elaboration</span>
+                            <span class="slot-band-tag" id="tag-body-logic"></span>
+                        </div>
+                        <div class="slot-content" id="text-body-logic">Drag sentence here or click to select...</div>
+                    </div>
+
+                    <div class="slot-card" id="slot-body-example" onclick="selectSlot('body-example')" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event, 'body-example')">
+                        <div class="slot-meta">
+                            <span class="slot-role">5. Body Paragraph 1: Concrete Illustration / Evidence</span>
+                            <span class="slot-band-tag" id="tag-body-example"></span>
+                        </div>
+                        <div class="slot-content" id="text-body-example">Drag sentence here or click to select...</div>
+                    </div>
+
+                    <div class="slot-card" id="slot-conclusion" onclick="selectSlot('conclusion')" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event, 'conclusion')">
+                        <div class="slot-meta">
+                            <span class="slot-role">6. Conclusion: Restatement & Future Outlook</span>
+                            <span class="slot-band-tag" id="tag-conclusion"></span>
+                        </div>
+                        <div class="slot-content" id="text-conclusion">Drag sentence here or click to select...</div>
+                    </div>
+
+                    <div class="eval-action-bar">
+                        <button class="btn-evaluate" onclick="evaluateCurrentEssay()">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                            Evaluate Essay & Calculate Band
+                        </button>
+                        <button class="btn-clear" onclick="resetSlots()">Reset All Slots</button>
+                    </div>
+
+                </div>
+
+                <div class="bank-sidebar">
+                    <div class="card" style="padding: 20px;">
+                        <div class="bank-header">
+                            <div style="font-weight: 700; font-size: 13px; text-transform: uppercase; color: var(--text-muted);">
+                                Task 2 Sentence Bank
+                            </div>
+                            <div class="bank-presets" title="Auto-fill essay slots with preset band level">
+                                <span style="font-size: 11px; color: var(--text-muted); margin-right: 4px; font-weight: 600;">Fill Essay:</span>
+                                <button class="preset-chip" onclick="applyPreset(5)">Band 5</button>
+                                <button class="preset-chip" onclick="applyPreset(7)">Band 7</button>
+                                <button class="preset-chip" onclick="applyPreset(8)">Band 8+</button>
+                            </div>
+                        </div>
+
+                        <!-- Sentence Bank Filter Bar: Slot Filter -->
+                        <div style="margin-bottom: 4px; font-size: 10.5px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">
+                            Slot Type:
+                        </div>
+                        <div class="bank-filters" style="margin-bottom: 10px;">
+                            <button class="filter-chip filter-slot-chip active" id="flt-slot-all" onclick="filterSentenceBank('all')">All Slots</button>
+                            <button class="filter-chip filter-slot-chip" id="flt-slot-intro" onclick="filterSentenceBank('intro')">Intro</button>
+                            <button class="filter-chip filter-slot-chip" id="flt-slot-body" onclick="filterSentenceBank('body')">Body</button>
+                            <button class="filter-chip filter-slot-chip" id="flt-slot-conclusion" onclick="filterSentenceBank('conclusion')">Conclusion</button>
+                        </div>
+
+                        <!-- Sentence Bank Filter Bar: Band Filter -->
+                        <div style="margin-bottom: 4px; font-size: 10.5px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">
+                            Band Filter:
+                        </div>
+                        <div class="bank-filters" style="margin-bottom: 14px;">
+                            <button class="filter-chip filter-band-chip active" id="flt-band-all" onclick="filterBandBank('all')">All Bands</button>
+                            <button class="filter-chip filter-band-chip" id="flt-band-5" onclick="filterBandBank('5')">Band 5.0</button>
+                            <button class="filter-chip filter-band-chip" id="flt-band-7" onclick="filterBandBank('7')">Band 7.0</button>
+                            <button class="filter-chip filter-band-chip" id="flt-band-8" onclick="filterBandBank('8')">Band 8.5+</button>
+                        </div>
+
+                        <div class="sentence-options-list" id="sentenceBankList">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- TAB 2: TASK 1 VISUAL RECREATOR & BUILDER -->
+        <section id="tab-task1" class="view-panel">
+            <div class="section-head">
+                <h1>Task 1: Academic Graphic Reconstruction</h1>
+                <p>100% complete, fully reconstructed vector charts matching Cambridge test graphics exactly.</p>
+            </div>
+
+            <div class="selector-bar">
+                <span class="selector-label">Task 1 Question / Chart</span>
+                <select class="custom-select" id="task1QuestionSelect" onchange="loadTask1Question(this.value)">
+                </select>
+            </div>
+
+            <div class="prompt-box">
+                <div class="prompt-label" id="task1PromptLabel">Academic Task 1 Prompt</div>
+                <div class="prompt-text" id="task1PromptText">
+                    Loading prompt...
+                </div>
+            </div>
+
+            <div class="task1-grid">
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <div>
+                            <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--text-muted);" id="task1BookLabel">
+                                Cambridge 19
+                            </div>
+                            <h3 style="margin-top: 2px;" id="task1Title">Social Centre Participants</h3>
+                        </div>
+
+                        <div class="chart-controls">
+                            <button class="mode-btn active" id="btnSvgMode" onclick="setGraphicMode('svg')">SVG Vector</button>
+                            <button class="mode-btn" id="btnImgMode" onclick="setGraphicMode('img')">Textbook Image</button>
+                            <button class="eye-btn" id="examinerEyeBtn" onclick="toggleExaminerEye()">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                                Examiner's Eye
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="graphic-viewport" id="graphicViewport">
+                        <div class="chart-svg-wrap" id="task1SvgContainer">
+                        </div>
+
+                        <img id="task1Img" src="" alt="Task 1 Graphic" style="display: none;" />
+
+                        <div id="hotspotContainer"></div>
+                    </div>
+                </div>
+
+                <div class="breakdown-notes" id="breakdownNotesContainer">
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: MASTER BLUEPRINTS & BAND 7+ MODEL ESSAYS -->
+        <section id="tab-blueprints" class="view-panel">
+            <div class="section-head">
+                <h1>Master Blueprints & Band 7.5+ Model Essays</h1>
+                <p>Complete structural walkthroughs, academic language banks, and verified sample model answers.</p>
+            </div>
+
+            <div class="blueprint-switcher">
+                <button class="blueprint-tab-btn active" id="btnBlueprintTask1" onclick="switchBlueprintTask('task1')">Task 1 Academic Graphic Blueprint (150 Words)</button>
+                <button class="blueprint-tab-btn" id="btnBlueprintTask2" onclick="switchBlueprintTask('task2')">Task 2 Academic Essay Blueprint (250 Words)</button>
+            </div>
+
+            <div class="blueprint-layout">
+                <div class="blueprint-structure-side">
+                    <div style="font-size: 12px; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 12px;">
+                        1. Detailed Paragraph Architecture & Formulas
+                    </div>
+                    <div id="blueprintCardsContainer">
+                    </div>
+                </div>
+
+                <div class="blueprint-sample-side">
+                    <div style="font-size: 12px; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 12px;">
+                        2. High-Yield Language & Vocabulary Bank
+                    </div>
+                    <div class="card" style="padding: 20px; margin-bottom: 24px;" id="blueprintLanguageContainer">
+                    </div>
+
+                    <div style="font-size: 12px; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 12px;">
+                        3. Verified Band 7.5+ Sample Model Answer
+                    </div>
+                    <div class="sample-essay-card">
+                        <div class="sample-essay-head">
+                            <div>
+                                <span class="slot-band-tag" style="display:inline-block; background: var(--pastel-sage); color: var(--sage-text);" id="sampleBandBadge">Band 7.5+</span>
+                                <h3 class="sample-essay-title" id="sampleEssayTitle" style="margin-top: 4px;">Sample Model Answer</h3>
+                            </div>
+                            <span class="blueprint-words-badge" id="sampleWordCountBadge">162 Words</span>
+                        </div>
+                        <div class="sample-essay-body" id="sampleEssayBodyText">
+                        </div>
+                        <div style="margin-top: 18px; text-align: right;">
+                            <button class="copy-btn" onclick="copySampleEssay()">Copy Model Essay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 4: VOCABULARY MATRIX -->
+        <section id="tab-vocab" class="view-panel">
+            <div class="section-head">
+                <h1>The High-Yield Vocabulary Vault</h1>
+                <p>Replace Band 5 clichés with natural, Band 7.5+ academic swaps.</p>
+            </div>
+
+            <div class="vocab-search-bar">
+                <input type="text" class="vocab-search-input" id="vocabSearchInput" placeholder="Search clichés or academic swaps..." oninput="filterVocabTable(this.value)" />
+            </div>
+
+            <div class="vocab-table" id="vocabTable">
+                <div class="vocab-header">Band 5 Cliché (Avoid)</div>
+                <div class="vocab-header">Band 7.5+ Academic Swap</div>
+                <div class="vocab-header">Live Context Sentence</div>
+                <div class="vocab-header">Copy</div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- FLOATING PRESENTATION CONTROL TOOLBAR -->
+    <div class="presentation-toolbar" id="presToolbar">
+        <span class="toolbar-badge">
+            <span class="recording-dot"></span>
+            REC MODE
+        </span>
+        <span>Press 'P' or 'Esc' to exit</span>
+        <button class="toolbar-btn" onclick="switchTab('tab-essay')">Task 2 Blueprint</button>
+        <button class="toolbar-btn" onclick="switchTab('tab-task1')">Task 1 Chart</button>
+        <button class="toolbar-btn" onclick="switchTab('tab-blueprints')">Blueprints & Models</button>
+        <button class="toolbar-btn" onclick="applyPreset(8)">Load Band 8+</button>
+        <button class="toolbar-btn" onclick="togglePresentationMode()">Exit Fullscreen</button>
+    </div>
+
+    <!-- EVALUATION MODAL -->
+    <div class="eval-modal-overlay" id="evalModal">
+        <div class="eval-card">
+            <div class="modal-head">
+                <div>
+                    <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.5px;">
+                        IELTS Examiner Assessment
+                    </div>
+                    <h2 style="font-family: var(--font-serif); font-size: 28px; font-weight: 400; margin-top: 2px;">
+                        Official Band Evaluation
+                    </h2>
+                </div>
+                <div class="score-dial">
+                    <span class="num" id="modalBandNum">7.5</span>
+                    <span class="max">/ 9.0</span>
+                </div>
+            </div>
+
+            <div class="criteria-grid">
+                <div class="criterion-item">
+                    <div class="crit-title">Task Response</div>
+                    <div class="crit-score" id="critTR">7.5</div>
+                </div>
+                <div class="criterion-item">
+                    <div class="crit-title">Coherence & Cohesion</div>
+                    <div class="crit-score" id="critCC">7.5</div>
+                </div>
+                <div class="criterion-item">
+                    <div class="crit-title">Lexical Resource</div>
+                    <div class="crit-score" id="critLR">7.5</div>
+                </div>
+                <div class="criterion-item">
+                    <div class="crit-title">Grammar & Accuracy</div>
+                    <div class="crit-score" id="critGRA">7.5</div>
+                </div>
+            </div>
+
+            <div class="examiner-feedback" id="modalFeedback">
+            </div>
+
+            <div style="text-align: right;">
+                <button class="btn-evaluate" onclick="closeModal()">Close Assessment</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // State Management
+        let currentTask2Question = null;
+        let currentTask1Question = null;
+        let activeGraphicMode = 'svg';
+        let activeBlueprintTask = 'task1';
+        let activeSentenceFilter = 'all';
+        let activeBandFilter = 'all';
+        let eyeActive = false;
+        let draggedItem = null;
+
+        let currentSlots = {
+            'intro-paraphrase': null,
+            'intro-thesis': null,
+            'body-topic': null,
+            'body-logic': null,
+            'body-example': null,
+            'conclusion': null
+        };
+        let activeSelectedSlot = 'intro-paraphrase';
+
+        // Initialize App
+        window.addEventListener('DOMContentLoaded', () => {
+            initTask2Dropdown();
+            initTask1Dropdown();
+            renderVocabTable();
+            renderBlueprintTab('task1');
+            setupKeyboardShortcuts();
+
+            if (window.masterclassData) {
+                if (window.masterclassData.task2Questions.length > 0) {
+                    loadTask2Question(window.masterclassData.task2Questions[0].id);
+                    applyPreset(8);
+                }
+                if (window.masterclassData.task1Questions.length > 0) {
+                    loadTask1Question(window.masterclassData.task1Questions[0].id);
+                }
+            }
+        });
+
+        // --- PRESENTATION MODE & SHORTCUTS ---
+        function togglePresentationMode() {
+            document.body.classList.toggle('presentation-mode');
+        }
+
+        function setupKeyboardShortcuts() {
+            window.addEventListener('keydown', (e) => {
+                if ((e.code === 'KeyP' || e.code === 'KeyF') && !isInputActive()) {
+                    e.preventDefault();
+                    togglePresentationMode();
+                }
+                if (e.code === 'Escape') {
+                    if (document.body.classList.contains('presentation-mode')) {
+                        document.body.classList.remove('presentation-mode');
+                    }
+                    closeModal();
+                }
+            });
+        }
+
+        function isInputActive() {
+            const active = document.activeElement;
+            return active && (active.tagName === 'INPUT' || active.tagName === 'SELECT' || active.tagName === 'TEXTAREA');
+        }
+
+        // --- TASK 2 ENGINE ---
+        function initTask2Dropdown() {
+            const select = document.getElementById('task2QuestionSelect');
+            select.innerHTML = '';
+            window.masterclassData.task2Questions.forEach(q => {
+                const opt = document.createElement('option');
+                opt.value = q.id;
+                opt.textContent = q.title;
+                select.appendChild(opt);
+            });
+        }
+
+        function loadTask2Question(questionId) {
+            const q = window.masterclassData.task2Questions.find(item => item.id === questionId);
+            if (!q) return;
+
+            currentTask2Question = q;
+            document.getElementById('task2PromptText').textContent = `"${q.prompt}"`;
+
+            resetSlots();
+            renderSentenceBank();
+        }
+
+        function getSlotLabel(slotKey) {
+            const labels = {
+                'intro-paraphrase': '1. Intro: Paraphrase',
+                'intro-thesis': '2. Intro: Thesis',
+                'body-topic': '3. Body: Topic Sentence',
+                'body-logic': '4. Body: Elaboration',
+                'body-example': '5. Body: Evidence',
+                'conclusion': '6. Conclusion'
+            };
+            return labels[slotKey] || slotKey.replace('-', ' ');
+        }
+
+        function filterSentenceBank(slotFilter) {
+            activeSentenceFilter = slotFilter;
+            document.querySelectorAll('.filter-slot-chip').forEach(c => c.classList.remove('active'));
+            const activeChip = document.getElementById(`flt-slot-${slotFilter}`);
+            if (activeChip) activeChip.classList.add('active');
+
+            renderSentenceBank();
+        }
+
+        function filterBandBank(bandFilter) {
+            activeBandFilter = bandFilter;
+            document.querySelectorAll('.filter-band-chip').forEach(c => c.classList.remove('active'));
+            const activeChip = document.getElementById(`flt-band-${bandFilter}`);
+            if (activeChip) activeChip.classList.add('active');
+
+            renderSentenceBank();
+        }
+
+        function renderSentenceBank() {
+            const container = document.getElementById('sentenceBankList');
+            if (!container) return;
+            container.innerHTML = '';
+
+            // Safe fallback initialization if currentTask2Question is not set
+            if (!currentTask2Question) {
+                if (window.masterclassData && window.masterclassData.task2Questions && window.masterclassData.task2Questions.length > 0) {
+                    currentTask2Question = window.masterclassData.task2Questions[0];
+                } else {
+                    container.innerHTML = '<div style="padding: 24px; text-align: center; color: var(--text-muted); font-size: 13px;">No question data available.</div>';
+                    return;
+                }
+            }
+
+            // Filter sentence cards based on activeSentenceFilter and activeBandFilter
+            const filtered = currentTask2Question.sentences.filter(item => {
+                let matchesSlot = true;
+                if (activeSentenceFilter === 'intro') matchesSlot = item.slot.startsWith('intro');
+                else if (activeSentenceFilter === 'body') matchesSlot = item.slot.startsWith('body');
+                else if (activeSentenceFilter === 'conclusion') matchesSlot = item.slot === 'conclusion';
+
+                let matchesBand = true;
+                if (activeBandFilter === '5') matchesBand = item.band === 5;
+                else if (activeBandFilter === '7') matchesBand = item.band === 7;
+                else if (activeBandFilter === '8') matchesBand = item.band === 8;
+
+                return matchesSlot && matchesBand;
+            });
+
+            if (filtered.length === 0) {
+                container.innerHTML = `
+                    <div style="padding: 24px 16px; text-align: center; color: var(--text-muted); font-size: 13px; background: var(--card-subtle); border-radius: 8px; border: 1px dashed var(--border);">
+                        No sentences match the selected filters.
+                        <br><button onclick="filterSentenceBank('all'); filterBandBank('all');" style="margin-top: 8px; background: var(--accent); color: white; border: none; padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: 600; cursor: pointer;">Reset Filters</button>
+                    </div>
+                `;
+                return;
+            }
+
+            filtered.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'sentence-card';
+                card.id = `sentence-card-${item.id}`;
+                card.draggable = true;
+
+                // Check if currently assigned to any slot
+                const isAssigned = Object.values(currentSlots).some(assignedItem => assignedItem && assignedItem.id === item.id);
+                if (isAssigned) {
+                    card.classList.add('is-assigned');
+                }
+
+                card.addEventListener('dragstart', (e) => handleDragStart(e, item));
+                card.addEventListener('dragend', handleDragEnd);
+                card.onclick = () => assignSentenceToSlot(item);
+
+                const bandClass = item.band === 5 ? 'b5' : (item.band === 7 ? 'b7' : 'b8');
+                const bandLabel = item.band === 5 ? 'Band 5.0' : (item.band === 7 ? 'Band 7.0' : 'Band 8.5+');
+                const assignedText = isAssigned ? `<span class="assigned-badge">✓ In Essay</span>` : '';
+
+                card.innerHTML = `
+                    <div class="sentence-meta">
+                        <span class="target-slot"><span class="drag-handle">⋮⋮</span> ${getSlotLabel(item.slot)} ${assignedText}</span>
+                        <span class="band-indicator ${bandClass}">${bandLabel}</span>
+                    </div>
+                    <div class="sentence-text">"${item.text}"</div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function handleDragStart(e, item) {
+            draggedItem = item;
+            e.target.classList.add('dragging');
+            e.dataTransfer.setData('text/plain', JSON.stringify(item));
+        }
+
+        function handleDragEnd(e) {
+            e.target.classList.remove('dragging');
+            draggedItem = null;
+        }
+
+        function handleDragOver(e) {
+            e.preventDefault();
+            e.currentTarget.classList.add('drag-over');
+        }
+
+        function handleDragLeave(e) {
+            e.currentTarget.classList.remove('drag-over');
+        }
+
+        function handleDrop(e, slotKey) {
+            e.preventDefault();
+            e.currentTarget.classList.remove('drag-over');
+            if (draggedItem) {
+                assignSentenceToSlot(draggedItem);
+            }
+        }
+
+        function assignSentenceToSlot(item) {
+            currentSlots[item.slot] = item;
+
+            const slotCard = document.getElementById(`slot-${item.slot}`);
+            const slotContent = document.getElementById(`text-${item.slot}`);
+            const slotTag = document.getElementById(`tag-${item.slot}`);
+
+            if (slotCard) {
+                slotCard.classList.add('filled');
+                slotContent.classList.add('has-text');
+                slotContent.textContent = `"${item.text}"`;
+
+                slotTag.style.display = 'inline-block';
+                slotTag.textContent = `Band ${item.band === 8 ? '8.5+' : item.band + '.0'}`;
+                slotTag.className = 'slot-band-tag';
+
+                if (item.band === 5) {
+                    slotTag.style.background = 'var(--pastel-terracotta)';
+                    slotTag.style.color = 'var(--terracotta-text)';
+                } else if (item.band === 7) {
+                    slotTag.style.background = 'var(--pastel-blue)';
+                    slotTag.style.color = 'var(--blue-text)';
+                } else {
+                    slotTag.style.background = 'var(--pastel-sage)';
+                    slotTag.style.color = 'var(--sage-text)';
+                }
+            }
+
+            renderSentenceBank();
+        }
+
+        function selectSlot(slotKey) {
+            activeSelectedSlot = slotKey;
+            document.querySelectorAll('.slot-card').forEach(c => c.classList.remove('selected-active'));
+            const card = document.getElementById(`slot-${slotKey}`);
+            if (card) card.classList.add('selected-active');
+        }
+
+        function applyPreset(bandLevel) {
+            if (!currentTask2Question) return;
+            const targetBand = parseInt(bandLevel);
+            currentTask2Question.sentences
+                .filter(s => s.band === (targetBand === 8 ? 8 : (targetBand === 7 ? 7 : 5)))
+                .forEach(s => assignSentenceToSlot(s));
+        }
+
+        function resetSlots() {
+            Object.keys(currentSlots).forEach(key => {
+                currentSlots[key] = null;
+                const slotCard = document.getElementById(`slot-${key}`);
+                const slotContent = document.getElementById(`text-${key}`);
+                const slotTag = document.getElementById(`tag-${key}`);
+
+                if (slotCard) {
+                    slotCard.classList.remove('filled', 'selected-active');
+                    slotContent.classList.remove('has-text');
+                    slotContent.textContent = 'Drag sentence here or click to select...';
+                    slotTag.style.display = 'none';
+                }
+            });
+            renderSentenceBank();
+        }
+
+        function evaluateCurrentEssay() {
+            const filledKeys = Object.keys(currentSlots).filter(k => currentSlots[k] !== null);
+            if (filledKeys.length === 0) {
+                alert("Please assign sentences from the bank or click 'Band 8+' to test the evaluator.");
+                return;
+            }
+
+            let totalScore = 0;
+            filledKeys.forEach(k => { totalScore += currentSlots[k].band; });
+            let avg = (totalScore / filledKeys.length);
+            let calculatedBand = Math.round(avg * 2) / 2;
+            if (calculatedBand < 5.0) calculatedBand = 5.0;
+
+            let tr = calculatedBand;
+            let cc = calculatedBand;
+            let lr = calculatedBand;
+            let gra = calculatedBand;
+
+            if (calculatedBand >= 8.0) { tr = 8.5; cc = 8.0; lr = 8.5; gra = 8.0; }
+            else if (calculatedBand >= 7.0) { tr = 7.5; cc = 7.0; lr = 7.5; gra = 7.0; }
+            else { tr = 5.5; cc = 5.0; lr = 5.0; gra = 5.5; }
+
+            document.getElementById('modalBandNum').textContent = calculatedBand.toFixed(1);
+            document.getElementById('critTR').textContent = tr.toFixed(1);
+            document.getElementById('critCC').textContent = cc.toFixed(1);
+            document.getElementById('critLR').textContent = lr.toFixed(1);
+            document.getElementById('critGRA').textContent = gra.toFixed(1);
+
+            const feedbackEl = document.getElementById('modalFeedback');
+            if (calculatedBand >= 8.0) {
+                feedbackEl.innerHTML = `<strong>Examiner Assessment (Band 8.5):</strong> Outstanding academic coherence. The thesis statement is explicit and consistently sustained. Lexical choices demonstrate precision and sophisticated collocations without resorting to forced clichés. Ideas are logically sequenced with convincing real-world evidence.`;
+            } else if (calculatedBand >= 7.0) {
+                feedbackEl.innerHTML = `<strong>Examiner Assessment (Band 7.0 - 7.5):</strong> Clear logical progression throughout. The position is clearly articulated in the introduction and supported with relevant illustrations. Vocabulary exhibits good flexibility with minor inaccuracies.`;
+            } else {
+                feedbackEl.innerHTML = `<strong>Examiner Assessment (Band 5.0 - 5.5):</strong> Over-reliance on repetitive transition formulas and informal phrasing. Arguments lack sufficient analytical depth and empirical support. Structural layout is basic.`;
+            }
+
+            document.getElementById('evalModal').classList.add('open');
+        }
+
+        function closeModal() {
+            document.getElementById('evalModal').classList.remove('open');
+        }
+
+        // --- TASK 1 ENGINE ---
+        function initTask1Dropdown() {
+            const select = document.getElementById('task1QuestionSelect');
+            select.innerHTML = '';
+            window.masterclassData.task1Questions.forEach(q => {
+                const opt = document.createElement('option');
+                opt.value = q.id;
+                opt.textContent = `${q.testBook}: ${q.title}`;
+                select.appendChild(opt);
+            });
+        }
+
+        function loadTask1Question(questionId) {
+            const q = window.masterclassData.task1Questions.find(item => item.id === questionId);
+            if (!q) return;
+
+            currentTask1Question = q;
+            document.getElementById('task1BookLabel').textContent = q.testBook;
+            document.getElementById('task1Title').textContent = q.title;
+            document.getElementById('task1PromptText').textContent = `"${q.promptText}"`;
+
+            const img = document.getElementById('task1Img');
+            img.src = q.imagePath;
+
+            renderTask1Notes(q.notes);
+            renderTask1Hotspots(q.hotspots);
+
+            const svgWrap = document.getElementById('task1SvgContainer');
+            if (svgWrap && typeof q.svgGenerator === 'function') {
+                svgWrap.innerHTML = q.svgGenerator();
+            }
+
+            if (q.hasSvg) {
+                document.getElementById('btnSvgMode').style.display = 'inline-block';
+                setGraphicMode('svg');
+            } else {
+                document.getElementById('btnSvgMode').style.display = 'none';
+                setGraphicMode('img');
+            }
+        }
+
+        function setGraphicMode(mode) {
+            activeGraphicMode = mode;
+            const svgWrap = document.getElementById('task1SvgContainer');
+            const imgEl = document.getElementById('task1Img');
+            const btnSvg = document.getElementById('btnSvgMode');
+            const btnImg = document.getElementById('btnImgMode');
+
+            if (mode === 'svg' && currentTask1Question && currentTask1Question.hasSvg) {
+                svgWrap.style.display = 'block';
+                imgEl.style.display = 'none';
+                btnSvg.classList.add('active');
+                btnImg.classList.remove('active');
+            } else {
+                svgWrap.style.display = 'none';
+                imgEl.style.display = 'block';
+                btnSvg.classList.remove('active');
+                btnImg.classList.add('active');
+            }
+        }
+
+        function renderTask1Hotspots(hotspots) {
+            const container = document.getElementById('hotspotContainer');
+            container.innerHTML = '';
+            if (!hotspots) return;
+
+            hotspots.forEach((hp, idx) => {
+                const pin = document.createElement('div');
+                pin.className = 'hotspot-pin';
+                pin.style.left = `${hp.xPercent}%`;
+                pin.style.top = `${hp.yPercent}%`;
+                pin.textContent = idx + 1;
+                pin.title = hp.title;
+
+                pin.onclick = () => highlightHotspot(hp.noteId, pin);
+                container.appendChild(pin);
+            });
+        }
+
+        function highlightHotspot(noteId, pinEl) {
+            document.querySelectorAll('.hotspot-pin').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.annotation-card').forEach(c => c.classList.remove('highlighted'));
+
+            if (pinEl) pinEl.classList.add('active');
+
+            const targetCard = document.getElementById(noteId);
+            if (targetCard) {
+                targetCard.classList.add('highlighted');
+                targetCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }
+
+        function renderTask1Notes(notes) {
+            const container = document.getElementById('breakdownNotesContainer');
+            container.innerHTML = '';
+            if (!notes) return;
+
+            notes.forEach(n => {
+                const card = document.createElement('div');
+                card.className = 'annotation-card';
+                card.id = n.id;
+                card.innerHTML = `
+                    <div class="note-category ${n.colorClass}">${n.category}</div>
+                    <div style="font-size: 14px; margin-top: 4px; font-weight: 500;">"${n.text}"</div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function toggleExaminerEye() {
+            eyeActive = !eyeActive;
+            const btn = document.getElementById('examinerEyeBtn');
+            const overlay = document.getElementById('overviewOverlay');
+            const note = document.getElementById('note-overview');
+
+            if (eyeActive) {
+                btn.classList.add('active');
+                if (overlay) overlay.style.opacity = '1';
+                if (note) note.classList.add('highlighted');
+            } else {
+                btn.classList.remove('active');
+                if (overlay) overlay.style.opacity = '0';
+                if (note) note.classList.remove('highlighted');
+            }
+        }
+
+        // --- MASTER BLUEPRINTS TAB ENGINE ---
+        function switchBlueprintTask(taskType) {
+            activeBlueprintTask = taskType;
+            const btn1 = document.getElementById('btnBlueprintTask1');
+            const btn2 = document.getElementById('btnBlueprintTask2');
+
+            if (taskType === 'task1') {
+                btn1.classList.add('active');
+                btn2.classList.remove('active');
+            } else {
+                btn2.classList.add('active');
+                btn1.classList.remove('active');
+            }
+
+            renderBlueprintTab(taskType);
+        }
+
+        function renderBlueprintTab(taskType) {
+            const bp = window.masterclassData.blueprints[taskType];
+            if (!bp) return;
+
+            const cardsWrap = document.getElementById('blueprintCardsContainer');
+            cardsWrap.innerHTML = '';
+            bp.structure.forEach(s => {
+                const card = document.createElement('div');
+                card.className = 'blueprint-para-card';
+                card.innerHTML = `
+                    <div class="blueprint-para-header">
+                        <span class="blueprint-para-title">${s.para}</span>
+                        <span class="blueprint-words-badge">${s.words}</span>
+                    </div>
+                    <div class="formula-box"><strong>Formula:</strong> ${s.formula}</div>
+                    <div class="blueprint-purpose"><strong>Purpose:</strong> ${s.purpose}</div>
+                `;
+                cardsWrap.appendChild(card);
+            });
+
+            const langWrap = document.getElementById('blueprintLanguageContainer');
+            langWrap.innerHTML = '';
+            bp.languageBank.forEach(lg => {
+                const grp = document.createElement('div');
+                grp.className = 'lang-group';
+                const title = document.createElement('div');
+                title.className = 'lang-group-title';
+                title.textContent = lg.category;
+
+                const chipsWrap = document.createElement('div');
+                chipsWrap.className = 'lang-chips-wrap';
+
+                lg.items.forEach(item => {
+                    const chip = document.createElement('span');
+                    chip.className = 'lang-chip';
+                    chip.textContent = item;
+                    chip.onclick = () => copyText(item);
+                    chipsWrap.appendChild(chip);
+                });
+
+                grp.appendChild(title);
+                grp.appendChild(chipsWrap);
+                langWrap.appendChild(grp);
+            });
+
+            document.getElementById('sampleBandBadge').textContent = bp.sampleEssay.band;
+            document.getElementById('sampleWordCountBadge').textContent = `${bp.sampleEssay.wordCount} Words`;
+            document.getElementById('sampleEssayTitle').textContent = bp.sampleEssay.title;
+            document.getElementById('sampleEssayBodyText').textContent = bp.sampleEssay.text;
+        }
+
+        function copySampleEssay() {
+            const text = document.getElementById('sampleEssayBodyText').textContent;
+            navigator.clipboard.writeText(text);
+            alert("Model Essay copied to clipboard!");
+        }
+
+        // --- VOCABULARY MATRIX ---
+        function renderVocabTable() {
+            const table = document.getElementById('vocabTable');
+            table.innerHTML = `
+                <div class="vocab-header">Band 5 Cliché (Avoid)</div>
+                <div class="vocab-header">Band 7.5+ Academic Swap</div>
+                <div class="vocab-header">Live Context Sentence</div>
+                <div class="vocab-header">Copy</div>
+            `;
+
+            window.masterclassData.vocabVault.forEach((v, idx) => {
+                const b5Cell = document.createElement('div');
+                b5Cell.className = 'vocab-cell b5-col';
+                b5Cell.textContent = v.b5;
+
+                const b8Cell = document.createElement('div');
+                b8Cell.className = 'vocab-cell b8-col';
+                b8Cell.textContent = v.b8;
+
+                const exCell = document.createElement('div');
+                exCell.className = 'vocab-cell';
+                exCell.textContent = `"${v.example}"`;
+
+                const copyCell = document.createElement('div');
+                copyCell.className = 'vocab-cell';
+                copyCell.innerHTML = `<button class="copy-btn" onclick="copyText('${v.b8.replace(/'/g, "\\'")}')">Copy</button>`;
+
+                table.appendChild(b5Cell);
+                table.appendChild(b8Cell);
+                table.appendChild(exCell);
+                table.appendChild(copyCell);
+            });
+        }
+
+        function filterVocabTable(query) {
+            const q = query.toLowerCase();
+            const rows = document.querySelectorAll('#vocabTable .vocab-cell');
+            for (let i = 4; i < rows.length; i += 4) {
+                const b5 = rows[i].textContent.toLowerCase();
+                const b8 = rows[i+1].textContent.toLowerCase();
+                const ex = rows[i+2].textContent.toLowerCase();
+
+                const matches = b5.includes(q) || b8.includes(q) || ex.includes(q);
+                rows[i].style.display = matches ? 'flex' : 'none';
+                rows[i+1].style.display = matches ? 'flex' : 'none';
+                rows[i+2].style.display = matches ? 'flex' : 'none';
+                rows[i+3].style.display = matches ? 'flex' : 'none';
+            }
+        }
+
+        function copyText(text) {
+            navigator.clipboard.writeText(text);
+            alert(`Copied to clipboard: "${text}"`);
+        }
+
+        // --- TAB NAVIGATION ---
+        function switchTab(tabId) {
+            document.querySelectorAll('.view-panel').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+
+            const targetPanel = document.getElementById(tabId);
+            if (targetPanel) targetPanel.classList.add('active');
+
+            document.querySelectorAll('.tab-btn').forEach(b => {
+                if (b.getAttribute('onclick').includes(tabId)) {
+                    b.classList.add('active');
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

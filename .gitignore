@@ -33,3 +33,5 @@ ielts-writing-tests/
 # Scratch scripts
 scratch/
 
+.vercel
+.env*

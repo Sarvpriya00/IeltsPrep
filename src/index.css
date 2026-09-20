@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --idp-primary: #E31837;
+    --idp-dark-red: #B9122C;
+    --idp-header-bg: #1E2433;
+    --idp-slate: #0F172A;
+    --idp-text-size: 15px;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #F1F5F9;
+    color: #0F172A;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Font Scaling Classes */
+.font-scale-sm {
+  font-size: 13.5px;
+}
+
+.font-scale-md {
+  font-size: 15px;
+}
+
+.font-scale-lg {
+  font-size: 17.5px;
+}
+
+/* High contrast selection in passage */
+::selection {
+  background-color: #FEF08A;
+  color: #0F172A;
+}
+
+.highlighted-text {
+  background-color: #FEF08A;
+  color: #0F172A;
+  padding: 0 3px;
+  border-radius: 2px;
+}
+
+/* Custom Scrollbars for light theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E2E8F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94A3B8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E31837;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+/* IDP Official Test Button styles */
+.idp-btn-red {
+  background-color: #E31837;
+  color: #FFFFFF;
+  transition: all 0.15s ease-in-out;
+}
+.idp-btn-red:hover {
+  background-color: #B9122C;
+  box-shadow: 0 4px 12px rgba(227, 24, 55, 0.25);
+}
