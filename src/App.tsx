@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Header } from './components/common/Header';
 import { BandCalculatorModal } from './components/common/BandCalculatorModal';
 import { PortalHome } from './components/dashboard/PortalHome';
@@ -145,6 +146,8 @@ export const App: React.FC = () => {
         onClose={() => setIsBandCalculatorOpen(false)}
       />
 
+      {/* Vercel Analytics */}
+      <Analytics />
     </div>
   );
 };
